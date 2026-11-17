@@ -1,0 +1,7 @@
+# Starter dependencies. Record exact resolved versions in completed experiments.
+torch
+torchvision
+numpy
+matplotlib
+pandas
+scikit-learn

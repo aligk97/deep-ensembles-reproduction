@@ -1,0 +1,217 @@
+% CMP4509 Introduction to Deep Learning -- Term project report template
+% Compiles with pdfLaTeX + BibTeX (Overleaf: upload this folder or the .zip).
+%
+% The grey boxes are guides describing what is expected in each section.
+% Keep them visible while writing. Before submitting, hide them all by
+% changing \showguidestrue to \showguidesfalse below.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[round]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+% ---------------------------------------------------------------------------
+% Guide boxes
+\newif\ifshowguides
+\showguidestrue   % change to \showguidesfalse before submitting
+\definecolor{guidebg}{gray}{0.93}
+\definecolor{guideframe}{gray}{0.55}
+\newcommand{\guide}[1]{%
+  \ifshowguides
+  \par\medskip\noindent
+  \fcolorbox{guideframe}{guidebg}{%
+    \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}
+      \small\textbf{Guide.}
+      \begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]
+        #1
+      \end{itemize}
+    \end{minipage}}%
+  \par\medskip
+  \fi}
+% ---------------------------------------------------------------------------
+
+% Notation shortcuts (optional)
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\vect}[1]{\mathbf{#1}}
+
+\title{Reproducing ``\textit{Title of the Original Paper}''\\[0.3em]
+\large CMP4509 Introduction to Deep Learning --- Term Project Report}
+\author{
+  First Student (Student ID) \and
+  Second Student (Student ID) \and
+  Third Student (Student ID)
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+One paragraph. State the paper you reproduce, the central claim you test,
+the setting you use (dataset, model, compute), and whether the claim held in
+your setting.
+\end{abstract}
+
+\guide{
+  \item One paragraph, written last.
+  \item A reader should learn four things: which paper, which claim, in what setting, and the outcome.
+  \item Give your main result as a number (e.g.\ accuracy, mean $\pm$ std), not as ``good'' or ``promising''.
+}
+
+\section{Introduction}
+\label{sec:intro}
+Introduce the problem the original paper addresses and why it matters.
+State precisely which claim or figure of \citet{kingma2015adam} you reproduce.
+
+\guide{
+  \item Explain the problem the paper addresses and why it mattered at the time.
+  \item State the claim you test in one or two precise sentences, and point to the exact figure, table or section of the paper it comes from.
+  \item A testable claim names what is compared and what is expected, e.g.\ ``network A reaches lower training loss than network B at depth $L$''. ``The method works well'' is not a claim.
+  \item Do not reproduce the paper's abstract.
+}
+
+\section{Background and Method}
+\label{sec:method}
+Explain the method of the original paper. Derive its key equations step by
+step and define every symbol. State tensor shapes where relevant.
+For example, a minibatch $\vect{X} \in \R^{B \times d}$ and a weight matrix
+$\vect{W} \in \R^{d \times k}$ give
+\begin{equation}
+  \vect{Z} = \vect{X}\vect{W} + \vect{1}\vect{b}^\top,
+  \label{eq:linear}
+\end{equation}
+with $\vect{Z} \in \R^{B \times k}$.
+
+\guide{
+  \item This is the theory part of the project.
+  \item Derive the key equations yourselves, step by step. Do not copy the final formula from the paper; show how it follows from its starting assumptions.
+  \item Define every symbol at first use and state the shape of every vector, matrix and tensor.
+  \item Use course notation where it exists. Cite course material or textbooks for standard results.
+  \item Explain \emph{why} the method should produce the claimed effect, not only \emph{what} it computes.
+  \item Every group member must be able to reproduce this derivation on the board during the presentation.
+}
+
+\section{Experimental Setup}
+\label{sec:setup}
+Describe what you did so that someone else could repeat it.
+\begin{itemize}
+  \item \textbf{Data:} dataset, subset sizes, splits, preprocessing.
+  \item \textbf{Model:} architecture, number of parameters.
+  \item \textbf{Training:} optimizer, learning rate, batch size, epochs, initialization.
+  \item \textbf{Seeds:} number of independent runs.
+  \item \textbf{Compute:} hardware (Colab free tier), approximate run time.
+  \item \textbf{Differences from the original paper:} every deviation and why.
+\end{itemize}
+
+\guide{
+  \item Another student should be able to repeat your experiments from this section and your code alone.
+  \item Report every hyperparameter, including the ones you left at library defaults.
+  \item Run each configuration with at least 3 different random seeds.
+  \item List every deviation from the original paper (smaller dataset, fewer epochs, different architecture, \dots) and explain why you made it and how it might affect the result.
+  \item Say how hyperparameters were chosen. Choosing them on the test set is not acceptable.
+}
+
+\section{Results}
+\label{sec:results}
+Report your results next to the original ones. Give mean $\pm$ standard
+deviation over seeds.
+
+\begin{table}[h]
+  \centering
+  \caption{Test accuracy (\%), mean $\pm$ std over $n$ seeds.}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    Method & Original paper & Ours \\
+    \midrule
+    Baseline        & 00.0 & 00.0 $\pm$ 0.0 \\
+    Proposed method & 00.0 & 00.0 $\pm$ 0.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[h]
+  \centering
+  % Replace the box with: \includegraphics[width=0.7\linewidth]{figures/your_figure.pdf}
+  \fbox{\parbox[c][4cm][c]{0.7\linewidth}{\centering Figure placeholder}}
+  \caption{Training loss over epochs. Shaded regions show one standard deviation over seeds.}
+  \label{fig:curves}
+\end{figure}
+
+\guide{
+  \item Report what you measured, without interpretation; interpretation goes in the Discussion.
+  \item Put your numbers next to the original paper's numbers. If your setting differs, say so in the caption.
+  \item Every number is mean $\pm$ standard deviation over seeds. A single run is not a result.
+  \item Recreate the paper's key figure with your own data where possible, so the two can be compared directly.
+  \item Every figure needs labelled axes with units, a legend, and a caption that can be understood without the text. Refer to every table and figure in the text.
+}
+
+\section{Discussion}
+\label{sec:discussion}
+Does the claim hold in your setting? Explain agreements and disagreements with
+the original results, and which conclusions depend on seed, initialization or
+hyperparameter choices. State the limitations of your reproduction.
+
+\guide{
+  \item Answer directly: does the claim hold in your setting, partially hold, or not hold?
+  \item Explain every agreement and disagreement with the original results using the theory from Section~\ref{sec:method} and your deviations from Section~\ref{sec:setup}.
+  \item State which conclusions depend on seed, initialization or hyperparameter choices. If the difference between two methods is smaller than the spread over seeds, say so.
+  \item A careful, well-explained failure to reproduce is a valid result. An unexplained one is not.
+  \item State the limitations of your reproduction and what you would test next with more compute.
+}
+
+\section{Conclusion}
+\label{sec:conclusion}
+Summarize what you reproduced and what you found.
+
+\guide{
+  \item A short paragraph: what you tested, what you found, and what it means for the paper's claim.
+  \item No new results or arguments here.
+}
+
+\section*{Contributions}
+State what each group member did.
+
+\guide{
+  \item Describe concretely what each member did (derivation, implementation, experiments, writing).
+  \item Every member is expected to understand the whole project, not only their own part.
+}
+
+\section*{Use of AI Tools}
+State whether and how AI tools were used, in line with the course policy.
+
+\guide{
+  \item State which tools were used, for what, and in which parts of the work.
+  \item If none were used, say so.
+}
+
+\section*{Code}
+\url{https://github.com/your-group/your-repository}
+
+\guide{
+  \item Mandatory: link to your group's own public GitHub repository containing the reproduction. A report without it receives 0 points.
+  \item The repository needs a README explaining how to run the code.
+  \item The notebooks must run top to bottom on a free platform (Colab or Kaggle) and produce the numbers and figures in this report.
+}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\guide{
+  \item Cite the original paper and every other source you used, including code repositories and blog posts.
+  \item Use BibTeX entries from the publisher or the venue, not from search-engine snippets.
+}
+
+\end{document}

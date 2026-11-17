@@ -1,5 +1,7 @@
 # CMP4509 reproduction roadmap
 
+- [ ] 00 — Set up local Python + CUDA PyTorch on both PCs; verify GPU and save environment versions.
+- [ ] 00 — Confirm with instructor whether locally executed experiments may be the reported runs, given the free GPU platform requirement.
 - [ ] 01 — Toy regression: generate and plot noisy 20-point cubic dataset.
 - [ ] 01 — Implement and evaluate MSE ensemble, Gaussian NLL model, NLL + AT, Gaussian NLL ensemble.
 - [ ] 01 — Produce Figure 1-like four-panel plot and reproducible seed experiments.
@@ -8,7 +10,7 @@
 - [ ] 02 — Calculate classification error, NLL and Brier score over 3 independent seeds.
 - [ ] 03 — Optional: MNIST vs NotMNIST predictive entropy / OOD experiment.
 - [ ] 04 — Document setup deviations and compare empirical results to the paper.
-- [ ] 05 — Test notebooks end-to-end on a free runtime; finalize README.
+- [ ] 05 — Test locally developed notebooks end-to-end on free Colab/Kaggle; finalize README.
 - [ ] 06 — Complete the instructor's LaTeX report, compile and submit PDF.
 - [ ] 06 — Prepare and rehearse 8–10-slide presentation.
 

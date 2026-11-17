@@ -1,5 +1,13 @@
 # Experiment protocol (draft)
 
+## Compute and execution environment
+
+- Primary implementation and training: Ali's RTX 4070 Ti SUPER and Atahan's NVIDIA RTX 30-series GPU (specific model to be confirmed).
+- Use CUDA-enabled PyTorch where available; do not assume both machines will produce bit-identical outputs. Capture device name, driver, PyTorch/CUDA version and OS with each experiment.
+- Make scripts and notebooks device-agnostic and free of absolute machine-local paths. Checkpoint/metrics format must work across both machines.
+- **Course requirement:** notebooks and experiments must run on free Google Colab or Kaggle; verify an end-to-end run on one of those platforms before submission. As the announcement also says all work must run on free GPU platforms, confirm with the instructor whether locally run experiments can be used as the final reported runs.
+- Large datasets and checkpoints should not be committed into GitHub; document how to re-download/reproduce them.
+
 ## Reproducibility
 1. Run each configuration at least **3 times with independent experiment seeds** (initial suggestion: 42, 123, 2026).
 2. Save model configurations, data splits, batch size, optimizer, learning rate, epochs, versions, seed values, hardware and training times.

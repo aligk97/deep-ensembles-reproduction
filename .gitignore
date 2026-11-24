@@ -1,44 +1,43 @@
-# Python
-__pycache__/
-*.py[cod]
+# Local environments, downloaded data and model weights must not be published.
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.ipynb_checkpoints/
+**/*.py[cod]
+**/*.pt
+**/*.pth
+/mnist_classification/data/
+/mnist_classification/references/
+/mnist_classification/outputs/**/probabilities/
+/mnist_classification/outputs/**/checkpoints/
+/mnist_classification/outputs/**/source_snapshot/
+/mnist_classification/outputs/**/splits.npz
+/mnist_classification/toy_original_hashes.json
+*.log
+
+# Additional repository rules
 *.egg-info/
-.venv/
-venv/
 .env
 .env.*
 !.env.example
-.ipynb_checkpoints/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-
-# Datasets and downloaded archives
 data/
 datasets/
 *.tar.gz
 *.gz
-
-# Large checkpoints; document how to regenerate them
 checkpoints/
-*.pt
-*.pth
 *.ckpt
-
-# Editors and OS
 .DS_Store
 .vscode/
 .idea/
-
-# Generated LaTeX files
 *.aux
 *.bbl
 *.blg
 *.fdb_latexmk
 *.fls
-*.log
 *.out
 *.synctex.gz
 *.toc
-
-# Temporary files
 *.tmp

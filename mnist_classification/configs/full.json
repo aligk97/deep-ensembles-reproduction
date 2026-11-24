@@ -1,0 +1,17 @@
+{
+  "name": "full",
+  "seeds": [42, 123, 2026],
+  "ensemble_sizes": [1, 2, 3, 4, 5, 10, 15],
+  "epochs": 10,
+  "batch_size": 100,
+  "learning_rate": 0.1,
+  "epsilon_fraction": 0.01,
+  "dropout": 0.1,
+  "validation_size": 5000,
+  "split_seed": 4509,
+  "train_limit": 0,
+  "test_limit": 0,
+  "eval_batch_size": 1000,
+  "threads": 2,
+  "deterministic": true
+}

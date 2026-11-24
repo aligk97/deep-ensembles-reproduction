@@ -1,0 +1,6 @@
+-r requirements.txt
+nbclient>=0.10,<1
+ipykernel>=6,<8
+# Only used for local PDF source extraction/rendering, not for training or Colab:
+pypdf>=5,<8
+pymupdf>=1.24,<3

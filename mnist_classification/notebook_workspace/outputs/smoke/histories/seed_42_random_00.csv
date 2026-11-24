@@ -1,0 +1,2 @@
+run_seed,member_seed,method,member,epoch,objective_loss,clean_loss,perturbed_loss,train_accuracy,validation_loss,validation_accuracy,epoch_seconds
+42,420001,random,0,1,4.34081506729126,2.170410394668579,2.1704046726226807,0.4410000145435333,1.811257763671875,0.6964,0.1334047999989707

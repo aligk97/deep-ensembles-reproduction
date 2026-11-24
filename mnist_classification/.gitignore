@@ -1,18 +1,5 @@
+# Data, checkpoints and experiment outputs are tracked in Git.
 .venv/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
-data/
-outputs/**/checkpoints/
-outputs/**/probabilities/
-outputs/**/splits.npz
-outputs/**/source_snapshot/
-*.pt
-*.pth
-*.tmp
-references/
-toy_original_hashes.json
-*.log
-.cache/
-notebook_workspace/
-outputs/notebook_smoke_executed.ipynb

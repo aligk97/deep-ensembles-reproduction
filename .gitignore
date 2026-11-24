@@ -1,43 +1,12 @@
-# Local environments, downloaded data and model weights must not be published.
+# Python environments and installed packages are recreated on each computer.
 **/.venv/
 **/venv/
 **/__pycache__/
-**/.ipynb_checkpoints/
 **/*.py[cod]
-**/*.pt
-**/*.pth
-/mnist_classification/data/
-/mnist_classification/references/
-/mnist_classification/outputs/**/probabilities/
-/mnist_classification/outputs/**/checkpoints/
-/mnist_classification/outputs/**/source_snapshot/
-/mnist_classification/outputs/**/splits.npz
-/mnist_classification/toy_original_hashes.json
-*.log
+**/.ipynb_checkpoints/
+**/.pytest_cache/
 
-# Additional repository rules
-*.egg-info/
+# Local credentials
 .env
 .env.*
 !.env.example
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-data/
-datasets/
-*.tar.gz
-*.gz
-checkpoints/
-*.ckpt
-.DS_Store
-.vscode/
-.idea/
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.out
-*.synctex.gz
-*.toc
-*.tmp

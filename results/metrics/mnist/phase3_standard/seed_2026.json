@@ -1,0 +1,62 @@
+[
+  {
+    "method": "Ensemble",
+    "experiment_seed": 2026,
+    "ensemble_size": 1,
+    "member_seeds": [
+      2026000
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "batch_size": 100,
+    "training_time_seconds": 97.15875780000351,
+    "test_samples": 10000,
+    "correct": 9810,
+    "accuracy": 0.981,
+    "classification_error": 1.9,
+    "nll": 0.06830042648914561,
+    "brier_score": 0.002941581644934577
+  },
+  {
+    "method": "Ensemble",
+    "experiment_seed": 2026,
+    "ensemble_size": 3,
+    "member_seeds": [
+      2026000,
+      2026001,
+      2026002
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "batch_size": 100,
+    "training_time_seconds": 292.25592259998666,
+    "test_samples": 10000,
+    "correct": 9853,
+    "accuracy": 0.9853,
+    "classification_error": 1.47,
+    "nll": 0.045247767742800656,
+    "brier_score": 0.0022355547261899617
+  },
+  {
+    "method": "Ensemble",
+    "experiment_seed": 2026,
+    "ensemble_size": 5,
+    "member_seeds": [
+      2026000,
+      2026001,
+      2026002,
+      2026003,
+      2026004
+    ],
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "batch_size": 100,
+    "training_time_seconds": 486.90511809992313,
+    "test_samples": 10000,
+    "correct": 9862,
+    "accuracy": 0.9862,
+    "classification_error": 1.38,
+    "nll": 0.042488432926881106,
+    "brier_score": 0.0020923150500838142
+  }
+]

@@ -1,0 +1,9 @@
+experiment_version: V4
+base_config: v2_a_high_learning_rate.yaml
+baseline_run_id: v2_20261121_v3_reference01
+baseline_arm: v2_a
+seeds: [42, 123, 2026]
+learning_rate: 0.03
+arms:
+  v4_lr_0p03: {batch_size: 5, max_epochs: 3000}
+

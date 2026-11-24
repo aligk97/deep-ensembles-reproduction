@@ -1,7 +1,9 @@
-# Starter dependencies. Record exact resolved versions in completed experiments.
+# Toy Regression and MNIST. Use matching torch and torchvision builds.
 torch
+filelock
 torchvision
 numpy
 matplotlib
 pandas
-scikit-learn
+PyYAML
+pytest

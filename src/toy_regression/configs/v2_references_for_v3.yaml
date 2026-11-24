@@ -1,0 +1,9 @@
+# Paired reference measurements for the V3 comparisons, recorded under a separate V2 run ID.
+experiment_version: V2
+base_config: v2_a_high_learning_rate.yaml
+seeds: [42, 123, 2026]
+learning_rate: 0.1
+arms:
+  v2_a: {batch_size: 5, max_epochs: 3000}
+  v2_c: {batch_size: 100, max_epochs: 3000, preset: paper_default_probe}
+

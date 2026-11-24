@@ -1,0 +1,20 @@
+experiment_version: V3
+base_config: v1_baseline.yaml
+seeds: [42, 123, 2026]
+learning_rate: 0.1
+arms:
+  v3_a_marco_b5_e500: {batch_size: 5, max_epochs: 500}
+  v3_b_doug_b1_e300: {batch_size: 1, max_epochs: 300}
+  v3_c_doug_b1_e500: {batch_size: 1, max_epochs: 500}
+  v3_d_mpritz_b20_e200: {batch_size: 20, max_epochs: 200}
+  v3_e_b1_e3000: {batch_size: 1, max_epochs: 3000}
+  v3_f_mpritz_wd_b20_e200: {batch_size: 20, max_epochs: 200, weight_decay: 0.00004}
+  v3_g_mpritz_b20_e600: {batch_size: 20, max_epochs: 600}
+  v3_h_b5_e300: {batch_size: 5, max_epochs: 300}
+  v3_i_b5_e200: {batch_size: 5, max_epochs: 200}
+  v3_j_b20_e500: {batch_size: 20, max_epochs: 500}
+  v3_k_b5_e2500: {batch_size: 5, max_epochs: 2500}
+  v3_l_b5_e3000_wd: {batch_size: 5, max_epochs: 3000, weight_decay: 0.00004}
+  v3_m_b5_e600: {batch_size: 5, max_epochs: 600}
+  v3_n_doug_mixed_lr_b1_e500: {batch_size: 1, max_epochs: 500, mse_learning_rate: 0.01}
+

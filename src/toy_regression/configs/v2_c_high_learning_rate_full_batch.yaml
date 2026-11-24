@@ -1,0 +1,4 @@
+# Diagnostic: general settings from DE2017 §3.1, not a verified Figure 1 recipe.
+preset: paper_default_probe
+learning_rate: 0.1
+batch_size: 100  # Effective batch size: 20.

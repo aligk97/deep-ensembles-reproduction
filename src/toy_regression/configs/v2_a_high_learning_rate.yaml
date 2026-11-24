@@ -1,0 +1,4 @@
+# V2-A: V1 minibatch boyutunda yüksek öğrenme oranını sınar.
+preset: practical
+learning_rate: 0.1
+batch_size: 5

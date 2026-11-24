@@ -1,1 +1,1 @@
-"""Toy regression implementation (planned)."""
+"""Toy regression training, prediction and regional evaluation."""

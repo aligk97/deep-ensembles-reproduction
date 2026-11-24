@@ -15,6 +15,7 @@ venv/
 # Datasets and downloaded archives
 data/
 datasets/
+/results/raw/
 *.tar.gz
 *.gz
 
@@ -36,6 +37,7 @@ checkpoints/
 *.fdb_latexmk
 *.fls
 *.log
+!/results/metrics/*_regional*/analysis.log
 *.out
 *.synctex.gz
 *.toc

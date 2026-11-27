@@ -66,7 +66,7 @@ PLOT_MIN, PLOT_MAX, GRID_SIZE = -6.0, 6.0, 400
 # Pre-existing predictions from Steps 3, 4 (stable LR), and 5.
 PRIOR_PANELS = [
     ("mse_ensemble_5_predictions.csv", "1. MSE Ensemble (5)"),
-    ("gaussian_nll_single_lr0001_predictions.csv", "2. Single Gaussian NLL"),
+    ("gaussian_nll_single_predictions.csv", "2. Single Gaussian NLL"),
     ("gaussian_nll_at_single_predictions.csv", "3. Single NLL + AT"),
 ]
 

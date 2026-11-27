@@ -1,0 +1,197 @@
+{
+  "title": "Deep Ensembles Reproduction",
+  "slide_count": 9,
+  "width_pt": 960,
+  "height_pt": 540,
+  "font": "Arial",
+  "font_policy": "design; Arial verified installed, required bodies >=17pt",
+  "authoring": "Local native PowerPoint automation fallback; Artifact runtime/session tools unavailable",
+  "slides": [
+    {
+      "title": "Deep Ensembles Reproduction",
+      "kind": "cover",
+      "subtitle": "Predictive uncertainty on three selected experiments",
+      "lines": [
+        "CMP4509 Introduction to Deep Learning",
+        "Fall 2026",
+        "Student 1 [Name, ID]   Student 2 [Name, ID]   Student 3 [Name, ID]"
+      ],
+      "source": "Lakshminarayanan, Pritzel and Blundell. NeurIPS 2017. arXiv:1612.01474.",
+      "student": 1,
+      "seconds": 15,
+      "speaker_notes_en": "We reproduce selected experiments from the 2017 Deep Ensembles paper for CMP4509. Our three experiments cover regression, digit classification and unfamiliar letter images. We will distinguish the findings that held from the uncertainty claim that failed.",
+      "speaker_notes_tr": "CMP4509 için 2017 Deep Ensembles makalesinin seçilmiş deneylerini yeniden ürettik. Regresyon, rakam sınıflandırma ve bilinmeyen harf görüntülerini ele aldık. Desteklenen bulguları ve başarısız olan belirsizlik sonucunu ayrı ve açık biçimde sunacağız."
+    },
+    {
+      "title": "Predictive uncertainty",
+      "kind": "text",
+      "lines": [
+        "High accuracy can coexist with overconfident unfamiliar inputs.",
+        "Deep Ensembles combines independent probabilistic networks.",
+        "Our scope: toy regression, MNIST classification, MNIST/NotMNIST OOD.",
+        "Research question: do the selected uncertainty claims hold under a free-GPU budget?"
+      ],
+      "source": "Original paper: Sections 2, 3.2, 3.4, 3.5 and Figures 1, 2(a), 3(a).",
+      "student": 1,
+      "seconds": 45,
+      "speaker_notes_en": "Our starting problem is that a neural network must produce an answer even when an input is unfamiliar. A high digit-classification accuracy does not tell us whether the probability distribution is trustworthy on a letter. The paper proposes a simple solution: train several independent networks to predict distributions, then combine their probabilities. We focus on three questions. Does learning variance improve the toy regression uncertainty? Do ensembles improve classification scores compared with MC Dropout? And does uncertainty increase appropriately on NotMNIST? We tested those questions under a small free-GPU budget, rather than attempting every experiment in the paper.",
+      "speaker_notes_tr": "Başlangıç problemimiz, bir sinir ağının alışılmadık bir girdi geldiğinde de cevap vermesidir. Rakam sınıflandırmada yüksek accuracy, yani doğruluk, bir harf üzerindeki olasılık dağılımının güvenilir olduğunu göstermez. Makale, birbirinden bağımsız birkaç ağın tahmin dağılımlarını birleştirmeyi öneriyor. Üç soruya odaklandık: varyans öğrenmek oyuncak regresyonda belirsizliği iyileştiriyor mu, ensemble sınıflandırma skorlarında MC Dropout'tan daha iyi mi ve NotMNIST üzerinde belirsizlik artıyor mu? Makalenin tüm deneylerini değil, bu soruları ücretsiz GPU bütçesinde sınadık."
+    },
+    {
+      "title": "Deep Ensembles method",
+      "kind": "equations",
+      "equations": [
+        "p̄(y|x) = (1/M) Σₘ pₘ(y|x)",
+        "Var(Y|x) = Eₘ[σ²ₘ] + Varₘ[μₘ]",
+        "H(p̄) = −Σₖ p̄ₖ ln p̄ₖ"
+      ],
+      "lines": [
+        "Train each member with a proper scoring rule such as NLL.",
+        "Independent initialization and data order supply diversity.",
+        "Optional FGSM training smooths predictions locally.",
+        "Average probabilities first, then calculate entropy."
+      ],
+      "source": "Original paper, Sections 2.2-2.4. Detailed derivations: report Section 2 and docs/KEY_EQUATIONS.md.",
+      "student": 1,
+      "seconds": 90,
+      "speaker_notes_en": "Each model predicts a distribution and learns with a proper scoring rule. For log loss, the expected loss is the true entropy plus a nonnegative KL divergence, so the true distribution is optimal in the population. In regression, Gaussian NLL contains a log-variance penalty and a squared residual divided by variance. This balances sharpness against errors. The network uses softplus to keep variance positive. An ensemble is an equally weighted mixture. Its mean is the average member mean. Expanding the second moment gives total variance as average predicted variance plus variance of the member means. These represent observation ambiguity and model disagreement, with important model assumptions. For classification, we average the softmax probabilities. We then calculate predictive entropy, not mean member entropy. Two certain models disagreeing on two classes each have zero entropy, but their mixture has entropy log two. Optional FGSM training adds a small perturbation in the gradient-sign direction and trains on the sum of clean and perturbed losses. Dropout instead samples masks from one model, while BatchNorm stays fixed.",
+      "speaker_notes_tr": "Her model bir dağılım tahmin ediyor ve proper scoring rule, yani doğru dağılımı beklenen skorda ödüllendiren bir kuralla öğreniyor. Log loss için beklenen kayıp, gerçek entropy ile negatif olmayan KL divergence toplamıdır. Regresyondaki Gaussian NLL, log-varyans cezasını ve varyansa bölünen karesel hatayı içerir. Böylece çok dar ve hatalı tahmin ile gereksiz geniş tahmin arasında denge kurulur. Softplus, varyansı pozitif tutar. Ensemble eşit ağırlıklı bir mixture, yani karışımdır. Ortalaması üye ortalamalarının ortalamasıdır. İkinci momenti açtığımızda toplam varyans, ortalama üye varyansı ile üye ortalamalarının varyansının toplamı olur. Bunlar gözlem belirsizliği ve model anlaşmazlığı için model varsayımlarına bağlı yorumlardır. Sınıflandırmada önce softmax olasılıklarını ortalıyoruz, sonra predictive entropy hesaplıyoruz. İki kesin ama farklı sınıf tahmini yapan üyenin kendi entropy'si sıfırdır, birleşimin entropy'si log ikidir. FGSM, kaybın girdiye göre gradient sign yönünde küçük pertürbasyon ekler ve temiz ile pertürbe kayıpları toplar. MC Dropout ise tek modelden maske örnekler; BatchNorm sabit kalır."
+    },
+    {
+      "title": "Reproduction setup",
+      "kind": "table",
+      "headers": [
+        "Experiment",
+        "Data / model",
+        "Budget"
+      ],
+      "table": [
+        [
+          "Toy",
+          "20 fixed cubic observations; 1–50–1/2 MLP",
+          "3,000 full-batch epochs"
+        ],
+        [
+          "MNIST",
+          "55k train / 5k validation / 10k test; 3×200 MLP",
+          "10 epochs; 48 models"
+        ],
+        [
+          "OOD",
+          "10,000 digits + 18,724 valid letters",
+          "Reuse MNIST weights; no training"
+        ]
+      ],
+      "lines": [
+        "Seeds: 42, 123, 2026. All summaries use sample SD, ddof=1.",
+        "Primary results: actual Colab Tesla T4 for all three experiments.",
+        "MNIST M=1…5; OOD M=1,3,5. Local results are supplementary."
+      ],
+      "source": "Saved final configs and completed real T4 manifests, results/colab/.",
+      "student": 2,
+      "seconds": 45,
+      "speaker_notes_en": "We kept the final configurations already used in the completed experiments. The three run seeds are forty-two, one hundred twenty-three and twenty twenty-six. Toy regression uses the same twenty observations in every run and three thousand full-batch epochs. MNIST uses a three-hidden-layer MLP with two hundred units per layer, a training-only validation split and ten epochs. The forty-eight models include five members for each ensemble variant and one dropout model for each seed. OOD reuses those exact models. We report all three actual T4 runs as primary results, with the local runs as supplementary comparisons. Standard deviations use the sample definition.",
+      "speaker_notes_tr": "Tamamlanmış deneylerde kullanılan final config dosyalarını koruduk. Run seed değerleri 42, 123 ve 2026'dır. Toy Regression her koşuda aynı yirmi gözlemi ve üç bin full-batch epoch kullanır. MNIST, her biri iki yüz birimli üç gizli katmanlı MLP ile on epoch eğitilir; validation ayrımı yalnız eğitim verisinden yapılır. Kırk sekiz model, her ensemble yöntemi için seed başına beş üye ve dropout için bir modelden oluşur. OOD bunların aynısını tekrar kullanır. Üç gerçek T4 koşusunu ana sonuç olarak, yerel koşuları ek karşılaştırma olarak raporluyoruz. Standart sapma, ddof bir olan sample standard deviation'dır; beş üye beş bağımsız deney seed'i sayılmaz."
+    },
+    {
+      "title": "Toy Regression: partial reproduction",
+      "kind": "toy_figure",
+      "image": "results/colab/toy_regression/07_seed_experiments/seed_42/deep_ensemble/figures/prediction.png",
+      "lines": [
+        "Left OOD 95% coverage: 0% for every method and seed.",
+        "The failure persists locally and on T4.",
+        "Shown: Deep Ensemble, first predeclared seed 42."
+      ],
+      "callout": "Plot band: ±3 SD. Coverage: a separate ±1.96 SD interval on fresh noisy targets.",
+      "source": "Actual saved Colab prediction figure and 48-row regional table. Full four-method panels and all seeds are in the report/repository.",
+      "student": 2,
+      "seconds": 60,
+      "speaker_notes_en": "The toy result is a partial reproduction. This plot shows the Deep Ensemble for the first predeclared seed, rather than the best-looking run. On the left, the predicted mean misses the cubic curve badly, while its uncertainty band stays too narrow. All four methods have zero left-OOD ninety-five-percent noisy-target coverage in every seed. This failure also appears locally. The plotted band is three standard deviations, as in the original figure. The numerical coverage is a separate one-point-nine-six-standard-deviation interval measured against fresh noisy observations. We must not confuse the two. Shared extrapolation bias and variance collapse are plausible explanations, but we did not run a controlled causal ablation. Learning variance and adding an ensemble therefore do not guarantee good uncertainty outside the data.",
+      "speaker_notes_tr": "Toy Regression sonucu kısmi reproduction'dır. Burada en iyi görünen koşuyu değil, önceden belirlenen ilk seed olan 42'nin Deep Ensemble grafiğini gösteriyoruz. Sol tarafta ortalama tahmini gerçek kübik eğriden çok uzaklaşırken belirsizlik bandı yetersiz kalıyor. Dört yöntemin bütün seed'lerinde sol OOD yüzde doksan beş noisy-target coverage değeri sıfırdır. Aynı başarısızlık yerelde de sürüyor. Grafikteki bant makaledeki gibi üç standart sapmadır. Sayısal coverage ise yeni gürültülü gözlemler üzerinde ayrı hesaplanan yaklaşık bir nokta doksan altı standart sapmalık aralıktır. Bu iki kavramı karıştırmıyoruz. Ortak extrapolation bias ve variance collapse olası açıklamalardır; kontrollü bir nedensel ablation yapmadık. Varyans öğrenmek ve ensemble kullanmak veri dışındaki belirsizliği otomatik olarak güvenilir kılmıyor."
+    },
+    {
+      "title": "MNIST Classification",
+      "kind": "wide_figure",
+      "image": "results/colab/mnist_classification/figures/figure2a_comparison.png",
+      "lines": [
+        "M=5 accuracy: Ensemble + AT 98.61 ± 0.09%; MC Dropout 97.32 ± 0.22%.",
+        "Lower mean NLL/Brier for ensembles in this setting; error is not always monotonic in M."
+      ],
+      "source": "Actual Colab Figure 2(a) and summary.csv. Mean ± sample SD, n=3. Brier includes 1/K.",
+      "student": 2,
+      "seconds": 45,
+      "speaker_notes_en": "For MNIST, the main qualitative trend is more favorable. At five members, Ensemble plus adversarial training reaches 98.61 percent accuracy, compared with 97.32 percent for five dropout passes. Its mean NLL and normalized Brier score are also lower in this protocol. The Brier definition includes the paper's one-over-ten normalization. Each point averages three training runs, and error bars are sample standard deviations. We do not claim that every metric improves at every increase in ensemble size. For example, adversarial classification error is slightly higher at five than at four members. Three seeds also do not establish statistical significance.",
+      "speaker_notes_tr": "MNIST'te nitel eğilim daha olumlu. Beş üyede Ensemble plus AT accuracy değeri yüzde 98.61, beş dropout geçişinde yüzde 97.32. Bu protokolde AT'nin ortalama NLL ve normalize Brier değerleri de daha düşüktür. Brier hesabı makaledeki bir bölü on normalizasyonunu içerir. Her nokta üç bağımsız eğitim koşusunun ortalamasıdır; error bar sample standard deviation gösterir. Her M artışının her metriği iyileştirdiğini söylemiyoruz. Örneğin AT classification error, dört üyeden beşe geçerken hafif yükseliyor. Üç seed ayrıca istatistiksel anlamlılık iddiası kurmaya yeterli bir significance testi oluşturmaz."
+    },
+    {
+      "title": "MNIST + NotMNIST predictive entropy",
+      "kind": "histogram",
+      "image": "results/colab/mnist_notmnist_ood/figures/figure3a.png",
+      "lines": [
+        "Top: known digits. Bottom: unseen letters. Same 48 Colab checkpoints; no new training."
+      ],
+      "source": "Actual Colab Figure 3(a). M=1,3,5; 50 common bins; mean of three per-seed densities; entropy in nats.",
+      "student": 3,
+      "seconds": 70,
+      "speaker_notes_en": "For OOD evaluation, the top row contains the ten thousand known MNIST digits. The bottom row contains all eighteen thousand seven hundred twenty-four readable NotMNIST letters. The two known corrupted images were excluded. There is no new model training here. We reuse the same forty-eight models from the preceding Colab classification run and verify their hashes. In the known classes, predictive entropy stays low. On unfamiliar letters, the ensemble entropy grows more strongly as we increase the number of members than it does for dropout. Nevertheless, some OOD examples retain low entropy, so this is not a guarantee that every unfamiliar input is detected. Letter labels are outside the digit classifier's label space, which is why we evaluate uncertainty and OOD ranking rather than digit accuracy on these images.",
+      "speaker_notes_tr": "OOD grafiğinin üst satırı bilinen on bin MNIST rakamını, alt satırı okunabilen on sekiz bin yedi yüz yirmi dört NotMNIST harfini gösteriyor. Bilinen iki bozuk görüntü çıkarıldı. Burada yeni model eğitimi yoktur. Önceki Colab sınıflandırma koşusunun aynı kırk sekiz modelini kullanıyor ve hash değerlerini doğruluyoruz. Bilinen sınıflarda predictive entropy düşük kalıyor. Harflerde üye sayısı arttıkça ensemble entropy'si dropout'tan daha fazla büyüyor. Bununla birlikte bazı bilinmeyen girdiler düşük entropy almaya devam ediyor; her OOD örneğinin güvenilir tespiti garanti edilmiyor. Harfler, rakam sınıflandırıcısının etiket uzayının dışındadır. Bu nedenle harfler için rakam accuracy'si yerine belirsizlik ve OOD sıralamasını inceliyoruz."
+    },
+    {
+      "title": "OOD separation and reproducibility",
+      "kind": "ood_table",
+      "headers": [
+        "Method",
+        "M=5 AUROC",
+        "Entropy gap (nat)"
+      ],
+      "table": [
+        [
+          "Ensemble",
+          "0.9653 ± 0.0038",
+          "0.9435 ± 0.0309"
+        ],
+        [
+          "Ensemble + R",
+          "0.9346 ± 0.0118",
+          "0.7286 ± 0.0363"
+        ],
+        [
+          "Ensemble + AT",
+          "0.9668 ± 0.0023",
+          "0.9426 ± 0.0153"
+        ],
+        [
+          "MC Dropout",
+          "0.7779 ± 0.0736",
+          "0.4192 ± 0.1189"
+        ]
+      ],
+      "lines": [
+        "AUROC and gap are added analyses, beyond the original histograms.",
+        "48 hashes match Figure 2(a). Windows/Linux order fixed jointly for images and labels.",
+        "Three seeds, one OOD dataset, M≤5. No significance or universal calibration claim."
+      ],
+      "source": "results/colab/mnist_notmnist_ood/results_summary.csv; checkpoint audit; dataset_order_alignment.json. Mean ± sample SD, ddof=1.",
+      "student": 3,
+      "seconds": 50,
+      "speaker_notes_en": "Our added AUROC analysis summarizes the entropy ranking. At five members, adversarial ensembles reach about 0.9668, plain ensembles 0.9653, and dropout 0.7779. The table includes every method and its sample spread, together with the entropy gap. AUROC and gap are additions to the paper's histogram experiment. Our provenance checks also found and fixed an operating-system ordering issue: the image bytes were the same, but Linux and Windows sorted filenames differently. Jointly reordering images and labels restored the reference hashes. The limitations remain three seeds, one OOD dataset, a small ensemble grid and the unresolved toy failure.",
+      "speaker_notes_tr": "Ek AUROC analizimiz entropy skorlarının ID ve OOD örneklerini ne kadar doğru sıraladığını özetliyor. Beş üyede AT yaklaşık 0.9668, sade ensemble 0.9653, dropout 0.7779 değerinde. Tabloda bütün yöntemler, seed yayılımları ve entropy gap birlikte bulunuyor. AUROC ve gap, orijinal histogram deneyine ek analizlerimizdir. Provenance kontrolleri bir işletim sistemi sorununu da ortaya çıkardı: görüntüler aynıydı ama Windows ve Linux dosya adlarını farklı sıralıyordu. Görüntüleri ve etiketleri birlikte referans sırasına almak hash eşleşmesini geri getirdi. Üç seed, tek OOD veri seti, sınırlı M aralığı ve çözülmemiş toy başarısızlığı temel sınırlılıklardır."
+    },
+    {
+      "title": "Conclusions and questions",
+      "kind": "text",
+      "lines": [
+        "Classification and OOD results support the selected ensemble trend.",
+        "Toy uncertainty fails in left extrapolation: the reproduction is partial.",
+        "All seeds, local/Colab differences and unfavorable results remain visible.",
+        "Full code, derivations, evidence and report:"
+      ],
+      "url": "https://github.com/aligk97/deep-ensembles-reproduction",
+      "source": "Selected-figure reproduction of Lakshminarayanan et al. (2017). No full-paper replication claim.",
+      "student": 3,
+      "seconds": 30,
+      "speaker_notes_en": "Our conclusion is limited but clear. Ensembles support the selected classification and unknown-class trend under our protocol. Toy regression does not reproduce reliable uncertainty in left extrapolation. We preserve both findings and every seed instead of selecting favorable results. The repository contains the sources, actual execution evidence, derivations and full tables. We are ready to discuss the assumptions, the variance derivation and the limitations.",
+      "speaker_notes_tr": "Sonucumuz sınırlı ama nettir. Ensemble yöntemleri bu protokolde seçilen sınıflandırma ve bilinmeyen sınıf eğilimini destekledi. Toy Regression ise sol extrapolation bölgesinde güvenilir belirsizliği yeniden üretemedi. Olumlu sonuç seçmek yerine her iki bulguyu ve bütün seed'leri koruduk. Repository kaynakları, gerçek çalışma kanıtlarını, türetimleri ve tam tabloları içeriyor. Varsayımları, toplam varyans türetimini ve sınırlılıkları tartışmaya hazırız."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "successful": true,
+  "tests_run": 12,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "scope": "Real complete datasets, exact preprocessing, all loader batches, archive identity and extraction safety"
+}

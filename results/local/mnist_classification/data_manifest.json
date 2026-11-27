@@ -1,0 +1,16 @@
+{
+  "train_n": 55000,
+  "validation_n": 5000,
+  "test_n": 10000,
+  "split_seed": 4509,
+  "epsilon_min": 0.0,
+  "epsilon_max": 0.009999999776482582,
+  "epsilon_zero_pixels": 69,
+  "checksums": {
+    "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+    "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432",
+    "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+    "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c"
+  },
+  "scaling": "uint8 / 255; no mean/std normalization"
+}

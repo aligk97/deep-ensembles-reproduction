@@ -1,0 +1,511 @@
+{
+  "successful": true,
+  "tests_run": 18,
+  "passed": 18,
+  "failed": 0,
+  "error": 0,
+  "skipped": 0,
+  "scope": "Synthetic mathematical tests only; no dataset access, inference or checkpoint loading",
+  "formulas": {
+    "p_bar": "mean(probabilities, axis=0)",
+    "predictive_entropy_nat": "-sum_k p_bar_k * ln(p_bar_k), with 0*ln(0)=0",
+    "entropy_gap_nat": "mean(H_OOD) - mean(H_ID)",
+    "auroc": "roc_auc_score([0]*N_ID + [1]*N_OOD, [H_ID, H_OOD])",
+    "sample_std": "sqrt(sum_s (metric_s - mean)^2 / (S - 1)); ddof=1"
+  },
+  "tests": [
+    {
+      "test": "__main__.MetricTests.test_auroc_identical_scores_half",
+      "status": "passed",
+      "checks": {
+        "auroc": {
+          "expected": 0.5,
+          "calculated": 0.5,
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_auroc_perfect_separation",
+      "status": "passed",
+      "checks": {
+        "auroc": {
+          "expected": 1,
+          "calculated": 1.0,
+          "absolute_tolerance": 0
+        },
+        "reverse_direction_auroc": {
+          "expected": 0,
+          "calculated": 0.0,
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_disagreeing_certain_members_entropy_ln2",
+      "status": "passed",
+      "checks": {
+        "member_entropies_nat": {
+          "expected": [
+            0,
+            0
+          ],
+          "calculated": [
+            -0.0,
+            -0.0
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "ensemble_entropy_nat": {
+          "expected": [
+            0.6931471805599453
+          ],
+          "calculated": [
+            0.6931471805599453
+          ],
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_entropy_means_and_gap",
+      "status": "passed",
+      "checks": {
+        "mean_id_entropy_nat": {
+          "expected": 0.2,
+          "calculated": 0.2,
+          "absolute_tolerance": 1e-12
+        },
+        "mean_ood_entropy_nat": {
+          "expected": 0.9,
+          "calculated": 0.9,
+          "absolute_tolerance": 1e-12
+        },
+        "entropy_gap_nat": {
+          "expected": 0.7,
+          "calculated": 0.7,
+          "absolute_tolerance": 1e-12
+        },
+        "negative_gap_nat": {
+          "expected": -0.7,
+          "calculated": -0.7,
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_float32_float16_bfloat16_rounding",
+      "status": "passed",
+      "checks": {
+        "torch.float64_uniform_entropy_nat": {
+          "expected": [
+            2.302585092994046,
+            2.302585092994046
+          ],
+          "calculated": [
+            2.3025850929940455,
+            2.3025850929940455
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "torch.float32_uniform_entropy_nat": {
+          "expected": [
+            2.302585092994046,
+            2.302585092994046
+          ],
+          "calculated": [
+            2.3025850929940455,
+            2.3025850929940455
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "torch.float16_uniform_entropy_nat": {
+          "expected": [
+            2.302585092994046,
+            2.302585092994046
+          ],
+          "calculated": [
+            2.3025850929940455,
+            2.3025850929940455
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "torch.bfloat16_uniform_entropy_nat": {
+          "expected": [
+            2.302585092994046,
+            2.302585092994046
+          ],
+          "calculated": [
+            2.3025850929940455,
+            2.3025850929940455
+          ],
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_identical_members_preserve_entropy",
+      "status": "passed",
+      "checks": {
+        "M=1_entropy_nat": {
+          "expected": [
+            0.8018185525433372
+          ],
+          "calculated": [
+            0.8018185525433373
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "M=3_entropy_nat": {
+          "expected": [
+            0.8018185525433372
+          ],
+          "calculated": [
+            0.8018185525433373
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "M=5_entropy_nat": {
+          "expected": [
+            0.8018185525433372
+          ],
+          "calculated": [
+            0.8018185525433373
+          ],
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_invalid_entropy_vectors_rejected",
+      "status": "passed",
+      "checks": {
+        "invalid_score_calls_rejected": {
+          "expected": 48,
+          "calculated": 48,
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_invalid_probabilities_rejected",
+      "status": "passed",
+      "checks": {
+        "invalid_cases_rejected": {
+          "expected": 18,
+          "calculated": 18,
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_invalid_seed_aggregation_rejected",
+      "status": "passed",
+      "checks": {
+        "invalid_seed_inputs_rejected": {
+          "expected": 10,
+          "calculated": 10,
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_member_permutation_invariance",
+      "status": "passed",
+      "checks": {
+        "permuted_entropy_nat": {
+          "expected": [
+            2.2104018083607553,
+            2.2245805403953156,
+            2.2427110366272043,
+            2.2360049064437812,
+            2.2965840200520096,
+            2.162899218764664,
+            2.2264092612983255
+          ],
+          "calculated": [
+            2.210401808360755,
+            2.2245805403953156,
+            2.2427110366272043,
+            2.2360049064437812,
+            2.2965840200520096,
+            2.162899218764664,
+            2.2264092612983255
+          ],
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_one_hot_entropy_zero",
+      "status": "passed",
+      "checks": {
+        "entropy_nat": {
+          "expected": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "calculated": [
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_output_shape_dtype_and_input_unchanged",
+      "status": "passed",
+      "checks": {
+        "output_shape": {
+          "expected": [
+            9
+          ],
+          "calculated": [
+            9
+          ],
+          "absolute_tolerance": 0
+        },
+        "input_unchanged": {
+          "expected": true,
+          "calculated": true,
+          "absolute_tolerance": 0
+        },
+        "float64_output": {
+          "expected": true,
+          "calculated": true,
+          "absolute_tolerance": 0
+        },
+        "device_preserved": {
+          "expected": true,
+          "calculated": true,
+          "absolute_tolerance": 0
+        },
+        "no_autograd_graph": {
+          "expected": false,
+          "calculated": false,
+          "absolute_tolerance": 0
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_probability_averaging_not_logit_averaging",
+      "status": "passed",
+      "checks": {
+        "entropy_of_mean_probabilities_nat": {
+          "expected": [
+            1.7260742423371833
+          ],
+          "calculated": [
+            1.7260742423371838
+          ],
+          "absolute_tolerance": 1e-12
+        },
+        "incorrect_logit_average_entropy_nat": 1.650502801814623,
+        "differs_from_logit_average": true
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_seed_aggregation_sample_std",
+      "status": "passed",
+      "checks": {
+        "n_seeds": {
+          "expected": 3,
+          "calculated": 3,
+          "absolute_tolerance": 0
+        },
+        "seeds": {
+          "expected": [
+            42,
+            123,
+            2026
+          ],
+          "calculated": [
+            42,
+            123,
+            2026
+          ],
+          "absolute_tolerance": 0
+        },
+        "ddof": {
+          "expected": 1,
+          "calculated": 1,
+          "absolute_tolerance": 0
+        },
+        "mean_id_entropy_mean": {
+          "expected": 0.2,
+          "calculated": 0.20000000000000004,
+          "absolute_tolerance": 1e-12
+        },
+        "mean_id_entropy_sample_std": {
+          "expected": 0.1,
+          "calculated": 0.09999999999999999,
+          "absolute_tolerance": 1e-12
+        },
+        "mean_ood_entropy_mean": {
+          "expected": 1.2,
+          "calculated": 1.2,
+          "absolute_tolerance": 1e-12
+        },
+        "mean_ood_entropy_sample_std": {
+          "expected": 0.1,
+          "calculated": 0.09999999999999998,
+          "absolute_tolerance": 1e-12
+        },
+        "entropy_gap_mean": {
+          "expected": 1,
+          "calculated": 1.0,
+          "absolute_tolerance": 1e-12
+        },
+        "entropy_gap_sample_std": {
+          "expected": 0,
+          "calculated": 0.0,
+          "absolute_tolerance": 1e-12
+        },
+        "ood_auroc_mean": {
+          "expected": 0.75,
+          "calculated": 0.75,
+          "absolute_tolerance": 1e-12
+        },
+        "ood_auroc_sample_std": {
+          "expected": 0.25,
+          "calculated": 0.25,
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_ten_class_bounds_for_all_planned_M",
+      "status": "passed",
+      "checks": {
+        "M=1_all_within_[0,ln10]": {
+          "expected": true,
+          "calculated": true,
+          "absolute_tolerance": 0
+        },
+        "M=1_observed_range_nat": [
+          1.627054111325899e-66,
+          0.4495487795990014
+        ],
+        "M=3_all_within_[0,ln10]": {
+          "expected": true,
+          "calculated": true,
+          "absolute_tolerance": 0
+        },
+        "M=3_observed_range_nat": [
+          0.6365149029637358,
+          1.341039843656489
+        ],
+        "M=5_all_within_[0,ln10]": {
+          "expected": true,
+          "calculated": true,
+          "absolute_tolerance": 0
+        },
+        "M=5_observed_range_nat": [
+          0.5013751493173647,
+          1.7818088642710326
+        ],
+        "theoretical_upper_bound_nat": {
+          "expected": 2.302585092994046,
+          "calculated": 2.302585092994046,
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_two_equal_classes_entropy_ln2",
+      "status": "passed",
+      "checks": {
+        "entropy_nat": {
+          "expected": [
+            0.6931471805599453
+          ],
+          "calculated": [
+            0.6931471805599453
+          ],
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_uniform_ten_class_entropy_ln10",
+      "status": "passed",
+      "checks": {
+        "entropy_nat": {
+          "expected": [
+            2.302585092994046,
+            2.302585092994046,
+            2.302585092994046,
+            2.302585092994046
+          ],
+          "calculated": [
+            2.302585092994046,
+            2.302585092994046,
+            2.302585092994046,
+            2.302585092994046
+          ],
+          "absolute_tolerance": 1e-12
+        }
+      }
+    },
+    {
+      "test": "__main__.MetricTests.test_zero_and_tiny_probabilities_finite",
+      "status": "passed",
+      "checks": {
+        "finite_outputs": {
+          "expected": [
+            true,
+            true,
+            true
+          ],
+          "calculated": [
+            true,
+            true,
+            true
+          ],
+          "absolute_tolerance": 0
+        },
+        "exact_zero": {
+          "expected": 0,
+          "calculated": -0.0,
+          "absolute_tolerance": 0
+        },
+        "tiny_probability_contribution": {
+          "expected": 6.907755278982137e-298,
+          "calculated": 6.907755278982137e-298,
+          "absolute_tolerance": 1e-310
+        },
+        "two_class_entropy_nat": {
+          "expected": 0.6931471805599453,
+          "calculated": 0.6931471805599453,
+          "absolute_tolerance": 1e-12
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "environment": {
+    "python": "3.14.3",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.5",
+    "sklearn": "1.9.1",
+    "device": "cpu"
+  }
+}

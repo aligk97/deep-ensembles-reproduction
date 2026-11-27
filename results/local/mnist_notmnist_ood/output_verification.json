@@ -1,0 +1,1100 @@
+{
+  "successful": true,
+  "new_model_forward_passes": 0,
+  "checks": [
+    {
+      "name": "experiment_complete",
+      "passed": true
+    },
+    {
+      "name": "36_seed_rows_and_12_summary_rows",
+      "passed": true
+    },
+    {
+      "name": "complete_distinct_seed_method_M_grid",
+      "passed": true
+    },
+    {
+      "name": "mnist_sample_order_integrity",
+      "passed": true
+    },
+    {
+      "name": "mnist_all_examples",
+      "passed": true
+    },
+    {
+      "name": "notmnist_sample_order_integrity",
+      "passed": true
+    },
+    {
+      "name": "notmnist_all_examples",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/ensemble/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/ensemble/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/ensemble/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/ensemble/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/ensemble/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/ensemble/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/ensemble/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/ensemble/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/ensemble/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/ensemble/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/random/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/random/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/random/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/random/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/random/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/random/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/random/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/random/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/random/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/random/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/random/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/random/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/random/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/adversarial/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/adversarial/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/adversarial/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/adversarial/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/adversarial/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/adversarial/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/adversarial/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/adversarial/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/adversarial/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/adversarial/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/mc_dropout/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/mc_dropout/mnist",
+      "passed": true
+    },
+    {
+      "name": "distinct_MC_passes/42/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/mc_dropout/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/mc_dropout/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/mc_dropout/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/42/mc_dropout/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/42/mc_dropout/notmnist",
+      "passed": true
+    },
+    {
+      "name": "distinct_MC_passes/42/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/mc_dropout/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/mc_dropout/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/42/mc_dropout/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/42/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/ensemble/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/ensemble/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/ensemble/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/ensemble/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/ensemble/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/ensemble/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/ensemble/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/ensemble/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/ensemble/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/ensemble/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/random/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/random/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/random/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/random/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/random/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/random/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/random/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/random/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/random/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/random/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/random/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/random/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/random/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/adversarial/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/adversarial/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/adversarial/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/adversarial/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/adversarial/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/adversarial/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/adversarial/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/adversarial/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/adversarial/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/adversarial/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/mc_dropout/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/mc_dropout/mnist",
+      "passed": true
+    },
+    {
+      "name": "distinct_MC_passes/123/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/mc_dropout/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/mc_dropout/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/mc_dropout/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/123/mc_dropout/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/123/mc_dropout/notmnist",
+      "passed": true
+    },
+    {
+      "name": "distinct_MC_passes/123/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/mc_dropout/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/mc_dropout/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/123/mc_dropout/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/123/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/ensemble/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/ensemble/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/ensemble/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/ensemble/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/ensemble/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/ensemble/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/ensemble/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/ensemble/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/ensemble/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/ensemble/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/random/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/random/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/random/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/random/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/random/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/random/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/random/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/random/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/random/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/random/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/random/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/random/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/random/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/adversarial/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/adversarial/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/adversarial/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/adversarial/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/adversarial/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/adversarial/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/adversarial/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/adversarial/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/adversarial/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/adversarial/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/mc_dropout/mnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/mc_dropout/mnist",
+      "passed": true
+    },
+    {
+      "name": "distinct_MC_passes/2026/mnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/mc_dropout/mnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/mc_dropout/mnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/mc_dropout/mnist/M5",
+      "passed": true
+    },
+    {
+      "name": "resume_cache/2026/mc_dropout/notmnist",
+      "passed": true
+    },
+    {
+      "name": "frozen_BN/2026/mc_dropout/notmnist",
+      "passed": true
+    },
+    {
+      "name": "distinct_MC_passes/2026/notmnist",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/mc_dropout/notmnist/M1",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/mc_dropout/notmnist/M3",
+      "passed": true
+    },
+    {
+      "name": "entropy_prefix/2026/mc_dropout/notmnist/M5",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "metrics_recomputed/2026/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/random/M1",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/random/M3",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/random/M5",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "seed_summary_recomputed/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/classification_consistency.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_adversarial_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_adversarial_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_adversarial_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_adversarial_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_adversarial_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_adversarial_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_ensemble_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_ensemble_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_ensemble_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_ensemble_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_ensemble_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_ensemble_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_mc_dropout_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_mc_dropout_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_mc_dropout_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_mc_dropout_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_mc_dropout_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_mc_dropout_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_random_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_random_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_random_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_random_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_random_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_123_random_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_adversarial_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_adversarial_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_adversarial_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_adversarial_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_adversarial_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_adversarial_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_ensemble_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_ensemble_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_ensemble_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_ensemble_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_ensemble_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_ensemble_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_mc_dropout_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_mc_dropout_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_mc_dropout_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_mc_dropout_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_mc_dropout_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_mc_dropout_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_random_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_random_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_random_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_random_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_random_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_2026_random_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_adversarial_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_adversarial_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_adversarial_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_adversarial_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_adversarial_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_adversarial_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_ensemble_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_ensemble_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_ensemble_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_ensemble_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_ensemble_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_ensemble_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_mc_dropout_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_mc_dropout_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_mc_dropout_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_mc_dropout_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_mc_dropout_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_mc_dropout_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_random_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_random_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_random_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_random_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_random_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/entropy\\seed_42_random_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\dataset_samples.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\entropy_gap.pdf",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\entropy_gap.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a.pdf",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a_seed123.pdf",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a_seed123.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a_seed2026.pdf",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a_seed2026.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a_seed42.pdf",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\figure3a_seed42.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\ood_auroc.pdf",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/figures\\ood_auroc.png",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/inference_test_results.json",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/results_per_seed.csv",
+      "passed": true
+    },
+    {
+      "name": "artifact_hash/results_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "24_complete_probability_files",
+      "passed": true
+    },
+    {
+      "name": "72_per_image_entropy_files",
+      "passed": true
+    }
+  ],
+  "resume_cache_checks": 24,
+  "entropy_prefix_checks": 72,
+  "seed_metric_rows_recomputed": 36,
+  "summary_rows_recomputed": 12,
+  "passed": 272,
+  "failed": 0
+}

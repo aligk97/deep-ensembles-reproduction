@@ -1,0 +1,170 @@
+[
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/toy_regression/07_seed_experiments/experiment_config.json",
+    "original_sha256": "ce428a69f4f98df4f7835aa472ce5625be9f6b4a5a4da286dc5705fbf1021e63",
+    "published_sha256": "bced6b7543c862c0505c2bf4f434c340780825ace1e9c4d6455531c4ffa711a9",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/dataset_info.json",
+    "original_sha256": "9a72ddaa057b038b2891883d7c85d4b9a8162744d105aeff10db64014d6d03b7",
+    "published_sha256": "a3dd678877e666ddc2fc47347287ce5abb8056d7754a2d1cb9a1a9c3bf1ef14b",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/experiment_manifest.json",
+    "original_sha256": "2ed82b1c063782b5b65c983479960373c309279ad2af6fe9c371a71ba4d8dc9c",
+    "published_sha256": "2bd22e2eb5b56507dcad4979ee3a24c67445c2928070fdbbddf4aa5869a2d2d2",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/inference_test_results.json",
+    "original_sha256": "a3fa37e08625873a1b641d68c97da18f28ea4bd78dd90cc4e68245d00357a8d6",
+    "published_sha256": "276fe926ced3e801ea34ee81e9b89138e7e7beeb6ba967e0e0f6d6c1bf78e456",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_adversarial_mnist.json",
+    "original_sha256": "bae8a06cd271e3375c72cd6a7676d093d5cb49845c9926aaf69933f3ecde37b0",
+    "published_sha256": "a21c83107d1f06a149e3756eea230267d1b80b60bc2427de98dfaa55690f0e76",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_adversarial_notmnist.json",
+    "original_sha256": "9b0b1332329f6733e9046cf3e491618515eae381305794069de7f16a88d3cb92",
+    "published_sha256": "3de0f38b71775ba455ec485a4b0eb6092df8591a7ca3a58e044b7b857d8a5d24",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_ensemble_mnist.json",
+    "original_sha256": "f971bb8fadbf4ef25830acf419285240a64f4fded86d677681758a3a39ec842a",
+    "published_sha256": "2a999c0d7a604f4ec34fe8d3c538e45222bb945abaa11b132160023c07c370a6",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_ensemble_notmnist.json",
+    "original_sha256": "6c0cceed84e8744d866adf2f7c85e7ce8f1fab3c4bffd07e378e563eb28e8ab8",
+    "published_sha256": "d331a4b2b4036a03d38593988707e23349f06c03cc58e274e5c45c597b26a470",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_mc_dropout_mnist.json",
+    "original_sha256": "3f58748a7097e79b79c3ae5bcf56b79fe722f551439c4e037b9841ef4c5870df",
+    "published_sha256": "549cf26d2c0ee767bad0fba0b3f6fc961288df56025e4e110e9012a55110c9a4",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_mc_dropout_notmnist.json",
+    "original_sha256": "ec3c29432860622baf33905b811ec3f646cce52ad5afdadacec0737fa10f8c6e",
+    "published_sha256": "a960c623ade18533690ee0e9ddf89e9f3b64e1c14dbf62d00dd317e4861d913b",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_random_mnist.json",
+    "original_sha256": "25049fce24b56c7f919e0bf0f87cd13e3e3fc7ba2470c8a2aecb8a7a77f6a8a5",
+    "published_sha256": "c0085d84d58400223faaf85cc2d42104d765ee2e3ef18510b89ba9de2da4b794",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_123_random_notmnist.json",
+    "original_sha256": "fb5a80ef2d58de1c1add2fdcdca0b45c729a57b7311f1e7041b01d923e7c6a1c",
+    "published_sha256": "c92787e49fe25a2bb9c7a1cd2ee2baa8d787313da6ab490195e99589cd0bc69d",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_adversarial_mnist.json",
+    "original_sha256": "00254fabe1804bba0e4111a8a0985502442011780f301f4898560166375e2697",
+    "published_sha256": "f7b23fbf7cf1485537e737bd79a9de2358946ffb15af28b92f146905e0de6287",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_adversarial_notmnist.json",
+    "original_sha256": "d6004f3b3401c70aae2d81054c0edd2b4f61e9c73d7b30cfcc6235ef02f0cd06",
+    "published_sha256": "59f158b3b158d4d8497c6336afecc39d490a8f80afbbb18721a0a0d7b4ebd2f7",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_ensemble_mnist.json",
+    "original_sha256": "2462ba27443f60784daaa327d143e6414797d695713967ba530e70e999884d26",
+    "published_sha256": "f3c614e8e0d7be57df80a8444163ac3a9edab56c8b5be5202c1c7062186d33c0",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_ensemble_notmnist.json",
+    "original_sha256": "da5b30c57ffe512f422528dad5e08587d1494021ddb5918735ce063f81e8ede2",
+    "published_sha256": "c0b600415c9c18aaf6ea130cb8040af7e9b29571c69b723a91e91ab0575f7208",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_mc_dropout_mnist.json",
+    "original_sha256": "6a9045aae87a7d236d9e8243bccd6868c98ac2c4628658c9deb1b14635c398cf",
+    "published_sha256": "de598ebd19883298f1c87dfb5ec3bbb3b52dbccf6eed5bf4c4614c3a9a862035",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_mc_dropout_notmnist.json",
+    "original_sha256": "af3b069eacddf17d649671123f6f9e962992492cfd7af4a3317f24e93f3f8b7b",
+    "published_sha256": "34eb8c6e63ca385f4e9e23785f2e1ddbd2f32f646b09481485ffed577db754e6",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_random_mnist.json",
+    "original_sha256": "7560aa1d6728ef4518c53044f53dfa8df7ff7cb1468ea4aa3fb2c988a9ed512b",
+    "published_sha256": "b692320ef5a1b538f8299d2c68ee4b693c818f89c59da234eae4998728f168b8",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_2026_random_notmnist.json",
+    "original_sha256": "044f9b317268281c7c4dc8f2c456ce72e5b3c3244beb619fea9db3bbfb61ce21",
+    "published_sha256": "3d3b593f842f9706e9bec150a020ed8ca5772359723170e3a5cad28e995167c0",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_adversarial_mnist.json",
+    "original_sha256": "cbd4763d4257a675df7017bfd34db1d91743237b9f21182b9696c888830cce59",
+    "published_sha256": "6c2aaa5242cb98a3c89e75e08de985a41ae1a1bf99958c35b456fd3af6c49625",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_adversarial_notmnist.json",
+    "original_sha256": "033774ba8a45257dfa2ff104468f5e5fabeda588221f2763d2a46aa77a4a0596",
+    "published_sha256": "ecbb66ae29d49fa3bc5acc3de389f4fac037d211ae67a45f8ce8d5115043ac24",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_ensemble_mnist.json",
+    "original_sha256": "40ec78a7deb8acae80d3ad2a07eee71d5e9cf5ddbc476ac92a781cd156f64f83",
+    "published_sha256": "166d322aebb9a493087a3588fdd4706a7a10a7a9102b36b9b2eca3dbbc83151f",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_ensemble_notmnist.json",
+    "original_sha256": "1385a7d5b27010354893ca83278e4ba0a883361383e80f8ef4cb36280db75144",
+    "published_sha256": "1e610bf1b53e00d68a8fb3b378416f0992e35c38d614ea7a958618d96e32a3cf",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_mc_dropout_mnist.json",
+    "original_sha256": "b8a6aa7fc09f0bbd08ad78f944ecda70282b5416ed12544ae235c2e6e0fb66d8",
+    "published_sha256": "050aca49d0b3d890fd6c5e992ed17c4b6f463b4e5f01336abedbe170efe384d0",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_mc_dropout_notmnist.json",
+    "original_sha256": "d694ac691a5f0f9ce84c18a59c782e90d1e419da510889955796bd085e4d6335",
+    "published_sha256": "8df7924c7f338de12f7a0b85d9c0d3897bc80ba3d28d311a7b22c995ac0d9885",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_random_mnist.json",
+    "original_sha256": "0255025286cabeca770b2379d692a9973d9830167b58472c5359f6bf2f1da366",
+    "published_sha256": "fbd482b8083e2e656c36d008b1123c64b03694b18a6427c55116140eb5a35065",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  },
+  {
+    "target": "04_GITHUB_REPOSITORY/deep-ensembles-reproduction/results/local/mnist_notmnist_ood/probabilities/seed_42_random_notmnist.json",
+    "original_sha256": "e152deb32fdad56192da71e184250315aa7ad7209bfc9ad45103a9f0aa49ee26",
+    "published_sha256": "12fb60068432e810c1d06b4fa6104efbc59d8e182bf767eac5856f7dcf95c117",
+    "scope": "personal absolute paths only; numeric values unchanged"
+  }
+]

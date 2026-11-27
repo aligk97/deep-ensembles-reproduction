@@ -1,0 +1,12 @@
+{
+  "successful": true,
+  "tests_run": 12,
+  "failed": 0,
+  "errors": 0,
+  "optimizer_steps": 0,
+  "real_colab_test": false,
+  "real_colab_checkpoint_sources_tested": 0,
+  "scope": "Explicitly synthetic metadata/untrained model/ZIP format fixtures only; no local trained checkpoint fallback",
+  "failures": [],
+  "error_details": []
+}

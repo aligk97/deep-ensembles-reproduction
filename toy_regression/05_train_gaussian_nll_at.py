@@ -55,8 +55,8 @@ from torch.nn import functional as F
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "outputs"
 DATA_CSV = OUT / "toy_training_data.csv"
-NLL_BASELINE_PRED_CSV = OUT / "gaussian_nll_single_lr0001_predictions.csv"
-NLL_BASELINE_LOG_CSV = OUT / "gaussian_nll_single_lr0001_training_log.csv"
+NLL_BASELINE_PRED_CSV = OUT / "gaussian_nll_single_predictions.csv"
+NLL_BASELINE_LOG_CSV = OUT / "gaussian_nll_single_training_log.csv"
 MSE_ENSEMBLE_CSV = OUT / "mse_ensemble_5_predictions.csv"
 
 SEED = 123

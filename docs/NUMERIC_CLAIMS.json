@@ -1,0 +1,682 @@
+[
+  {
+    "macro": "MNISTEnsembleAccuracy",
+    "mean": 0.9853999999999999,
+    "sample_sd": 0.001058300524425851,
+    "scale": 100,
+    "digits": 2,
+    "latex": "98.54 \\pm 0.11",
+    "plain": "98.54 \u00b1 0.11",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=ensemble,M=5,accuracy"
+  },
+  {
+    "macro": "MNISTEnsembleError",
+    "mean": 0.014600000000000021,
+    "sample_sd": 0.0010583005244258457,
+    "scale": 100,
+    "digits": 3,
+    "latex": "1.460 \\pm 0.106",
+    "plain": "1.460 \u00b1 0.106",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=ensemble,M=5,classification_error"
+  },
+  {
+    "macro": "MNISTEnsembleNLL",
+    "mean": 0.05581007955526945,
+    "sample_sd": 0.0022289599396294016,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0558 \\pm 0.0022",
+    "plain": "0.0558 \u00b1 0.0022",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=ensemble,M=5,nll"
+  },
+  {
+    "macro": "MNISTEnsembleBrier",
+    "mean": 0.002473118887116357,
+    "sample_sd": 5.998338959223497e-05,
+    "scale": 1,
+    "digits": 5,
+    "latex": "0.00247 \\pm 0.00006",
+    "plain": "0.00247 \u00b1 0.00006",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=ensemble,M=5,brier"
+  },
+  {
+    "macro": "OODEnsembleID",
+    "mean": 0.07878498394505119,
+    "sample_sd": 0.002966062592167944,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0788 \\pm 0.0030",
+    "plain": "0.0788 \u00b1 0.0030",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=ensemble,M=5,mean_id_entropy"
+  },
+  {
+    "macro": "OODEnsembleOOD",
+    "mean": 1.0222473927633164,
+    "sample_sd": 0.03197503236024746,
+    "scale": 1,
+    "digits": 4,
+    "latex": "1.0222 \\pm 0.0320",
+    "plain": "1.0222 \u00b1 0.0320",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=ensemble,M=5,mean_ood_entropy"
+  },
+  {
+    "macro": "OODEnsembleGap",
+    "mean": 0.9434624088182652,
+    "sample_sd": 0.030949186244493197,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.9435 \\pm 0.0309",
+    "plain": "0.9435 \u00b1 0.0309",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=ensemble,M=5,entropy_gap"
+  },
+  {
+    "macro": "OODEnsembleAUROC",
+    "mean": 0.9653214092430392,
+    "sample_sd": 0.0037722868782520966,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.9653 \\pm 0.0038",
+    "plain": "0.9653 \u00b1 0.0038",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=ensemble,M=5,ood_auroc"
+  },
+  {
+    "macro": "MNISTRandomAccuracy",
+    "mean": 0.9846666666666666,
+    "sample_sd": 0.002074447717666937,
+    "scale": 100,
+    "digits": 2,
+    "latex": "98.47 \\pm 0.21",
+    "plain": "98.47 \u00b1 0.21",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=random,M=5,accuracy"
+  },
+  {
+    "macro": "MNISTRandomError",
+    "mean": 0.015333333333333346,
+    "sample_sd": 0.0020744477176668817,
+    "scale": 100,
+    "digits": 3,
+    "latex": "1.533 \\pm 0.207",
+    "plain": "1.533 \u00b1 0.207",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=random,M=5,classification_error"
+  },
+  {
+    "macro": "MNISTRandomNLL",
+    "mean": 0.05665239518977785,
+    "sample_sd": 0.0037557575691395994,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0567 \\pm 0.0038",
+    "plain": "0.0567 \u00b1 0.0038",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=random,M=5,nll"
+  },
+  {
+    "macro": "MNISTRandomBrier",
+    "mean": 0.0025047241981710315,
+    "sample_sd": 0.00017673769999864176,
+    "scale": 1,
+    "digits": 5,
+    "latex": "0.00250 \\pm 0.00018",
+    "plain": "0.00250 \u00b1 0.00018",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=random,M=5,brier"
+  },
+  {
+    "macro": "OODRandomID",
+    "mean": 0.07699567422975177,
+    "sample_sd": 0.009705554030873021,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0770 \\pm 0.0097",
+    "plain": "0.0770 \u00b1 0.0097",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=random,M=5,mean_id_entropy"
+  },
+  {
+    "macro": "OODRandomOOD",
+    "mean": 0.8055924262109858,
+    "sample_sd": 0.040425284114497764,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.8056 \\pm 0.0404",
+    "plain": "0.8056 \u00b1 0.0404",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=random,M=5,mean_ood_entropy"
+  },
+  {
+    "macro": "OODRandomGap",
+    "mean": 0.7285967519812341,
+    "sample_sd": 0.036304812582793736,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.7286 \\pm 0.0363",
+    "plain": "0.7286 \u00b1 0.0363",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=random,M=5,entropy_gap"
+  },
+  {
+    "macro": "OODRandomAUROC",
+    "mean": 0.9345748362173326,
+    "sample_sd": 0.011821146659851095,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.9346 \\pm 0.0118",
+    "plain": "0.9346 \u00b1 0.0118",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=random,M=5,ood_auroc"
+  },
+  {
+    "macro": "MNISTATAccuracy",
+    "mean": 0.9861,
+    "sample_sd": 0.0008888194417315907,
+    "scale": 100,
+    "digits": 2,
+    "latex": "98.61 \\pm 0.09",
+    "plain": "98.61 \u00b1 0.09",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=adversarial,M=5,accuracy"
+  },
+  {
+    "macro": "MNISTATError",
+    "mean": 0.013899999999999987,
+    "sample_sd": 0.000888819441731586,
+    "scale": 100,
+    "digits": 3,
+    "latex": "1.390 \\pm 0.089",
+    "plain": "1.390 \u00b1 0.089",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=adversarial,M=5,classification_error"
+  },
+  {
+    "macro": "MNISTATNLL",
+    "mean": 0.04982750074292161,
+    "sample_sd": 0.003929599204903034,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0498 \\pm 0.0039",
+    "plain": "0.0498 \u00b1 0.0039",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=adversarial,M=5,nll"
+  },
+  {
+    "macro": "MNISTATBrier",
+    "mean": 0.0022493517060661046,
+    "sample_sd": 0.00014709577128184254,
+    "scale": 1,
+    "digits": 5,
+    "latex": "0.00225 \\pm 0.00015",
+    "plain": "0.00225 \u00b1 0.00015",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=adversarial,M=5,brier"
+  },
+  {
+    "macro": "OODATID",
+    "mean": 0.0766495450574059,
+    "sample_sd": 0.007326998148426005,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0766 \\pm 0.0073",
+    "plain": "0.0766 \u00b1 0.0073",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=adversarial,M=5,mean_id_entropy"
+  },
+  {
+    "macro": "OODATOOD",
+    "mean": 1.0192660150899453,
+    "sample_sd": 0.020864653031966947,
+    "scale": 1,
+    "digits": 4,
+    "latex": "1.0193 \\pm 0.0209",
+    "plain": "1.0193 \u00b1 0.0209",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=adversarial,M=5,mean_ood_entropy"
+  },
+  {
+    "macro": "OODATGap",
+    "mean": 0.9426164700325393,
+    "sample_sd": 0.015306550595936354,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.9426 \\pm 0.0153",
+    "plain": "0.9426 \u00b1 0.0153",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=adversarial,M=5,entropy_gap"
+  },
+  {
+    "macro": "OODATAUROC",
+    "mean": 0.966793669443851,
+    "sample_sd": 0.0022699743697127484,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.9668 \\pm 0.0023",
+    "plain": "0.9668 \u00b1 0.0023",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=adversarial,M=5,ood_auroc"
+  },
+  {
+    "macro": "MNISTDropoutAccuracy",
+    "mean": 0.9732,
+    "sample_sd": 0.0021702534414210803,
+    "scale": 100,
+    "digits": 2,
+    "latex": "97.32 \\pm 0.22",
+    "plain": "97.32 \u00b1 0.22",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=mc_dropout,M=5,accuracy"
+  },
+  {
+    "macro": "MNISTDropoutError",
+    "mean": 0.026799999999999973,
+    "sample_sd": 0.0021702534414210876,
+    "scale": 100,
+    "digits": 3,
+    "latex": "2.680 \\pm 0.217",
+    "plain": "2.680 \u00b1 0.217",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=mc_dropout,M=5,classification_error"
+  },
+  {
+    "macro": "MNISTDropoutNLL",
+    "mean": 0.09857238395592945,
+    "sample_sd": 0.006952223873059713,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.0986 \\pm 0.0070",
+    "plain": "0.0986 \u00b1 0.0070",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=mc_dropout,M=5,nll"
+  },
+  {
+    "macro": "MNISTDropoutBrier",
+    "mean": 0.004196789489436103,
+    "sample_sd": 0.00036995600713174377,
+    "scale": 1,
+    "digits": 5,
+    "latex": "0.00420 \\pm 0.00037",
+    "plain": "0.00420 \u00b1 0.00037",
+    "evidence": "results/colab/mnist_classification/summary.csv: method=mc_dropout,M=5,brier"
+  },
+  {
+    "macro": "OODDropoutID",
+    "mean": 0.11612731466893356,
+    "sample_sd": 0.005264095676330782,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.1161 \\pm 0.0053",
+    "plain": "0.1161 \u00b1 0.0053",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=mc_dropout,M=5,mean_id_entropy"
+  },
+  {
+    "macro": "OODDropoutOOD",
+    "mean": 0.535356996297312,
+    "sample_sd": 0.11750806281951726,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.5354 \\pm 0.1175",
+    "plain": "0.5354 \u00b1 0.1175",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=mc_dropout,M=5,mean_ood_entropy"
+  },
+  {
+    "macro": "OODDropoutGap",
+    "mean": 0.4192296816283785,
+    "sample_sd": 0.11885808284325892,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.4192 \\pm 0.1189",
+    "plain": "0.4192 \u00b1 0.1189",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=mc_dropout,M=5,entropy_gap"
+  },
+  {
+    "macro": "OODDropoutAUROC",
+    "mean": 0.7778506622516557,
+    "sample_sd": 0.07362900127283524,
+    "scale": 1,
+    "digits": 4,
+    "latex": "0.7779 \\pm 0.0736",
+    "plain": "0.7779 \u00b1 0.0736",
+    "evidence": "results/colab/mnist_notmnist_ood/results_summary.csv: method=mc_dropout,M=5,ood_auroc"
+  },
+  {
+    "macro": "ToyMSEIDRMSE",
+    "mean": 5.420518160966146,
+    "sample_sd": 0.36023897588500725,
+    "scale": 1,
+    "digits": 3,
+    "latex": "5.421 \\pm 0.360",
+    "plain": "5.421 \u00b1 0.360",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=in_distribution,rmse_clean"
+  },
+  {
+    "macro": "ToyMSEIDNLL",
+    "mean": 7784.984528442569,
+    "sample_sd": 10950.285793315843,
+    "scale": 1,
+    "digits": 1,
+    "latex": "7785.0 \\pm 10950.3",
+    "plain": "7785.0 \u00b1 10950.3",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=in_distribution,nll_moment"
+  },
+  {
+    "macro": "ToyMSEIDCoverage",
+    "mean": 0.13577694235588975,
+    "sample_sd": 0.05520761278614154,
+    "scale": 100,
+    "digits": 2,
+    "latex": "13.58 \\pm 5.52",
+    "plain": "13.58 \u00b1 5.52",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=in_distribution,coverage95"
+  },
+  {
+    "macro": "ToyMSELeftRMSE",
+    "mean": 83.13322352988433,
+    "sample_sd": 2.895306952357001,
+    "scale": 1,
+    "digits": 3,
+    "latex": "83.133 \\pm 2.895",
+    "plain": "83.133 \u00b1 2.895",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=left_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyMSELeftNLL",
+    "mean": 355.0521214495848,
+    "sample_sd": 155.84626247285658,
+    "scale": 1,
+    "digits": 1,
+    "latex": "355.1 \\pm 155.8",
+    "plain": "355.1 \u00b1 155.8",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=left_ood,nll_moment"
+  },
+  {
+    "macro": "ToyMSELeftCoverage",
+    "mean": 0.0,
+    "sample_sd": 0.0,
+    "scale": 100,
+    "digits": 2,
+    "latex": "0.00 \\pm 0.00",
+    "plain": "0.00 \u00b1 0.00",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=left_ood,coverage95"
+  },
+  {
+    "macro": "ToyMSERightRMSE",
+    "mean": 33.767367266142394,
+    "sample_sd": 1.0350234299466334,
+    "scale": 1,
+    "digits": 3,
+    "latex": "33.767 \\pm 1.035",
+    "plain": "33.767 \u00b1 1.035",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=right_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyMSERightNLL",
+    "mean": 522.0168806582303,
+    "sample_sd": 719.3056568965774,
+    "scale": 1,
+    "digits": 1,
+    "latex": "522.0 \\pm 719.3",
+    "plain": "522.0 \u00b1 719.3",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=right_ood,nll_moment"
+  },
+  {
+    "macro": "ToyMSERightCoverage",
+    "mean": 0.0753731343283582,
+    "sample_sd": 0.09845091094949542,
+    "scale": 100,
+    "digits": 2,
+    "latex": "7.54 \\pm 9.85",
+    "plain": "7.54 \u00b1 9.85",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=mse_ensemble,region=right_ood,coverage95"
+  },
+  {
+    "macro": "ToyGaussianIDRMSE",
+    "mean": 5.024092512132094,
+    "sample_sd": 0.07253097206097714,
+    "scale": 1,
+    "digits": 3,
+    "latex": "5.024 \\pm 0.073",
+    "plain": "5.024 \u00b1 0.073",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=in_distribution,rmse_clean"
+  },
+  {
+    "macro": "ToyGaussianIDNLL",
+    "mean": 15966.969233495613,
+    "sample_sd": 4320.137384076461,
+    "scale": 1,
+    "digits": 1,
+    "latex": "15967.0 \\pm 4320.1",
+    "plain": "15967.0 \u00b1 4320.1",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=in_distribution,nll_moment"
+  },
+  {
+    "macro": "ToyGaussianIDCoverage",
+    "mean": 0.46572681704260654,
+    "sample_sd": 0.004512583353391191,
+    "scale": 100,
+    "digits": 2,
+    "latex": "46.57 \\pm 0.45",
+    "plain": "46.57 \u00b1 0.45",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=in_distribution,coverage95"
+  },
+  {
+    "macro": "ToyGaussianLeftRMSE",
+    "mean": 79.18709564754465,
+    "sample_sd": 0.30478987717831896,
+    "scale": 1,
+    "digits": 3,
+    "latex": "79.187 \\pm 0.305",
+    "plain": "79.187 \u00b1 0.305",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=left_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyGaussianLeftNLL",
+    "mean": 7526602.832709272,
+    "sample_sd": 70051.7582128306,
+    "scale": 1,
+    "digits": 1,
+    "latex": "7526602.8 \\pm 70051.8",
+    "plain": "7526602.8 \u00b1 70051.8",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=left_ood,nll_moment"
+  },
+  {
+    "macro": "ToyGaussianLeftCoverage",
+    "mean": 0.0,
+    "sample_sd": 0.0,
+    "scale": 100,
+    "digits": 2,
+    "latex": "0.00 \\pm 0.00",
+    "plain": "0.00 \u00b1 0.00",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=left_ood,coverage95"
+  },
+  {
+    "macro": "ToyGaussianRightRMSE",
+    "mean": 39.17012952716333,
+    "sample_sd": 10.713979491779103,
+    "scale": 1,
+    "digits": 3,
+    "latex": "39.170 \\pm 10.714",
+    "plain": "39.170 \u00b1 10.714",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=right_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyGaussianRightNLL",
+    "mean": 5.956455165516911,
+    "sample_sd": 2.4595979730489965,
+    "scale": 1,
+    "digits": 1,
+    "latex": "6.0 \\pm 2.5",
+    "plain": "6.0 \u00b1 2.5",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=right_ood,nll_moment"
+  },
+  {
+    "macro": "ToyGaussianRightCoverage",
+    "mean": 0.6965174129353233,
+    "sample_sd": 0.3954867157479636,
+    "scale": 100,
+    "digits": 2,
+    "latex": "69.65 \\pm 39.55",
+    "plain": "69.65 \u00b1 39.55",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_nll,region=right_ood,coverage95"
+  },
+  {
+    "macro": "ToyGaussianATIDRMSE",
+    "mean": 5.019120152414581,
+    "sample_sd": 0.0810356822024186,
+    "scale": 1,
+    "digits": 3,
+    "latex": "5.019 \\pm 0.081",
+    "plain": "5.019 \u00b1 0.081",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=in_distribution,rmse_clean"
+  },
+  {
+    "macro": "ToyGaussianATIDNLL",
+    "mean": 171.72416427723513,
+    "sample_sd": 94.16584745172689,
+    "scale": 1,
+    "digits": 1,
+    "latex": "171.7 \\pm 94.2",
+    "plain": "171.7 \u00b1 94.2",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=in_distribution,nll_moment"
+  },
+  {
+    "macro": "ToyGaussianATIDCoverage",
+    "mean": 0.6159774436090225,
+    "sample_sd": 0.00879851860035224,
+    "scale": 100,
+    "digits": 2,
+    "latex": "61.60 \\pm 0.88",
+    "plain": "61.60 \u00b1 0.88",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=in_distribution,coverage95"
+  },
+  {
+    "macro": "ToyGaussianATLeftRMSE",
+    "mean": 80.52960289975009,
+    "sample_sd": 0.47182813798094214,
+    "scale": 1,
+    "digits": 3,
+    "latex": "80.530 \\pm 0.472",
+    "plain": "80.530 \u00b1 0.472",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=left_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyGaussianATLeftNLL",
+    "mean": 4030276.6339008324,
+    "sample_sd": 1599794.2261757809,
+    "scale": 1,
+    "digits": 1,
+    "latex": "4030276.6 \\pm 1599794.2",
+    "plain": "4030276.6 \u00b1 1599794.2",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=left_ood,nll_moment"
+  },
+  {
+    "macro": "ToyGaussianATLeftCoverage",
+    "mean": 0.0,
+    "sample_sd": 0.0,
+    "scale": 100,
+    "digits": 2,
+    "latex": "0.00 \\pm 0.00",
+    "plain": "0.00 \u00b1 0.00",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=left_ood,coverage95"
+  },
+  {
+    "macro": "ToyGaussianATRightRMSE",
+    "mean": 35.44163248105834,
+    "sample_sd": 1.0392601511348645,
+    "scale": 1,
+    "digits": 3,
+    "latex": "35.442 \\pm 1.039",
+    "plain": "35.442 \u00b1 1.039",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=right_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyGaussianATRightNLL",
+    "mean": 5.046559115969832,
+    "sample_sd": 0.1551782405567646,
+    "scale": 1,
+    "digits": 1,
+    "latex": "5.0 \\pm 0.2",
+    "plain": "5.0 \u00b1 0.2",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=right_ood,nll_moment"
+  },
+  {
+    "macro": "ToyGaussianATRightCoverage",
+    "mean": 0.6786069651741293,
+    "sample_sd": 0.04415195145132294,
+    "scale": 100,
+    "digits": 2,
+    "latex": "67.86 \\pm 4.42",
+    "plain": "67.86 \u00b1 4.42",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=gaussian_at,region=right_ood,coverage95"
+  },
+  {
+    "macro": "ToyDeepIDRMSE",
+    "mean": 5.0626441892911656,
+    "sample_sd": 0.10880419778455548,
+    "scale": 1,
+    "digits": 3,
+    "latex": "5.063 \\pm 0.109",
+    "plain": "5.063 \u00b1 0.109",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=in_distribution,rmse_clean"
+  },
+  {
+    "macro": "ToyDeepIDNLL",
+    "mean": 131.06131706557733,
+    "sample_sd": 121.65151871387296,
+    "scale": 1,
+    "digits": 1,
+    "latex": "131.1 \\pm 121.7",
+    "plain": "131.1 \u00b1 121.7",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=in_distribution,nll_moment"
+  },
+  {
+    "macro": "ToyDeepIDCoverage",
+    "mean": 0.5006892230576441,
+    "sample_sd": 0.02025922839594093,
+    "scale": 100,
+    "digits": 2,
+    "latex": "50.07 \\pm 2.03",
+    "plain": "50.07 \u00b1 2.03",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=in_distribution,coverage95"
+  },
+  {
+    "macro": "ToyDeepLeftRMSE",
+    "mean": 79.7281721294529,
+    "sample_sd": 0.4541958419770594,
+    "scale": 1,
+    "digits": 3,
+    "latex": "79.728 \\pm 0.454",
+    "plain": "79.728 \u00b1 0.454",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=left_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyDeepLeftNLL",
+    "mean": 3961.5201041296423,
+    "sample_sd": 3417.639938775199,
+    "scale": 1,
+    "digits": 1,
+    "latex": "3961.5 \\pm 3417.6",
+    "plain": "3961.5 \u00b1 3417.6",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=left_ood,nll_moment"
+  },
+  {
+    "macro": "ToyDeepLeftCoverage",
+    "mean": 0.0,
+    "sample_sd": 0.0,
+    "scale": 100,
+    "digits": 2,
+    "latex": "0.00 \\pm 0.00",
+    "plain": "0.00 \u00b1 0.00",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=left_ood,coverage95"
+  },
+  {
+    "macro": "ToyDeepRightRMSE",
+    "mean": 33.81374422175581,
+    "sample_sd": 3.389616375156286,
+    "scale": 1,
+    "digits": 3,
+    "latex": "33.814 \\pm 3.390",
+    "plain": "33.814 \u00b1 3.390",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=right_ood,rmse_clean"
+  },
+  {
+    "macro": "ToyDeepRightNLL",
+    "mean": 4.656734864513908,
+    "sample_sd": 0.30822635491379713,
+    "scale": 1,
+    "digits": 1,
+    "latex": "4.7 \\pm 0.3",
+    "plain": "4.7 \u00b1 0.3",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=right_ood,nll_moment"
+  },
+  {
+    "macro": "ToyDeepRightCoverage",
+    "mean": 0.8932835820895523,
+    "sample_sd": 0.1790531642911739,
+    "scale": 100,
+    "digits": 2,
+    "latex": "89.33 \\pm 17.91",
+    "plain": "89.33 \u00b1 17.91",
+    "evidence": "results/colab/toy_regression/07_seed_experiments/aggregate/metrics/summary_mean_sd.csv: method=deep_ensemble,region=right_ood,coverage95"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "config": {
+    "name": "local",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "ensemble_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "epochs": 10,
+    "batch_size": 100,
+    "learning_rate": 0.1,
+    "epsilon_fraction": 0.01,
+    "dropout": 0.1,
+    "validation_size": 5000,
+    "split_seed": 4509,
+    "train_limit": 0,
+    "test_limit": 0,
+    "eval_batch_size": 1000,
+    "threads": 2,
+    "deterministic": true
+  },
+  "signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+  "source_sha256": {
+    "data.py": "4c8fb06ca776da3a3a82f982e6240e6bd9bccf78b7c64b42212a04af40497c5b",
+    "model.py": "5d976b1df17f9d2f30d6c247a98d0a104ce62d73971224e7cef3e786cebc70fd",
+    "metrics.py": "abe15a8090d93755316bcaf549cd97f3fd7b314cce9f9145370ffc42d2899881",
+    "engine.py": "bfdf6771fb18d5f8c181e4c287b900fe7f9fe7e621a966e0d176c879cd3fdd85",
+    "run_experiment.py": "6d2430bb55c016886356c5b5f15afe143acb1f64fb61c1609fa8d0a038baa082"
+  },
+  "split_array_sha256": {
+    "train": "8de627d7cc03641728e35757ecbbff33770c8d483b4eaa21a128ccdc3dc8b11a",
+    "validation": "c415d2a2b4dd413cee2a09ec9b70bf5973e625174c348df84416e4f36e59645e",
+    "test": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099"
+  },
+  "origin_manifest_sha256": "fd73c2081147df314dd800e9a787e7581f9a1d74c1d767ed9adc38026160bd5c",
+  "origin_status": "complete",
+  "expected_checkpoints": 48,
+  "expected_raw_rows": 63,
+  "expected_summary_rows": 21,
+  "train_n": 55000,
+  "validation_n": 5000,
+  "test_n": 10000
+}

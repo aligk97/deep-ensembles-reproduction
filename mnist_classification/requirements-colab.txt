@@ -1,0 +1,5 @@
+# Keep Colab's preinstalled CUDA-enabled PyTorch; no Windows CUDA wheels.
+# Notebook installs these only if missing. nbformat/nbclient are local audit tools.
+numpy>=1.26,<3
+pandas>=2.1,<4
+matplotlib>=3.8,<4

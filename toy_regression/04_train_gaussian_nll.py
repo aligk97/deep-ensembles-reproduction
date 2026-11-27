@@ -20,7 +20,7 @@ This is one network, WITHOUT adversarial training and WITHOUT an ensemble.
 OUR declared simplifications compared with the paper:
   - input range [-4,4], 20 data points (range is our choice)
   - 1 hidden layer with 50 ReLU neurons (paper refers to another architecture)
-  - Adam(lr=0.005), 3000 full-batch epochs, seed=123
+  - Adam(lr=0.001), 3000 full-batch epochs, seed=123
   - normalize y using training-set mean and std for stable NLL optimization.
     Reported predictions, variances, RMSE and NLL are converted BACK to original units.
 

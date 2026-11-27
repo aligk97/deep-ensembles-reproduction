@@ -1,0 +1,10 @@
+{
+  "successful": true,
+  "array_equality": {
+    "train": true,
+    "validation": true,
+    "test": true
+  },
+  "model_forwards": 0,
+  "new_training": false
+}

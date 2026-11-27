@@ -1,0 +1,32 @@
+{
+  "run_seeds": [
+    42,
+    123,
+    2026
+  ],
+  "num_members_per_ensemble": 5,
+  "member_seed_rule": "run_seed * 100 + member_index (starting at 0)",
+  "epochs_per_model": 3000,
+  "data_file": "<ORIGINAL_LOCAL_ROOT>\\toy_regression\\outputs\\toy_training_data.csv",
+  "data_sha256": "adab2533701055f77f024b6a94f042b4e3ad7d18479d14d93d9d042e10790235",
+  "number_train": 20,
+  "mse_lr": 0.01,
+  "gaussian_lr": 0.001,
+  "gaussian_target_normalization": {
+    "mean": 12.519777297973633,
+    "scale": 20.432126998901367
+  },
+  "fgsm_epsilon": 0.06608957767486573,
+  "fgsm_fraction_of_observed_x_range": 0.01,
+  "eval_seed": 20261122,
+  "eval_x_points": 400,
+  "eval_noise_repeats_per_x": 20,
+  "eval_noise_sd": 3.0,
+  "metric_z95": 1.959963984540054,
+  "variance_floor_for_evaluation_y2": 1e-06,
+  "source_paper": "Lakshminarayanan et al. 2017 arXiv:1612.01474 Figure 1",
+  "simplifications": "50-ReLU, full-batch, fixed original 20-point dataset; user-chosen x range",
+  "torch_version": "2.11.0+cu128",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER"
+}

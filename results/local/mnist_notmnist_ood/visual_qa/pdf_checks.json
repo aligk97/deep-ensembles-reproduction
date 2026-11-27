@@ -1,0 +1,126 @@
+[
+  {
+    "file": "entropy_gap.pdf",
+    "pages": 1,
+    "page_size_points": [
+      568.5282592773438,
+      352.4796142578125
+    ],
+    "fonts": [
+      "DDKVHF+DejaVuSans"
+    ],
+    "text_extracted": true,
+    "png_pixels": [
+      2370,
+      1469
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ]
+  },
+  {
+    "file": "figure3a.pdf",
+    "pages": 1,
+    "page_size_points": [
+      1123.542724609375,
+      524.5941162109375
+    ],
+    "fonts": [
+      "GEKFSC+DejaVuSans-Bold",
+      "EVIPXK+DejaVuSans"
+    ],
+    "text_extracted": true,
+    "png_pixels": [
+      4683,
+      2185
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ]
+  },
+  {
+    "file": "figure3a_seed123.pdf",
+    "pages": 1,
+    "page_size_points": [
+      1133.073974609375,
+      524.5941162109375
+    ],
+    "fonts": [
+      "GEKFSC+DejaVuSans-Bold",
+      "BHMURA+DejaVuSans"
+    ],
+    "text_extracted": true,
+    "png_pixels": [
+      4723,
+      2185
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ]
+  },
+  {
+    "file": "figure3a_seed2026.pdf",
+    "pages": 1,
+    "page_size_points": [
+      1133.073974609375,
+      524.5941162109375
+    ],
+    "fonts": [
+      "GEKFSC+DejaVuSans-Bold",
+      "DXNGFX+DejaVuSans"
+    ],
+    "text_extracted": true,
+    "png_pixels": [
+      4723,
+      2185
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ]
+  },
+  {
+    "file": "figure3a_seed42.pdf",
+    "pages": 1,
+    "page_size_points": [
+      1123.542724609375,
+      524.5941162109375
+    ],
+    "fonts": [
+      "GEKFSC+DejaVuSans-Bold",
+      "FFPMBL+DejaVuSans"
+    ],
+    "text_extracted": true,
+    "png_pixels": [
+      4683,
+      2185
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ]
+  },
+  {
+    "file": "ood_auroc.pdf",
+    "pages": 1,
+    "page_size_points": [
+      568.5282592773438,
+      352.4796142578125
+    ],
+    "fonts": [
+      "GYGNPM+DejaVuSans"
+    ],
+    "text_extracted": true,
+    "png_pixels": [
+      2370,
+      1469
+    ],
+    "png_dpi": [
+      299.9994,
+      299.9994
+    ]
+  }
+]

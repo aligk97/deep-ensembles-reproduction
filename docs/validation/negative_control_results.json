@@ -1,0 +1,19 @@
+{
+  "successful": true,
+  "tests_run": 2,
+  "model_forwards": 0,
+  "cases": [
+    {
+      "case": "latex",
+      "intentional_change": "One displayed result value changed in a private disposable copy only",
+      "correctly_rejected": true,
+      "expected_check": "LaTeX numeric macro/MNISTATAccuracy"
+    },
+    {
+      "case": "pptx",
+      "intentional_change": "One displayed result value changed in a private disposable copy only",
+      "correctly_rejected": true,
+      "expected_check": "PPTX OOD table value/ensemble/ood_auroc"
+    }
+  ]
+}

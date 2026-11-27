@@ -1,2 +1,0 @@
-model,seed,training_rmse,training_nll_original_y_units,y_mean,y_scale
-gaussian_nll_single,123,2.320733070373535,1.9575233459472656,12.519777297973633,20.432126998901367

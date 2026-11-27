@@ -1,0 +1,99 @@
+{
+  "ood_config": {
+    "name": "mnist_notmnist_ood_final",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "methods": [
+      "ensemble",
+      "random",
+      "adversarial",
+      "mc_dropout"
+    ],
+    "ensemble_sizes": [
+      1,
+      3,
+      5
+    ],
+    "dropout": 0.1,
+    "batch_size": 1000,
+    "num_workers": 0,
+    "threads": 2,
+    "deterministic": true,
+    "histogram_bins": 50,
+    "mc_rng_offset": 500000000,
+    "notmnist_rng_offset": 1000000000,
+    "loader_rng_seed": 4509,
+    "probability_sum_atol": 5e-07,
+    "classification_atol": {
+      "accuracy": 1e-12,
+      "nll": 1e-06,
+      "brier": 1e-08
+    },
+    "checkpoint_root": "../mnist_classification/outputs/local",
+    "mnist_root": "../mnist_classification/data",
+    "notmnist_root": "data/notMNIST_small"
+  },
+  "ood_scientific_source_sha256": {
+    "data.py": "7065cbaa456d1e50f727dfe24c1841f559f062315ecd8696e79d645a54150454",
+    "metrics.py": "fd92bcc87449eebbf98b42d17005b55de65351260454292254c7f3f0ff55778a",
+    "inference.py": "715a5b1e627044bf15ce7e2d556e8ef0340d1da4b1f11388a9e5e9029a9d71e7",
+    "plots.py": "b353fa142a7e4cbf6ecc0b8235d85d90dada543304e89eb193de54c227ed8b09",
+    "run_experiment.py": "f62e5d06c41d77113693c2cf6d721b865d6dc488847e045d36d7e26b16f3d61d",
+    "prepare_data.py": "5cfced65452e04bbff4057f140b78fb55cb0b520c4caef5edae46e97ed3f95eb",
+    "test_inference.py": "8237133b9021f97205d7503f84cf25ce12708a55192caedea24317cfdc61b759"
+  },
+  "mnist_config": {
+    "name": "local",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "ensemble_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "epochs": 10,
+    "batch_size": 100,
+    "learning_rate": 0.1,
+    "epsilon_fraction": 0.01,
+    "dropout": 0.1,
+    "validation_size": 5000,
+    "split_seed": 4509,
+    "train_limit": 0,
+    "test_limit": 0,
+    "eval_batch_size": 1000,
+    "threads": 2,
+    "deterministic": true
+  },
+  "mnist_signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+  "mnist_source_sha256": {
+    "data.py": "4c8fb06ca776da3a3a82f982e6240e6bd9bccf78b7c64b42212a04af40497c5b",
+    "model.py": "5d976b1df17f9d2f30d6c247a98d0a104ce62d73971224e7cef3e786cebc70fd",
+    "metrics.py": "abe15a8090d93755316bcaf549cd97f3fd7b314cce9f9145370ffc42d2899881",
+    "engine.py": "bfdf6771fb18d5f8c181e4c287b900fe7f9fe7e621a966e0d176c879cd3fdd85",
+    "run_experiment.py": "6d2430bb55c016886356c5b5f15afe143acb1f64fb61c1609fa8d0a038baa082"
+  },
+  "notmnist_archive_sha256": "76b2ef7ccc56452964780569db37b279c9cbe1bf442c3b38be784752683b3cec",
+  "corrupt_files": [
+    "A/RGVtb2NyYXRpY2FCb2xkT2xkc3R5bGUgQm9sZC50dGY=.png",
+    "F/Q3Jvc3NvdmVyIEJvbGRPYmxpcXVlLnR0Zg==.png"
+  ],
+  "dataset_tensor_sha256": {
+    "mnist": "bc9f8f501f39b3ca61f899a2f402edf2024bde012b73223431b6bd735e47a165",
+    "notmnist": "5da5a545dee93c711d8ec8ca5be2398f1114a406690a1efaa74d5d072bf1a46e"
+  },
+  "dataset_order_sha256": {
+    "mnist": "9f58954c71996aab4bdced34507e299b8312011721f00b7bbbdb521995c7bbc8",
+    "notmnist": "829c6c8f00292645bc6d00c4f39c9c8d089ef9ba018a8d0ad0bd251fccb947b1"
+  },
+  "mnist_examples": 10000,
+  "notmnist_examples": 18724,
+  "origin": "Local files provide scientific configuration/hash references only; NEVER model weights or results fallback"
+}

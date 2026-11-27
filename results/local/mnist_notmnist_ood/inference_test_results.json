@@ -1,0 +1,3649 @@
+{
+  "successful": true,
+  "scope": "Real final local checkpoints; fixed 37 MNIST / 41 NotMNIST examples",
+  "device": "cuda",
+  "unique_checkpoints": 48,
+  "checks": [
+    {
+      "name": "seed_42/ensemble/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.8098476273209485e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.3680855697410383e-13,
+            "max_nat": 0.29913641778533845
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 8.146498176115463e-08,
+            "max_nat": 0.8457725085406902
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.4073823140325515e-06,
+            "max_nat": 0.7465282094922027
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.30021049999049865
+      }
+    },
+    {
+      "name": "seed_42/ensemble/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.6525419477275705e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 1.1431685461881932e-12,
+            "max_nat": 0.7964402991410182
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.00026255424353179593,
+            "max_nat": 1.344851236977039
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.00019834879835243746,
+            "max_nat": 1.6814633090192168
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11233060000813566
+      }
+    },
+    {
+      "name": "seed_42/random/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.7031387100630013e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.1539205188807533e-09,
+            "max_nat": 1.3766654694457747
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.1546999149891235e-07,
+            "max_nat": 1.2243963558271613
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.0516134642250494e-07,
+            "max_nat": 0.8790545529756373
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10998829998425208
+      }
+    },
+    {
+      "name": "seed_42/random/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.7676939023658633e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 6.769360496578804e-14,
+            "max_nat": 1.1164097769787316
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.003170031368105045,
+            "max_nat": 1.7929462979724446
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.0037815550929316444,
+            "max_nat": 1.6768794111647027
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10263249999843538
+      }
+    },
+    {
+      "name": "seed_42/adversarial/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.6625790522084571e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.3551232882874804e-12,
+            "max_nat": 1.207494420292191
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.7578088745503164e-06,
+            "max_nat": 1.0688122273416856
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.357590608472445e-06,
+            "max_nat": 0.7667762164341968
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11252120000426657
+      }
+    },
+    {
+      "name": "seed_42/adversarial/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.5791738405823708e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 1.9913548077575924e-06,
+            "max_nat": 1.6149346369242492
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.06547167842680042,
+            "max_nat": 2.1004292179314046
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.19717934238409274,
+            "max_nat": 2.1126653933104693
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10767649998888373
+      }
+    },
+    {
+      "name": "seed_42/mc_dropout/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.6978615668961083e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 6.647560189564869e-10,
+            "max_nat": 1.614826646088202
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.001362824422186e-08,
+            "max_nat": 1.4847234935997977
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.4899032175958206e-08,
+            "max_nat": 1.5468493295216619
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "1c26cd6fb84bf7399b0c73fd00802e0dc907961d928534954a2d26d281445666",
+          "a84af58bdd403704ba8c347af93048c8ece6d67d4efa8b42f77c8390fd035c0a",
+          "c34e7094a305d8353554d93d1f3c98c5abfa84796ff28925d4ab30a910932b9a",
+          "0c62d345200892708e0ff249e30f7015e2908149fdbfe18e5811f7451f1be7ea",
+          "8787863df307af900a8b09dc06a19b635807aae2cfad1918b800306d77d98f27"
+        ],
+        "mc_stream_seed": 500429001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.04396670000278391
+      }
+    },
+    {
+      "name": "seed_42/mc_dropout/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.8174870319853653e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 7.789657932049167e-10,
+            "max_nat": 1.8018326672388534
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 6.142050280335647e-08,
+            "max_nat": 1.7642117460605993
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 1.165849375627128e-06,
+            "max_nat": 1.7838367104393937
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "978bd1f502ea4ebc9030ef5c8effee64bd60e52c43b6c907d714b1a3d94b3b0b",
+          "490c97578d2ad4cf9ac1eab68f5f150ed82a0e139b56c6e88e39dbdeccc91fee",
+          "c11ee429205caf9514f8d883002da57b6e35a9bb0ca693846ea6d6a40c19d79f",
+          "efbd25a7a2f69a0aabe294627124a9968a5b342ea21f660a8c9c7a8019193380",
+          "9c6eeda9b5096648b07ea2c00fa25a803b42becd9a1ea438e60d03b053540751"
+        ],
+        "mc_stream_seed": 1500429001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.03735020000021905
+      }
+    },
+    {
+      "name": "seed_123/ensemble/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.5671587050292146e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.0175625060218896e-11,
+            "max_nat": 0.8012411440949935
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.6532492421508485e-07,
+            "max_nat": 0.572447430375717
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.6938039409749525e-06,
+            "max_nat": 0.9154744942247071
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11635399999795482
+      }
+    },
+    {
+      "name": "seed_123/ensemble/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.459924569013893e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 3.038015492976587e-15,
+            "max_nat": 1.1858637140162323
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.0008568698629065703,
+            "max_nat": 1.8631641800451157
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.022742348722651146,
+            "max_nat": 1.780082635415131
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11841809999896213
+      }
+    },
+    {
+      "name": "seed_123/random/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.735595960283831e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 4.4752888969590535e-11,
+            "max_nat": 0.7204307391249698
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.740787073556561e-08,
+            "max_nat": 0.4400995989330314
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.4608980063431845e-06,
+            "max_nat": 0.608421630541581
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11841049999929965
+      }
+    },
+    {
+      "name": "seed_123/random/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.5479080772706766e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 1.6598092010801253e-15,
+            "max_nat": 1.8617353397672525
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 2.5055584159622424e-05,
+            "max_nat": 1.6326453041204896
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.010747747354915895,
+            "max_nat": 1.8525876014089082
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.12305570000899024
+      }
+    },
+    {
+      "name": "seed_123/adversarial/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.6181483841748445e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.517378632636425e-07,
+            "max_nat": 0.5318314597110945
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 6.924975105726357e-07,
+            "max_nat": 0.9343342700778603
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 0.00024272172401614657,
+            "max_nat": 0.818649742963634
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10596430001896806
+      }
+    },
+    {
+      "name": "seed_123/adversarial/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.268227265427413e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.016535868470686152,
+            "max_nat": 1.7764165269490226
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.11567780758960676,
+            "max_nat": 2.0781888665640813
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.1618793807396417,
+            "max_nat": 2.120207636095502
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11269559999345802
+      }
+    },
+    {
+      "name": "seed_123/mc_dropout/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.5718187995616972e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.6370933883846737e-10,
+            "max_nat": 1.1161273780529473
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.570206803676114e-08,
+            "max_nat": 0.9731802268258931
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.5795711475266612e-08,
+            "max_nat": 0.9783609984755941
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "096ff3651068615c1b3393b33b8ea372b70faacafeef54a922fc081c92176785",
+          "219eabd4111117c482e94aa4917e65b2f84b5416aed6ef35c41aef6536b42952",
+          "e66259f9c3daf6674705a4ab55d963b2a5ecfa8e6bd5de3348464d67e979ac09",
+          "8596b1dab3d6e046e1f7b9ed256b6c9989194c2aa9c110e84c4407dd32c68d96",
+          "209f9a6bcca2288a420c02d3a0d02d44378777c668154c381e3c1df69c5ba2d3"
+        ],
+        "mc_stream_seed": 501239001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.03555120000964962
+      }
+    },
+    {
+      "name": "seed_123/mc_dropout/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.440287332206026e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 5.452634390830341e-07,
+            "max_nat": 1.7293227343847812
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 5.773516978493893e-05,
+            "max_nat": 1.7489788519268732
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.0007740441323426884,
+            "max_nat": 1.8726511555615857
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "e2ba290230f93308ac76d72fc519f2347cc97093c7534b942adf23a89a8609c2",
+          "acaaf17b09aa6cfe9cb6a80b38d412b19593caab3a76ea6185bb644922be730a",
+          "d380cd1bbdcbe93b1f95fb75ccfee9a936d34b7446e4a76d59faa6571719b278",
+          "f04680c3b70fa0bb78fc9ecbd8cdcb027c5f5f68dfd2680823123d252897f098",
+          "5cd2391e21f9a8a6505fcf4e225c9313acfa884c2b8d4aca6e64d96b2bc7c6fa"
+        ],
+        "mc_stream_seed": 1501239001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.03590220000478439
+      }
+    },
+    {
+      "name": "seed_2026/ensemble/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.2023888129597537e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 3.804162657272258e-09,
+            "max_nat": 0.45167768781105666
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.1364971619770647e-07,
+            "max_nat": 0.9356781732967219
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 4.163163990189564e-07,
+            "max_nat": 1.051775633478115
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.11689520001527853
+      }
+    },
+    {
+      "name": "seed_2026/ensemble/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.4742129650358038e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 4.3667778758581616e-23,
+            "max_nat": 1.1968481034181664
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.0006167541892425846,
+            "max_nat": 1.6242434413026454
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.00041235203615302344,
+            "max_nat": 1.856134040425711
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10611920000519603
+      }
+    },
+    {
+      "name": "seed_2026/random/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.5820754406536963e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.1369672074791986e-09,
+            "max_nat": 1.3919460829928085
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 1.3559126038628883e-05,
+            "max_nat": 1.2800617534339844
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 8.452440400130865e-06,
+            "max_nat": 1.3968119118714142
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.1117484999995213
+      }
+    },
+    {
+      "name": "seed_2026/random/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.7032477273026814e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 1.5381246932646223e-11,
+            "max_nat": 1.6703230501297748
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 9.798171327139679e-06,
+            "max_nat": 1.9076304251578233
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.00015289696489364634,
+            "max_nat": 1.8820153547556147
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10155640001175925
+      }
+    },
+    {
+      "name": "seed_2026/adversarial/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.5759865434894493e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 5.2353154278986244e-08,
+            "max_nat": 0.9059676243844754
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 7.215634445852985e-06,
+            "max_nat": 1.0365874211500863
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 0.00014449502859026613,
+            "max_nat": 0.9715796405741471
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.10215359998983331
+      }
+    },
+    {
+      "name": "seed_2026/adversarial/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.7562803389381543e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.001813650584731373,
+            "max_nat": 1.6863921692680748
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.09699309118032098,
+            "max_nat": 1.9391162900591215
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 0.17876829219687373,
+            "max_nat": 1.9094398564130977
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.09803620001184754
+      }
+    },
+    {
+      "name": "seed_2026/mc_dropout/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          37,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.7430630672166103e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.449165526102445e-13,
+            "max_nat": 1.4249652825655346
+          },
+          "3": {
+            "shape": [
+              37
+            ],
+            "min_nat": 3.393053419513516e-10,
+            "max_nat": 1.7205466070413264
+          },
+          "5": {
+            "shape": [
+              37
+            ],
+            "min_nat": 2.074444521301318e-10,
+            "max_nat": 1.6791548084986243
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "f6f9daaa397983df3ef071f1c3d89912e66e51b3807274cda7f585faebe0abfc",
+          "0dee6581511f40d8cf705722be05f1a34aa6ce7a93c4a6a4d9898762212d32fd",
+          "e70083a64054feeb31fa809121c82caee4e9cdcd5911798ccbf33c110d8509a8",
+          "6d9607849827f39658294422fbaf856359ded45be3a8ef528fb967447375b8d4",
+          "6f32963c049044cb9e55bdb60d325f3bf459d856f3a234008491d7a76ee91352"
+        ],
+        "mc_stream_seed": 520269001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.031249600026058033
+      }
+    },
+    {
+      "name": "seed_2026/mc_dropout/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          41,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 1.2985816510990844e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              41
+            ],
+            "min_nat": 2.12043036773104e-11,
+            "max_nat": 1.9943191768606416
+          },
+          "3": {
+            "shape": [
+              41
+            ],
+            "min_nat": 1.258254988664076e-11,
+            "max_nat": 1.926363922502801
+          },
+          "5": {
+            "shape": [
+              41
+            ],
+            "min_nat": 5.3107885471287393e-11,
+            "max_nat": 1.91535458213767
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "1aa2e8172e20b161a9c84b25ddb9e42a62646f195756e337fe357a08d5b7a31a",
+          "9ed400b19e01f2aa8b79732f8446122c473641f420b5ae6f28f657cf8ae6a6c3",
+          "2c51789e9628bf3bf133777a09ad332887de9e91f93f1af36d4e554e3e7ee126",
+          "e73806e150d4a3ff8abe8998f8055cb4aee49c31d9a0de14e699a36e92c4ea5e",
+          "4d414271b5d694d3558ed4c704f66d4a9e0a2f602e1c5a0cb2e7410ada10bff7"
+        ],
+        "mc_stream_seed": 1520269001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.031758800003444776
+      }
+    },
+    {
+      "name": "mc_rng_replay/mnist",
+      "passed": true
+    },
+    {
+      "name": "mc_rng_replay/notmnist",
+      "passed": true
+    },
+    {
+      "name": "sequential_loader_partial_batch",
+      "passed": true,
+      "batch_sizes": [
+        16,
+        16,
+        5
+      ]
+    },
+    {
+      "name": "strict_load_rejects_missing_key",
+      "passed": true
+    },
+    {
+      "name": "atomic_cache_roundtrip_and_tamper_detection",
+      "passed": true
+    }
+  ],
+  "passed": 29,
+  "failed": 0,
+  "smoke_seconds": 2.609461599990027,
+  "full_evaluation_checks": [
+    {
+      "name": "full/42/ensemble/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.276221442443216e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.212840145877161e-20,
+            "max_nat": 1.6602835487629857
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.9667223504240688e-11,
+            "max_nat": 1.9231188115740259
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 8.324085899897372e-10,
+            "max_nat": 1.9438405931811589
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.44092690001707524
+      }
+    },
+    {
+      "name": "full/42/ensemble/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.1080162881936815e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": -0.0,
+            "max_nat": 1.9544772029675748
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.0944322160029797e-13,
+            "max_nat": 2.117686189796913
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.365458215610755e-09,
+            "max_nat": 2.1241253307613377
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.6688200999924447
+      }
+    },
+    {
+      "name": "full/42/random/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3865114262555664e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.1418560755651408e-15,
+            "max_nat": 1.9168774989925592
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.826723822774357e-11,
+            "max_nat": 2.0089523423502476
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.660866927140735e-11,
+            "max_nat": 2.1036222259426376
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.4704761999892071
+      }
+    },
+    {
+      "name": "full/42/random/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.0930258415319258e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 4.990754244850284e-22,
+            "max_nat": 2.0241878445960073
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.0475686067038609e-15,
+            "max_nat": 2.114315471317615
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.818156039939875e-11,
+            "max_nat": 2.1429141558776115
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.694117200007895
+      }
+    },
+    {
+      "name": "full/42/adversarial/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2027355073284127e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.006211610415762e-12,
+            "max_nat": 1.8692924321736721
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.061482613421198e-09,
+            "max_nat": 1.9402263256391945
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 7.471094035026963e-09,
+            "max_nat": 1.9836508174153722
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.44530130000202917
+      }
+    },
+    {
+      "name": "full/42/adversarial/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.297759641445296e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.628132883845546e-11,
+            "max_nat": 2.1259175761026334
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.0706728757991916e-06,
+            "max_nat": 2.204604043581722
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.9541813175738116e-06,
+            "max_nat": 2.1988806854182172
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7041649000020698
+      }
+    },
+    {
+      "name": "full/42/mc_dropout/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.256458930816052e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.720585430100646e-19,
+            "max_nat": 2.1454999979684723
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.186034395856094e-15,
+            "max_nat": 2.098156943726691
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.50661618515198e-14,
+            "max_nat": 2.1228938623976714
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "1c26cd6fb84bf7399b0c73fd00802e0dc907961d928534954a2d26d281445666",
+          "9070d0670d572d89471c12854cd5f4d7ac411127c0440804bab50d7455e9634e",
+          "a0282760c73fdcfac799adf5b25ffad643547e62ecfbd761868b43b809f60a63",
+          "d65ac18ac106eb4078c1c826bc0f3c5ff7dd1f40430add3e1ed6653241af9613",
+          "5c461104e151b05db711fe731a8d1165bc778cd7a14c54e2193d4cc739ef83f1"
+        ],
+        "mc_stream_seed": 500429001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.37901869998313487
+      }
+    },
+    {
+      "name": "full/42/mc_dropout/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2055158965805788e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.998861136174808e-30,
+            "max_nat": 2.2015551018750044
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.452370608415977e-26,
+            "max_nat": 2.1677355258106386
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.75845157522449e-23,
+            "max_nat": 2.211982884641362
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "978bd1f502ea4ebc9030ef5c8effee64bd60e52c43b6c907d714b1a3d94b3b0b",
+          "607855d0b1860299a6822adefba556ce3732831ef2798e0fe3d87c6f6ad07894",
+          "b7c10f42589e243673aae28bbb2795580fc4d65662338b3b8090095b8fe6926d",
+          "5e1c79f78e5ee6815cf3855bda37202ac49817fb8273da4a1b2809a63b782b0e",
+          "03e4cb33720c6b49b0ad75cc29270d6a49d126087b5b70780799009b45f2359d"
+        ],
+        "mc_stream_seed": 1500429001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_42\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.6656325000221841
+      }
+    },
+    {
+      "name": "full/123/ensemble/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2480577399619506e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.3121129293946197e-14,
+            "max_nat": 1.9664820255237607
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 4.009960545803898e-11,
+            "max_nat": 1.9982407632995691
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 5.701659689758969e-10,
+            "max_nat": 2.0256940734861093
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.5007846999797039
+      }
+    },
+    {
+      "name": "full/123/ensemble/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2539040855917847e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": -0.0,
+            "max_nat": 1.8196099796384286
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.893650887639416e-16,
+            "max_nat": 1.9774220576389872
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 9.258960368734327e-14,
+            "max_nat": 2.0495602890756595
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7226745999942068
+      }
+    },
+    {
+      "name": "full/123/random/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2482303752013877e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.1653128297401615e-17,
+            "max_nat": 2.1394688119659278
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.1487065731949868e-12,
+            "max_nat": 1.9503646062641251
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.024361305212875e-09,
+            "max_nat": 1.8202607458404403
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.4760942000139039
+      }
+    },
+    {
+      "name": "full/123/random/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3049460651236586e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.0347761475846829e-18,
+            "max_nat": 2.1292137017526853
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 7.636834603879736e-13,
+            "max_nat": 1.9989424453259885
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.063451939580814e-13,
+            "max_nat": 2.07401530587369
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7102985999954399
+      }
+    },
+    {
+      "name": "full/123/adversarial/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.250834896244669e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 8.09545604306481e-11,
+            "max_nat": 1.9180186046377212
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.190872197044709e-10,
+            "max_nat": 1.8155072793478435
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 6.244551223867491e-07,
+            "max_nat": 1.7611502601541882
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.49651220001396723
+      }
+    },
+    {
+      "name": "full/123/adversarial/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3400207282975316e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.795269411639067e-09,
+            "max_nat": 2.0876047876436306
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 7.343358532132446e-07,
+            "max_nat": 2.1872107253273647
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 9.212115304633176e-05,
+            "max_nat": 2.1735131268656325
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7795396999863442
+      }
+    },
+    {
+      "name": "full/123/mc_dropout/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2164022084325552e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.5696411874236564e-16,
+            "max_nat": 2.2037063781901534
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 5.2530329848646795e-14,
+            "max_nat": 2.1982668116885176
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 8.046679136666928e-14,
+            "max_nat": 2.2042242510981858
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "096ff3651068615c1b3393b33b8ea372b70faacafeef54a922fc081c92176785",
+          "df2848e66067da43810a2013045627d1e9f8e1f29f3d89c139c1e8c12bcc247c",
+          "7f2e8fe2bb26a33d3ac3299eedf2ea99ab5b100ea6a5c31011afe229e7709eca",
+          "5bb6ed9c33848b2c1da1928d40c28cd7aafd8e5af356e03dbf20aa219b9958d9",
+          "26080124f85fbe1c02f5b3ed18f8808439507098169984ca3a757729298d5597"
+        ],
+        "mc_stream_seed": 501239001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.4488969999947585
+      }
+    },
+    {
+      "name": "full/123/mc_dropout/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3460927112139984e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 6.621988213680332e-25,
+            "max_nat": 2.2600989343548266
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.6366860185309459e-18,
+            "max_nat": 2.236063824915237
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.5271992142741107e-15,
+            "max_nat": 2.2252368941345866
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "e2ba290230f93308ac76d72fc519f2347cc97093c7534b942adf23a89a8609c2",
+          "0308161f386a6d09cd8bc21f4724a9f68cb3b39d7d7650331caa69b75c841ae4",
+          "8b66b680950115a5dc65caa6596e76814ec5bab718f158add4a6ff5524390369",
+          "58ccfed31223c404bc927080f3457772e7e3d9a0b43e41bc2ca68724fa8e7ba1",
+          "aa01c2eb735620ef7276cd02c05cedca12c3f63c768c7cf5b9e8365146fe117d"
+        ],
+        "mc_stream_seed": 1501239001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_123\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.6378606999933254
+      }
+    },
+    {
+      "name": "full/2026/ensemble/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.200402740015761e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.4771128670725215e-17,
+            "max_nat": 2.085590741690694
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.3336858163866777e-10,
+            "max_nat": 2.00560471298566
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 8.30480549456893e-09,
+            "max_nat": 1.9175978935549847
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.4661892000003718
+      }
+    },
+    {
+      "name": "full/2026/ensemble/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3251789116329746e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.3145543940027941e-33,
+            "max_nat": 2.114822302124431
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.842198341427275e-11,
+            "max_nat": 2.0914701601923507
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.5305754731425243e-10,
+            "max_nat": 2.1073594751413727
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\ensemble\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7143598000111524
+      }
+    },
+    {
+      "name": "full/2026/random/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.4001201381906867e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 8.048024361937956e-17,
+            "max_nat": 1.891952876633749
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.428865476345015e-09,
+            "max_nat": 1.827640317207024
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 8.825595295686795e-10,
+            "max_nat": 1.9086435626615204
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.4737764000019524
+      }
+    },
+    {
+      "name": "full/2026/random/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.195263097970468e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.302191741056955e-24,
+            "max_nat": 2.1870128610940696
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.0970502826540744e-15,
+            "max_nat": 2.1565194921566424
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 4.704054757433912e-12,
+            "max_nat": 2.1424803967398978
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\random\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7623474999854807
+      }
+    },
+    {
+      "name": "full/2026/adversarial/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3205728894026834e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.4991834730067056e-11,
+            "max_nat": 1.9094886938758142
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 6.438814816793891e-08,
+            "max_nat": 1.9589647154852623
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.5033150281580505e-07,
+            "max_nat": 1.9594350943548242
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.47913570000673644
+      }
+    },
+    {
+      "name": "full/2026/adversarial/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3357799960876946e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.7355650365189725e-09,
+            "max_nat": 2.159761216500731
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.493028203751664e-07,
+            "max_nat": 2.1531783588663025
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.6916480813229616e-07,
+            "max_nat": 2.155794375280206
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\adversarial\\member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7346771000011358
+      }
+    },
+    {
+      "name": "full/2026/mc_dropout/mnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.1151352069814777e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 4.548195745271477e-26,
+            "max_nat": 2.1561671873755524
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.1149969244005113e-20,
+            "max_nat": 2.1867848828169643
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.486152838923522e-19,
+            "max_nat": 2.1967971666807453
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "f6f9daaa397983df3ef071f1c3d89912e66e51b3807274cda7f585faebe0abfc",
+          "41b842913196987112f9a77acc0d0e0b3e0b77b0e5bf4a96945771dec8e09f41",
+          "14a0e8461fa3c81c0033a327791fff397963cbbf3755bbcebaf0d0ceb4594d01",
+          "4123c3883574e130971c2cf63636f9460b647c3b9a2f451af18fac516c51c7c9",
+          "d411ce81956155bb92b202728b54d991455ff4444fc04b52f1253fde0764fab4"
+        ],
+        "mc_stream_seed": 520269001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.40104349999455735
+      }
+    },
+    {
+      "name": "full/2026/mc_dropout/notmnist",
+      "passed": true,
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.212637831844333e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.3928252821652018e-42,
+            "max_nat": 2.1093263238948667
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.652993816493779e-32,
+            "max_nat": 2.1223826802355896
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.6211417000934416e-32,
+            "max_nat": 2.1355952078100557
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "1aa2e8172e20b161a9c84b25ddb9e42a62646f195756e337fe357a08d5b7a31a",
+          "70cf54d9e00e0d7aa3676205071debc68a347fc80740ae18eac62bb2cf8a7f2f",
+          "374cd71f2af52be3d0b7cbf02b3abbc160bba2a59c2529667796fe8ff83b2801",
+          "5a954cf28e3fe47184307fb73c338a4b959bd12f9809600d79290f6d16af18af",
+          "774f9a2dfec78fb3961979b6c9f01671abd747e2de0c2c726827b7bb88dfa905"
+        ],
+        "mc_stream_seed": 1520269001,
+        "models": [
+          {
+            "checkpoint": "<ORIGINAL_LOCAL_ROOT>\\mnist_classification\\outputs\\local\\checkpoints\\seed_2026\\mc_dropout\\member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.6261012000031769
+      }
+    },
+    {
+      "name": "figure2a_deterministic_consistency",
+      "passed": true,
+      "deterministic_comparisons": 27,
+      "all_36_within_tolerance": true,
+      "mc_dropout_comparisons": [
+        {
+          "run_seed": 42,
+          "method": "mc_dropout",
+          "M": 1,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9687,
+          "accuracy_current": 0.9687,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.11759781087321867,
+          "nll_current": 0.11759781087321867,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.004652268155382782,
+          "brier_current": 0.004652268155382782,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 42,
+          "method": "mc_dropout",
+          "M": 3,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9746,
+          "accuracy_current": 0.9746,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.09216594042088362,
+          "nll_current": 0.09216594042088362,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.0039159845271451756,
+          "brier_current": 0.0039159845271451756,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 42,
+          "method": "mc_dropout",
+          "M": 5,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.975,
+          "accuracy_current": 0.975,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.087964162530728,
+          "nll_current": 0.087964162530728,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.003762765732065186,
+          "brier_current": 0.003762765732065186,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 123,
+          "method": "mc_dropout",
+          "M": 1,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9686,
+          "accuracy_current": 0.9686,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.11558857583330145,
+          "nll_current": 0.11558857583330145,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.00488812967015831,
+          "brier_current": 0.00488812967015831,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 123,
+          "method": "mc_dropout",
+          "M": 3,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9736,
+          "accuracy_current": 0.9736,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.09395564257249488,
+          "nll_current": 0.09395564257249488,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.004108923143828629,
+          "brier_current": 0.004108923143828629,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 123,
+          "method": "mc_dropout",
+          "M": 5,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.975,
+          "accuracy_current": 0.975,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.0895034892064394,
+          "nll_current": 0.0895034892064394,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.003927615213342296,
+          "brier_current": 0.003927615213342296,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 2026,
+          "method": "mc_dropout",
+          "M": 1,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9587,
+          "accuracy_current": 0.9587,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.15909416380096242,
+          "nll_current": 0.15909416380096242,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.006332732566764787,
+          "brier_current": 0.006332732566764787,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 2026,
+          "method": "mc_dropout",
+          "M": 3,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9666,
+          "accuracy_current": 0.9666,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.12355598112814348,
+          "nll_current": 0.12355598112814348,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.005140391710885451,
+          "brier_current": 0.005140391710885451,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        },
+        {
+          "run_seed": 2026,
+          "method": "mc_dropout",
+          "M": 5,
+          "deterministic_match_required": false,
+          "accuracy_previous": 0.9678,
+          "accuracy_current": 0.9678,
+          "accuracy_delta": 0.0,
+          "accuracy_atol": 1e-12,
+          "nll_previous": 0.12100940829778194,
+          "nll_current": 0.12100940829778194,
+          "nll_delta": 0.0,
+          "nll_atol": 1e-06,
+          "brier_previous": 0.004965873461280215,
+          "brier_current": 0.004965873461280215,
+          "brier_delta": 0.0,
+          "brier_atol": 1e-08,
+          "within_tolerance": true,
+          "interpretation": "stochastic scores; legacy MNIST stream seed/batch reproduced; cross-device masks may differ"
+        }
+      ]
+    }
+  ],
+  "full_evaluation_passed": 25,
+  "results_per_seed_rows": 36,
+  "results_summary_rows": 12
+}

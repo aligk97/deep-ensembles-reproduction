@@ -1,0 +1,413 @@
+{
+  "stage": "dataset_preparation_only",
+  "schema_version": 1,
+  "model_training_performed": false,
+  "model_inference_performed": false,
+  "predictive_entropy_computed": false,
+  "auroc_computed": false,
+  "future_experiment": {
+    "methods": [
+      "Ensemble",
+      "Ensemble + R",
+      "Ensemble + AT",
+      "MC Dropout"
+    ],
+    "M": [
+      1,
+      3,
+      5
+    ],
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "status": "not_run"
+  },
+  "notmnist_source": {
+    "original_url": "http://yaroslavvb.com/upload/notMNIST/notMNIST_small.tar.gz",
+    "used_url": "http://yaroslavvb.com/upload/notMNIST/notMNIST_small.tar.gz",
+    "resolved_url": "http://yaroslavvb.com/upload/notMNIST/notMNIST_small.tar.gz",
+    "sha256": "76b2ef7ccc56452964780569db37b279c9cbe1bf442c3b38be784752683b3cec",
+    "bytes": 8458043,
+    "attempts": [
+      {
+        "url": "http://yaroslavvb.com/upload/notMNIST/notMNIST_small.tar.gz",
+        "status": "verified"
+      }
+    ],
+    "checksum_origin": "Pinned from mirror; not author-published",
+    "dataset": "NotMNIST",
+    "subset": "small/test",
+    "archive": "notMNIST_small.tar.gz",
+    "expected_bytes": 8458043,
+    "expected_sha256": "76b2ef7ccc56452964780569db37b279c9cbe1bf442c3b38be784752683b3cec",
+    "mirror_commit": "398659255438af55e163e0e9e1697c2d423ee97d",
+    "mirror_documentation": "https://github.com/mathefuchs/robust-pll",
+    "historical_reference": "https://github.com/tensorflow/tensorflow/blob/v0.12.0/tensorflow/examples/udacity/1_notmnist.ipynb",
+    "version_verification": [
+      "Historical TensorFlow v0.12.0 notebook specifies small/test archive size 8458043",
+      "Mirror authors identify this exact archive as Yaroslav Bulatov's NotMNIST",
+      "Ten A-J classes, 18726 PNG members, 18724 readable native L/28x28 images",
+      "Two known unreadable files in A and F; no large-set or resampled substitute",
+      "Original URL download matches the independently downloaded mirror byte-for-byte by SHA-256",
+      "SHA-256 was initially pinned from mirror, not from an author-published checksum"
+    ],
+    "extraction": "Preflight allowlist; regular PNG files only; no links/traversal; bounded sizes; cached bytes rechecked",
+    "extracted_file_hash_manifest": "data/notmnist_file_manifest.json"
+  },
+  "mnist_source": {
+    "root": "/content/mnist_ood_colab_tj1vss4q/mnist_classification/data",
+    "read_only": true,
+    "files": {
+      "t10k-images-idx3-ubyte.gz": {
+        "md5": "9fb629c4189551a2d022fa330f9573f3",
+        "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6"
+      },
+      "t10k-labels-idx1-ubyte.gz": {
+        "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+        "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+      }
+    },
+    "preprocessing_reference": "mnist_classification/data.py:prepare/read_idx",
+    "reference_sha256": "4c8fb06ca776da3a3a82f982e6240e6bd9bccf78b7c64b42212a04af40497c5b",
+    "model_input_reference": "mnist_classification/model.py:MLP (784 features; flatten(1))"
+  },
+  "preprocessing": {
+    "width": 28,
+    "height": 28,
+    "channels": 1,
+    "grayscale": "Pillow convert('L'); all valid source files already L",
+    "dtype": "float32",
+    "scaling": "uint8 -> float32 / 255",
+    "range": [
+      0,
+      1
+    ],
+    "sample_shape": [
+      784
+    ],
+    "batch_shape": [
+      "N",
+      784
+    ],
+    "flatten_order": "row-major",
+    "polarity": "Native light foreground on dark background in both datasets",
+    "polarity_inversion": false,
+    "polarity_check": "Visual inspection of raw glyphs and paired figure; no border heuristic (glyphs may touch edges)",
+    "resize": false,
+    "normalization": null,
+    "augmentation": null,
+    "class_to_idx": {
+      "A": 0,
+      "B": 1,
+      "C": 2,
+      "D": 3,
+      "E": 4,
+      "F": 5,
+      "G": 6,
+      "H": 7,
+      "I": 8,
+      "J": 9
+    },
+    "label_semantics": "A-J are dataset metadata, not MNIST digit targets or OOD scores"
+  },
+  "notmnist": {
+    "valid_images": 18724,
+    "tensor_shape": [
+      18724,
+      784
+    ],
+    "sample_shape": [
+      784
+    ],
+    "image_shape_before_flatten": [
+      1,
+      28,
+      28
+    ],
+    "dtype": "float32",
+    "label_dtype": "int64",
+    "pixel_min": 0.0,
+    "pixel_max": 1.0,
+    "nan_count": 0,
+    "inf_count": 0,
+    "batch_size": 1000,
+    "first_batch_shape": [
+      1000,
+      784
+    ],
+    "last_batch_shape": [
+      724,
+      784
+    ],
+    "loader_seen": 18724,
+    "shuffle": false,
+    "drop_last": false,
+    "class_counts": {
+      "A": 1872,
+      "B": 1873,
+      "C": 1873,
+      "D": 1873,
+      "E": 1873,
+      "F": 1872,
+      "G": 1872,
+      "H": 1872,
+      "I": 1872,
+      "J": 1872
+    },
+    "raw_images": 18726,
+    "raw_class_counts": {
+      "A": 1873,
+      "B": 1873,
+      "C": 1873,
+      "D": 1873,
+      "E": 1873,
+      "F": 1873,
+      "G": 1872,
+      "H": 1872,
+      "I": 1872,
+      "J": 1872
+    },
+    "corrupt_images": 2,
+    "corrupt_files": [
+      {
+        "path": "A/RGVtb2NyYXRpY2FCb2xkT2xkc3R5bGUgQm9sZC50dGY=.png",
+        "class": "A",
+        "error_type": "UnidentifiedImageError",
+        "error": "cannot identify image file '/content/mnist_ood_colab_tj1vss4q/mnist_notmnist_ood/data/notMNIST_small/A/RGVtb2NyYXRpY2FCb2xkT2xkc3R5bGUgQm9sZC50dGY=.png'"
+      },
+      {
+        "path": "F/Q3Jvc3NvdmVyIEJvbGRPYmxpcXVlLnR0Zg==.png",
+        "class": "F",
+        "error_type": "UnidentifiedImageError",
+        "error": "cannot identify image file '/content/mnist_ood_colab_tj1vss4q/mnist_notmnist_ood/data/notMNIST_small/F/Q3Jvc3NvdmVyIEJvbGRPYmxpcXVlLnR0Zg==.png'"
+      }
+    ],
+    "source_image_modes": {
+      "L": 18724
+    },
+    "all_valid_examples_used": true,
+    "subsampling": false
+  },
+  "mnist_test": {
+    "valid_images": 10000,
+    "tensor_shape": [
+      10000,
+      784
+    ],
+    "sample_shape": [
+      784
+    ],
+    "image_shape_before_flatten": [
+      1,
+      28,
+      28
+    ],
+    "dtype": "float32",
+    "label_dtype": "int64",
+    "pixel_min": 0.0,
+    "pixel_max": 1.0,
+    "nan_count": 0,
+    "inf_count": 0,
+    "batch_size": 1000,
+    "first_batch_shape": [
+      1000,
+      784
+    ],
+    "last_batch_shape": [
+      1000,
+      784
+    ],
+    "loader_seen": 10000,
+    "shuffle": false,
+    "drop_last": false,
+    "class_counts": {
+      "0": 980,
+      "1": 1135,
+      "2": 1032,
+      "3": 1010,
+      "4": 982,
+      "5": 892,
+      "6": 958,
+      "7": 1028,
+      "8": 974,
+      "9": 1009
+    }
+  },
+  "sample_figure": {
+    "path": "figures/dataset_samples.png",
+    "selection": [
+      {
+        "digit_class": 0,
+        "mnist_indices": [
+          3,
+          10
+        ],
+        "letter_class": "A",
+        "notmnist_indices": [
+          0,
+          1
+        ],
+        "notmnist_files": [
+          "A/MDEtMDEtMDAudHRm.png",
+          "A/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 1,
+        "mnist_indices": [
+          2,
+          5
+        ],
+        "letter_class": "B",
+        "notmnist_indices": [
+          1872,
+          1873
+        ],
+        "notmnist_files": [
+          "B/MDEtMDEtMDAudHRm.png",
+          "B/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 2,
+        "mnist_indices": [
+          1,
+          35
+        ],
+        "letter_class": "C",
+        "notmnist_indices": [
+          3745,
+          3746
+        ],
+        "notmnist_files": [
+          "C/MDEtMDEtMDAudHRm.png",
+          "C/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 3,
+        "mnist_indices": [
+          18,
+          30
+        ],
+        "letter_class": "D",
+        "notmnist_indices": [
+          5618,
+          5619
+        ],
+        "notmnist_files": [
+          "D/MDEtMDEtMDAudHRm.png",
+          "D/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 4,
+        "mnist_indices": [
+          4,
+          6
+        ],
+        "letter_class": "E",
+        "notmnist_indices": [
+          7491,
+          7492
+        ],
+        "notmnist_files": [
+          "E/MDEtMDEtMDAudHRm.png",
+          "E/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 5,
+        "mnist_indices": [
+          8,
+          15
+        ],
+        "letter_class": "F",
+        "notmnist_indices": [
+          9364,
+          9365
+        ],
+        "notmnist_files": [
+          "F/MDEtMDEtMDAudHRm.png",
+          "F/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 6,
+        "mnist_indices": [
+          11,
+          21
+        ],
+        "letter_class": "G",
+        "notmnist_indices": [
+          11236,
+          11237
+        ],
+        "notmnist_files": [
+          "G/MDEtMDEtMDAudHRm.png",
+          "G/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 7,
+        "mnist_indices": [
+          0,
+          17
+        ],
+        "letter_class": "H",
+        "notmnist_indices": [
+          13108,
+          13109
+        ],
+        "notmnist_files": [
+          "H/MDEtMDEtMDAudHRm.png",
+          "H/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 8,
+        "mnist_indices": [
+          61,
+          84
+        ],
+        "letter_class": "I",
+        "notmnist_indices": [
+          14980,
+          14981
+        ],
+        "notmnist_files": [
+          "I/MDEtMDEtMDAudHRm.png",
+          "I/MDRiXzA4LnR0Zg==.png"
+        ]
+      },
+      {
+        "digit_class": 9,
+        "mnist_indices": [
+          7,
+          9
+        ],
+        "letter_class": "J",
+        "notmnist_indices": [
+          16852,
+          16853
+        ],
+        "notmnist_files": [
+          "J/MDEtMDEtMDAudHRm.png",
+          "J/MDRiXzA4LnR0Zg==.png"
+        ]
+      }
+    ],
+    "note": "Class rows aid display only; letters are not mapped to digit classes"
+  },
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6",
+    "pillow": "11.3.0",
+    "matplotlib": "3.10.0",
+    "device": "cpu"
+  },
+  "test_status": "Preparation checks passed; see test_results.json for independent tests"
+}

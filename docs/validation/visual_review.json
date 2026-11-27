@@ -1,0 +1,134 @@
+{
+  "successful": true,
+  "report_pdf_sha256": "b29c626b4086aa92c16fdcf46119a41f087fcb121d1f456c91d134c571a30d57",
+  "report_pages": 10,
+  "presentation_pptx_sha256": "ca182373f0454cde6d4eee24645a073e60b0e58f018d7b78399924236fa3aaa9",
+  "presentation_pdf_sha256": "bd838c7400bff279b5edae6741f82cd95e6a158b078d97617e8e6b333770d80f",
+  "presentation_slides": 9,
+  "all_pages_rendered": true,
+  "all_rendered_pages_and_slides_visually_reviewed": true,
+  "report_compile": "Actual Tectonic compile, original course template, no undefined refs/citations or overfull boxes",
+  "presentation_render": "Actual native PowerPoint export, editable text/tables, zero reported overflow shapes",
+  "visual_findings": "No clipped tables, missing figures, unreadable math, broken glyph boxes or unintended overlaps observed. Author/ID/contribution placeholders are intentional and require user completion.",
+  "renders": {
+    "report": [
+      {
+        "page_or_slide": 1,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "5f8667bd0988e804cc4ad0e7ed0bc499827464843082b4012029b367351b7d2e"
+      },
+      {
+        "page_or_slide": 2,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "a1853a48ecb5350218134ad42f6d3eb76ea0354c2135e8ef0d6a00e55f203be2"
+      },
+      {
+        "page_or_slide": 3,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "0750f6e7d33267fddcca893ee142a41b6a6b187f75de5ee41675539ca854c3c3"
+      },
+      {
+        "page_or_slide": 4,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "bae849dd0e0bc9531d5670f5ccf6a974c1528112370ace3d45d76530c75875ba"
+      },
+      {
+        "page_or_slide": 5,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "d76bc0f0209d34649c684bd042f9f9ed712a6ae12c9921cced7d2223e47c308d"
+      },
+      {
+        "page_or_slide": 6,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "b2f72e5e1ad3a111332f0cf9b4ec561d120c00355649c73ee10340eab897e02a"
+      },
+      {
+        "page_or_slide": 7,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "ede6eb37f74b2ace6a4efc482479ac04c0ec29c6440a874c217faedff3b5812f"
+      },
+      {
+        "page_or_slide": 8,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "95d21af2e2495df25978b8e01d2464b9afa0f4b6ebb4ca20f9f292b9a47c87ea"
+      },
+      {
+        "page_or_slide": 9,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "225260fcd654cd326986329b9e693c0abc7a4463cdedc90b1b588d306b033d26"
+      },
+      {
+        "page_or_slide": 10,
+        "width": 804,
+        "height": 1137,
+        "render_sha256": "b6b95656ed965939d2030bbbf92c87a2cb79f48423e89cb1a2faf5c3212e2647"
+      }
+    ],
+    "presentation": [
+      {
+        "page_or_slide": 1,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "88b01a59551a5b006d9d54c71dc025eac4b3c6309d33476fd66b4b634d7c37a0"
+      },
+      {
+        "page_or_slide": 2,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "3c0813973300794dcdab3571bf7eba8f12da68d05d4116e4f82f736c6063ddf4"
+      },
+      {
+        "page_or_slide": 3,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "14463338909ccf79e7212ff6d8c05927fd409517be305eb99614dff5f1b97005"
+      },
+      {
+        "page_or_slide": 4,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "8f7837dec75b8fe2e44baf4217c60ec2ce451558c15de309d5b09e191ed5df18"
+      },
+      {
+        "page_or_slide": 5,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "7182e9dfada3e46c3be94c681834c096e331b8c59f5cf42f76a303bdcf185948"
+      },
+      {
+        "page_or_slide": 6,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "a005fa69d58deb27b663da7cc0ff9dd84e528b4d005d1794fd5934a78140b1fd"
+      },
+      {
+        "page_or_slide": 7,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "d7c42efd0026441dd28320e027b520cdd74c2a0abbceffed063200edec64fd44"
+      },
+      {
+        "page_or_slide": 8,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "a794ce8e4b23599e71eb219cd0c41a06d021660a5e3d3536020a3c2f2aa8968e"
+      },
+      {
+        "page_or_slide": 9,
+        "width": 1920,
+        "height": 1080,
+        "render_sha256": "2b8a29226e9facb9570d6ad9e23100beae5f416d8ef99fd270756a6989fe6a76"
+      }
+    ]
+  },
+  "new_experiments": false
+}

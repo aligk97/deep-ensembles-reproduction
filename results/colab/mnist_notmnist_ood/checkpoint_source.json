@@ -1,0 +1,529 @@
+{
+  "result_root": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local",
+  "manifest": {
+    "signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+    "config": {
+      "name": "local",
+      "seeds": [
+        42,
+        123,
+        2026
+      ],
+      "ensemble_sizes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "epochs": 10,
+      "batch_size": 100,
+      "learning_rate": 0.1,
+      "epsilon_fraction": 0.01,
+      "dropout": 0.1,
+      "validation_size": 5000,
+      "split_seed": 4509,
+      "train_limit": 0,
+      "test_limit": 0,
+      "eval_batch_size": 1000,
+      "threads": 2,
+      "deterministic": true
+    },
+    "source_sha256": {
+      "data.py": "4c8fb06ca776da3a3a82f982e6240e6bd9bccf78b7c64b42212a04af40497c5b",
+      "model.py": "5d976b1df17f9d2f30d6c247a98d0a104ce62d73971224e7cef3e786cebc70fd",
+      "metrics.py": "abe15a8090d93755316bcaf549cd97f3fd7b314cce9f9145370ffc42d2899881",
+      "engine.py": "bfdf6771fb18d5f8c181e4c287b900fe7f9fe7e621a966e0d176c879cd3fdd85",
+      "run_experiment.py": "6d2430bb55c016886356c5b5f15afe143acb1f64fb61c1609fa8d0a038baa082"
+    },
+    "environment": {
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "torch": "2.14.1+cu130",
+      "numpy": "2.4.6",
+      "pandas": "2.2.3",
+      "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+      "device": "cuda",
+      "gpu": "Tesla T4",
+      "cuda": "13.0",
+      "deterministic": true
+    },
+    "status": "complete",
+    "started_utc": "2026-11-25T20:51:47.816968+00:00",
+    "resume_policy": "last completed epoch; final epoch evaluated; no test-based selection",
+    "completed_utc": "2026-11-25T21:12:16.053781+00:00",
+    "invocation_seconds": 1228.189546743,
+    "result_rows": 63,
+    "trained_models": 48,
+    "total_training_epoch_seconds": 1188.8576210560013,
+    "colab_resume_summary": {
+      "verified_complete_skipped": 0,
+      "resumed_partial": 0,
+      "trained_new": 48
+    },
+    "checkpoint_validation": "strict architecture/config/signature/history/finite weights/optimizer/RNG"
+  },
+  "inventory": [
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_00.pt",
+      "sha256": "095d6326aec91131699da6f852e4e8ec2c1adcb9e91340f32aeed041d482b7e6"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_01.pt",
+      "sha256": "dac2e3ddd3b230c27b6c4aec163967f3180041e6c1d2fe6cae41fb76a30f91fe"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_02.pt",
+      "sha256": "2bc292797cacb62e2d3f6952bf985998d713e8eeb199363b3144219b811a05fd"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_03.pt",
+      "sha256": "ebb04890b0fe9a15f83f2621af5c4d3c0b28425a1c48119e5e351496c7d20e48"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_04.pt",
+      "sha256": "d834558e0b6c205f9ed7651f2172e81621f5a3805a1e4a8d745a9e84f76ea927"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_00.pt",
+      "sha256": "6169b031d7e341bf4a1b849ffe5f593fd8320b73c984d1bca80389a28ba5c73f"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_01.pt",
+      "sha256": "636ef53ac0dc1ee6a33355e8544eabbef72a751fbbda69de95a63f69623f981c"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_02.pt",
+      "sha256": "81edba4db977118a63538b03e57f716f36a29d6dd26e109b722ae9ba43ecc229"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_03.pt",
+      "sha256": "2d93ac11a7676c71cffdc050bb78e44896c598a847cab3c06903a18728c64cb7"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_04.pt",
+      "sha256": "0ed87a7589cb6c51abe22cf8618b3b6ee501ce9b23c70654ebcc0ebc0c90ff1d"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_00.pt",
+      "sha256": "22e44e0f4cdc9a6323d5ca0f43bd59cad07b3f7cb3e8bfc97b1b76f2542fa36d"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_01.pt",
+      "sha256": "43030a07fda38a443724176d35930e22597a2c574ec59a174bc48604612c7047"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_02.pt",
+      "sha256": "1698288f46f352a64649ac38b210fbcdbc7716bd19f890dc65d3bd11477c293b"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_03.pt",
+      "sha256": "15346aaab2c9550145e8f8762bf82a2e0e70a9fd914be27710a3cf1c9e449c08"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_04.pt",
+      "sha256": "e1e164601ae866c6312b4a273b28bccf7c7f157c740d2c377359985ea20f530b"
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/mc_dropout/member_00.pt",
+      "sha256": "8fc2b8324907ac265198c0500af6238015f45d1c3335a8e2153f37c64e025015"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_00.pt",
+      "sha256": "89f38de90709d4422f80e98f5cb7453f9d9c291957dadf115a6149a12447a8ab"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_01.pt",
+      "sha256": "cf89107b29d4c4125622cc8dfd203f0f706d15cadc06ccb3b3525cbf2cdd1b4a"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_02.pt",
+      "sha256": "ac7c225c473eae32b4c7248df5d9947b24730b5a460e70294de8d39f8ef3c9bf"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_03.pt",
+      "sha256": "2cdbe282c50b3f331624880aaee3c5b4695175c3c10ed5258cd088b20db20af4"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_04.pt",
+      "sha256": "446dba447a07ad5143e68c298b14ea330e5fcc122ad4e6a5ad9c17fcde28f16b"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_00.pt",
+      "sha256": "c8ee3a398063efe8a38cac5a5090544d5e0f2b3049d23978449e897d2b252cf8"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_01.pt",
+      "sha256": "f79656e55203982dcb5b1a3f2c3133efec8fae08c2d1baffc9c48428e8feb343"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_02.pt",
+      "sha256": "102ddcb57da14777e72d250644ec83246b8c9a662399e6f26a1542884d68801a"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_03.pt",
+      "sha256": "3379d99f9ded5e4693eb5dc6b81cceb1d2f5a8e61196137c9b4319f5122d033e"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_04.pt",
+      "sha256": "84edc2936ca164bdc25edd4af48b55e030f0038a3d0baba5556379a1ee8086c7"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_00.pt",
+      "sha256": "466aa09fbed592d3189503b9e955df906b0d7c627fcf3a9b48883d109e7627c5"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_01.pt",
+      "sha256": "a4355af864f0ff176102ebb249395b8d55d4404b8206b99f218381a50c402781"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_02.pt",
+      "sha256": "ff31ed3a0e1e65f701be91373f8714cd200910c9520bdea51f48f76befa75333"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_03.pt",
+      "sha256": "5583a99943fd711ed2f634e18373f83012d7431de73e06706e5ef744948ef453"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_04.pt",
+      "sha256": "f68a62bafbd3e7d3d1dcb5097f6b6c0d2130ee356ca91f98049bc468c5e169cc"
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/mc_dropout/member_00.pt",
+      "sha256": "384807f259b787298d1682c168cea047184e2a57bcbb0da3f0a4838dd2007a73"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_00.pt",
+      "sha256": "247df37256d027207cb1bdc29435a7aa66b6f31e0b9b458f8ffd2b9ba0737923"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_01.pt",
+      "sha256": "06595930f9a9e0feadcf959d007013bf0423e5243a0c0c325725f1c37c4ae1e1"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_02.pt",
+      "sha256": "f4362693086335ec9f834f770f5be51491ed1920c9ab94f2e49f6589d856ecbd"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_03.pt",
+      "sha256": "78b322e0b05ad5eaedbc3e12fc3716dc1f2e178e592b7126498937cba66a5102"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_04.pt",
+      "sha256": "1e7937ee0272e038ad29256cc7aa5d972496aec9421924698b0dd9753474de97"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_00.pt",
+      "sha256": "0d74c29c4cb329482f6bd98074cc0b4e0f8e9fced5c5fb606288d5f9fbf090cf"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_01.pt",
+      "sha256": "db952ed746b2c628c797f49e7593b8b992cb621e48a2c98d78162a34e7988dad"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_02.pt",
+      "sha256": "b5ad176f96bfbe9d3e1fbbb6eefc5b6482f18c4cd54586378ec471516811a115"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_03.pt",
+      "sha256": "c05afc3983114f2fea7343ee25f9372c688d6af7269ed9aa12cf230f2b29e748"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_04.pt",
+      "sha256": "d8b04f41543cd5ec9aa8d643643aa29b112cef2e2b0f674ad7447a05b9348bdd"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_00.pt",
+      "sha256": "e89d16a74dd96b068a37f3db3db7895a38cc6f6ee4acad49d7c7197e419915f6"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_01.pt",
+      "sha256": "a5f7a55a712db22fa07b1797eb38fb6e4584a95e1bb1aee50ef6dd3afad073a1"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_02.pt",
+      "sha256": "19cf1c513ae9465af64e20cffd3a073490fcc8870a031e0d330346ebc482885e"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_03.pt",
+      "sha256": "5a29620737d43878f4760be4a60482fdb1f966fbaf85cdaad472dc88e9d192bd"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_04.pt",
+      "sha256": "822d50490648b48279f413db2d85c2e634c534ed19de939a727f627f8c075e73"
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/mc_dropout/member_00.pt",
+      "sha256": "6fdb2ef4e820eb581150763815cffeab43e72191dfa129ac8898e470a90de6d7"
+    }
+  ],
+  "manifest_sha256": "e130828b44ba1ab5bc78337e4d96f4e9b0026c3da2c937196bb1f9764afbf8db",
+  "checkpoint_audit_sha256": "236e5b9d3f2a4538dd2d78dc5cee069a5d3097a8cd8f08fa2fbff3033bd3aee9",
+  "figure2a_raw_sha256": "0b80fa6b4e2bcc8cd17d45e3d1fec1468d918b4605c72d7a4279db2cc145708e",
+  "attestation": {
+    "kind": "drive_session",
+    "run_id": "figure2a_final_local_48",
+    "session": {
+      "status": "complete",
+      "scientific_signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+      "config": {
+        "name": "local",
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "ensemble_sizes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "epochs": 10,
+        "batch_size": 100,
+        "learning_rate": 0.1,
+        "epsilon_fraction": 0.01,
+        "dropout": 0.1,
+        "validation_size": 5000,
+        "split_seed": 4509,
+        "train_limit": 0,
+        "test_limit": 0,
+        "eval_batch_size": 1000,
+        "threads": 2,
+        "deterministic": true
+      },
+      "training_enabled": true,
+      "real_colab_training_completed": true,
+      "new_training_executed": true,
+      "result_directory": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local",
+      "no_training_tests": {
+        "successful": true,
+        "tests_run": 11,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "optimizer_steps": 0,
+        "new_training": false,
+        "real_colab_test": false,
+        "checkpoint_fixtures": "Synthetic untrained private format fixtures; never used as experiment results",
+        "training_dependent_old_tests_not_run": [
+          "test_fgsm_random_and_gradient_update",
+          "test_exact_resume_all_methods_and_mismatch"
+        ],
+        "failures": [],
+        "error_details": []
+      },
+      "preprocessing": {
+        "shapes": [
+          [
+            55000,
+            784
+          ],
+          [
+            55000
+          ],
+          [
+            5000,
+            784
+          ],
+          [
+            5000
+          ],
+          [
+            10000,
+            784
+          ],
+          [
+            10000
+          ],
+          [
+            784
+          ]
+        ],
+        "dtype": "float32",
+        "range": [
+          0,
+          1
+        ],
+        "split_seed": 4509,
+        "split_arrays_match_local_sha256": true,
+        "official_data_md5": "passed",
+        "local_downloads": null
+      },
+      "checkpoints": 48,
+      "result_rows": 63,
+      "invocation_seconds": 1243.752406715,
+      "training_epoch_seconds": 1188.8576210560013,
+      "environment": {
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.4.6",
+        "pandas": "2.2.3",
+        "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+        "device": "cuda",
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "deterministic": true
+      },
+      "resume_summary": {
+        "verified_complete_skipped": 0,
+        "resumed_partial": 0,
+        "trained_new": 48
+      },
+      "export": {
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification_colab_figure2a_final_local_48.zip",
+        "sha256": "2a346c75e559d10a3fbfbda1960a76d53914f7d2ba320e87decda3945151b08d",
+        "checkpoint_files": 48,
+        "raw_rows": 63,
+        "archive_mode": "real_colab_completed",
+        "outer_folder": "mnist_classification_colab_figure2a_final_local_48"
+      }
+    },
+    "session_sha256": "70a333404016552f63e1d28f0fa69e7aa77398fcebdb06ab17d358f4ba55bbbc"
+  },
+  "source_is_real_colab": true
+}

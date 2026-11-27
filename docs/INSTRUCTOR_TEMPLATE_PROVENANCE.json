@@ -1,0 +1,18 @@
+{
+  "original_template_sha256": "5c86712352f3189189004b9f90d71f7002a5f4b553acda1466e2f468de2c6721",
+  "original_bibliography_sha256": "6d0cf008391279e8a990f306f82d695bb14b445c913df10ca01b684d517b660f",
+  "expected_preamble": "% CMP4509 Introduction to Deep Learning -- Term project report template\n% Compiles with pdfLaTeX + BibTeX (Overleaf: upload this folder or the .zip).\n%\n% The grey boxes are guides describing what is expected in each section.\n% Keep them visible while writing. Before submitting, hide them all by\n% changing \\showguidesfalse to \\showguidesfalse below.\n\\documentclass[11pt,a4paper]{article}\n\n\\usepackage[margin=2.5cm]{geometry}\n\\usepackage[T1]{fontenc}\n\\usepackage[utf8]{inputenc}\n\\usepackage{lmodern}\n\\usepackage{amsmath,amssymb,amsfonts}\n\\usepackage{graphicx}\n\\usepackage{booktabs}\n\\usepackage{multirow}\n\\usepackage{caption}\n\\usepackage{subcaption}\n\\usepackage{xcolor}\n\\usepackage{enumitem}\n\\usepackage[round]{natbib}\n\\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}\n\n% ---------------------------------------------------------------------------\n% Guide boxes\n\\newif\\ifshowguides\n\\showguidesfalse   % change to \\showguidesfalse before submitting\n\\definecolor{guidebg}{gray}{0.93}\n\\definecolor{guideframe}{gray}{0.55}\n\\newcommand{\\guide}[1]{%\n  \\ifshowguides\n  \\par\\medskip\\noindent\n  \\fcolorbox{guideframe}{guidebg}{%\n    \\begin{minipage}{\\dimexpr\\linewidth-2\\fboxsep-2\\fboxrule\\relax}\n      \\small\\textbf{Guide.}\n      \\begin{itemize}[leftmargin=1.2em,itemsep=1pt,topsep=2pt]\n        #1\n      \\end{itemize}\n    \\end{minipage}}%\n  \\par\\medskip\n  \\fi}\n% ---------------------------------------------------------------------------\n\n% Notation shortcuts (optional)\n\\newcommand{\\R}{\\mathbb{R}}\n\\newcommand{\\E}{\\mathbb{E}}\n\\newcommand{\\vect}[1]{\\mathbf{#1}}\n\n",
+  "required_sections": [
+    "Introduction",
+    "Background and Method",
+    "Experimental Setup",
+    "Results",
+    "Discussion",
+    "Conclusion",
+    "Contributions",
+    "Use of AI Tools",
+    "Code"
+  ],
+  "format": "article, 11pt, A4, 2.5cm margins; all supplied packages/guide macro retained",
+  "allowed_changes": "Guide visibility disabled; actual title/authors/body/references; results_values.tex input added after the preserved preamble"
+}

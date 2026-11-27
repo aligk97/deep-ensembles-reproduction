@@ -1,1 +1,0 @@
-"""MNIST classification implementation (planned)."""

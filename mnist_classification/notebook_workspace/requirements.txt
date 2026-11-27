@@ -1,7 +1,0 @@
-# CUDA PyTorch: use the installation command in README, or Colab's existing torch.
-torch>=2.5,<3
-numpy>=1.26,<3
-matplotlib>=3.8,<4
-pandas>=2.1,<4
-# Notebook validation (not needed by the experiment runner):
-nbformat>=5.9,<6

@@ -1,0 +1,9 @@
+{
+  "policy": "case-insensitive class/filename order matching the validated local dataset",
+  "examples": 18724,
+  "positions_changed": 16719,
+  "native_tensor_sha256": "a54ca4033cde31b59c3cec969e2646eec28c1bbcb91e7c7259cbd4ffac3b0fe6",
+  "aligned_tensor_sha256": "5da5a545dee93c711d8ec8ca5be2398f1114a406690a1efaa74d5d072bf1a46e",
+  "pixels_modified": false,
+  "labels_permuted_with_images": true
+}

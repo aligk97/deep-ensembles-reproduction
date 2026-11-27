@@ -1,0 +1,10 @@
+{
+  "successful": true,
+  "tests_run": 4,
+  "failures": [],
+  "errors": [],
+  "scope": "Explicit Windows + Linux order simulation on ALL 18,724 real images, including local tensor/order hashes",
+  "model_forwards": 0,
+  "new_training": false,
+  "real_colab_test": false
+}

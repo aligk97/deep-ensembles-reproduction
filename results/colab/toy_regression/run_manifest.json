@@ -1,0 +1,182 @@
+{
+  "mode": "colab_training",
+  "training_enabled": true,
+  "steps": [
+    {
+      "script": "02_train_mse.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/02_train_mse.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 14.960912688999997,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/02_train_mse.py.log"
+    },
+    {
+      "script": "03_train_mse_ensemble.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/03_train_mse_ensemble.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 28.146048645999997,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/03_train_mse_ensemble.py.log"
+    },
+    {
+      "script": "04_train_gaussian_nll.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/04_train_gaussian_nll.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 15.616301819,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/04_train_gaussian_nll.py.log"
+    },
+    {
+      "script": "05_train_gaussian_nll_at.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/05_train_gaussian_nll_at.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 23.483935670999983,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/05_train_gaussian_nll_at.py.log"
+    },
+    {
+      "script": "06_train_deep_ensemble.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/06_train_deep_ensemble.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 42.908549189999974,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/06_train_deep_ensemble.py.log"
+    },
+    {
+      "script": "07_multi_seed_experiments.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/07_multi_seed_experiments.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 203.21166576899998,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/07_multi_seed_experiments.py.log"
+    },
+    {
+      "script": "08_diagnose_uncertainty.py",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-u",
+        "/content/toy_regression_colab_runs/run_br453546/toy_regression/08_diagnose_uncertainty.py"
+      ],
+      "cwd": "/content/toy_regression_colab_runs/run_br453546/toy_regression",
+      "status": "completed",
+      "seconds": 3.755682057000058,
+      "log": "/content/toy_regression_colab_runs/run_br453546/logs/08_diagnose_uncertainty.py.log"
+    }
+  ],
+  "source_manifest": {
+    "01_generate_data.py": "8d52d9c573bc049783cbe846b5b0a66b86cb06c739db4658a04f1ab56a4d6280",
+    "02_train_mse.py": "26367c21d0973ed27b0a6c761fe8b0568f809c74ee60349f5961a4def884c242",
+    "03_train_mse_ensemble.py": "bee62f903ad86660da54a3c8e6623a2a9ecc190c4af57a7e7e8b74e1a9870acc",
+    "04_train_gaussian_nll.py": "c52ff8373427c030bf576627005c50f693e0f83ba17d4dd88b8278bc682cfb00",
+    "05_train_gaussian_nll_at.py": "cea122add57b72d9acff058bb674a9473c1873d73554ba8e449b669806a48463",
+    "06_train_deep_ensemble.py": "da5f0556bdd7ff67fb1fd659a19c276b03d1052023e68612b1139bac539eba8d",
+    "07_multi_seed_experiments.py": "485f594cda90e60f81663d4f418696e56a79e62f3f9087c56ce2d715e310c342",
+    "08_diagnose_uncertainty.py": "3ef5240835c86a77142fe715a033062a3c57696bc9fce4fbc49f024dfaa09e99",
+    "colab_runtime.py": "f6862ea8aa74181a61fc0592c5111c1855328d3d6a9a52eac83e5c1e88a2585f",
+    "outputs/toy_training_data.csv": "adab2533701055f77f024b6a94f042b4e3ad7d18479d14d93d9d042e10790235"
+  },
+  "run_root": "/content/toy_regression_colab_runs/run_br453546",
+  "status": "colab_training_complete",
+  "real_colab_training_completed": true,
+  "import_checks": [
+    {
+      "script": "01_generate_data.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "02_train_mse.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "03_train_mse_ensemble.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "04_train_gaussian_nll.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "05_train_gaussian_nll_at.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "06_train_deep_ensemble.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "07_multi_seed_experiments.py",
+      "imported_without_main": true
+    },
+    {
+      "script": "08_diagnose_uncertainty.py",
+      "imported_without_main": true
+    }
+  ],
+  "dataset_sha256": "adab2533701055f77f024b6a94f042b4e3ad7d18479d14d93d9d042e10790235",
+  "training_samples": 20,
+  "scientific_config": {
+    "run_seeds": [
+      42,
+      123,
+      2026
+    ],
+    "epochs": 3000,
+    "members": 5,
+    "hidden": 50,
+    "mse_lr": 0.01,
+    "nll_lr": 0.001,
+    "eval_seed": 20261122,
+    "legacy_model_seeds": [
+      123,
+      124,
+      125,
+      126,
+      127
+    ]
+  },
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6",
+    "matplotlib": "3.10.0",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "cuda": "13.0",
+    "gpu_available": true,
+    "gpu": "Tesla T4"
+  },
+  "trained_model_files": 49,
+  "seed_region_rows": 48,
+  "region_summary_rows": 16,
+  "elapsed_seconds": 333.20909358200004
+}

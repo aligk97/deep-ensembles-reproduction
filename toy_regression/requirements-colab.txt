@@ -1,0 +1,4 @@
+# Colab already supplies CUDA-enabled torch; do not replace it or upload .venv.
+# These are the only additional libraries used by the experiment scripts.
+numpy>=1.26,<3
+matplotlib>=3.8,<4

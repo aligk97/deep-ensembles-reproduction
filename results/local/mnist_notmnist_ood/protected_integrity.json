@@ -1,0 +1,17 @@
+{
+  "unchanged": true,
+  "algorithm": "SHA-256 + byte size + complete file-path set",
+  "scope": [
+    "toy_regression/**",
+    "mnist_classification/**"
+  ],
+  "includes": "All files including .venv, ignored data, outputs and checkpoints",
+  "files_before": 63282,
+  "files_after": 63282,
+  "bytes_checked": 10037770596,
+  "local_mnist_checkpoint_files": 48,
+  "added": [],
+  "removed": [],
+  "modified": [],
+  "elapsed_seconds": 104.43
+}

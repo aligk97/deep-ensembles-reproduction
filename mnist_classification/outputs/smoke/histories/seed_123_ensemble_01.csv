@@ -1,2 +1,0 @@
-run_seed,member_seed,method,member,epoch,objective_loss,clean_loss,perturbed_loss,train_accuracy,validation_loss,validation_accuracy,epoch_seconds
-123,1230002,ensemble,1,1,2.2812469005584717,2.2812469005584717,0.0,0.445000022649765,8.04637861328125,0.496,0.05130240000289632

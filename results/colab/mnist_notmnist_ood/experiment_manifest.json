@@ -1,0 +1,2920 @@
+{
+  "status": "complete",
+  "config": {
+    "name": "mnist_notmnist_ood_final",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "methods": [
+      "ensemble",
+      "random",
+      "adversarial",
+      "mc_dropout"
+    ],
+    "ensemble_sizes": [
+      1,
+      3,
+      5
+    ],
+    "dropout": 0.1,
+    "batch_size": 1000,
+    "num_workers": 0,
+    "threads": 2,
+    "deterministic": true,
+    "histogram_bins": 50,
+    "mc_rng_offset": 500000000,
+    "notmnist_rng_offset": 1000000000,
+    "loader_rng_seed": 4509,
+    "probability_sum_atol": 5e-07,
+    "classification_atol": {
+      "accuracy": 1e-12,
+      "nll": 1e-06,
+      "brier": 1e-08
+    },
+    "checkpoint_root": "../mnist_classification/outputs/local",
+    "mnist_root": "../mnist_classification/data",
+    "notmnist_root": "data/notMNIST_small"
+  },
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6",
+    "sklearn": "1.6.1",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "tf32": false,
+    "amp": false,
+    "deterministic_algorithms": true
+  },
+  "inference_signature": "32c002f9d200f79d12213085695f795abded25f1d9555f165e4003e239fe8d13",
+  "source_sha256": {
+    "data.py": "7065cbaa456d1e50f727dfe24c1841f559f062315ecd8696e79d645a54150454",
+    "metrics.py": "fd92bcc87449eebbf98b42d17005b55de65351260454292254c7f3f0ff55778a",
+    "inference.py": "715a5b1e627044bf15ce7e2d556e8ef0340d1da4b1f11388a9e5e9029a9d71e7",
+    "plots.py": "b353fa142a7e4cbf6ecc0b8235d85d90dada543304e89eb193de54c227ed8b09",
+    "run_experiment.py": "f62e5d06c41d77113693c2cf6d721b865d6dc488847e045d36d7e26b16f3d61d",
+    "prepare_data.py": "5cfced65452e04bbff4057f140b78fb55cb0b520c4caef5edae46e97ed3f95eb",
+    "test_inference.py": "8237133b9021f97205d7503f84cf25ce12708a55192caedea24317cfdc61b759"
+  },
+  "checkpoints": [
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_00.pt",
+      "sha256": "095d6326aec91131699da6f852e4e8ec2c1adcb9e91340f32aeed041d482b7e6"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_01.pt",
+      "sha256": "dac2e3ddd3b230c27b6c4aec163967f3180041e6c1d2fe6cae41fb76a30f91fe"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_02.pt",
+      "sha256": "2bc292797cacb62e2d3f6952bf985998d713e8eeb199363b3144219b811a05fd"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_03.pt",
+      "sha256": "ebb04890b0fe9a15f83f2621af5c4d3c0b28425a1c48119e5e351496c7d20e48"
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_04.pt",
+      "sha256": "d834558e0b6c205f9ed7651f2172e81621f5a3805a1e4a8d745a9e84f76ea927"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_00.pt",
+      "sha256": "6169b031d7e341bf4a1b849ffe5f593fd8320b73c984d1bca80389a28ba5c73f"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_01.pt",
+      "sha256": "636ef53ac0dc1ee6a33355e8544eabbef72a751fbbda69de95a63f69623f981c"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_02.pt",
+      "sha256": "81edba4db977118a63538b03e57f716f36a29d6dd26e109b722ae9ba43ecc229"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_03.pt",
+      "sha256": "2d93ac11a7676c71cffdc050bb78e44896c598a847cab3c06903a18728c64cb7"
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_04.pt",
+      "sha256": "0ed87a7589cb6c51abe22cf8618b3b6ee501ce9b23c70654ebcc0ebc0c90ff1d"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_00.pt",
+      "sha256": "22e44e0f4cdc9a6323d5ca0f43bd59cad07b3f7cb3e8bfc97b1b76f2542fa36d"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_01.pt",
+      "sha256": "43030a07fda38a443724176d35930e22597a2c574ec59a174bc48604612c7047"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_02.pt",
+      "sha256": "1698288f46f352a64649ac38b210fbcdbc7716bd19f890dc65d3bd11477c293b"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_03.pt",
+      "sha256": "15346aaab2c9550145e8f8762bf82a2e0e70a9fd914be27710a3cf1c9e449c08"
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_04.pt",
+      "sha256": "e1e164601ae866c6312b4a273b28bccf7c7f157c740d2c377359985ea20f530b"
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/mc_dropout/member_00.pt",
+      "sha256": "8fc2b8324907ac265198c0500af6238015f45d1c3335a8e2153f37c64e025015"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_00.pt",
+      "sha256": "89f38de90709d4422f80e98f5cb7453f9d9c291957dadf115a6149a12447a8ab"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_01.pt",
+      "sha256": "cf89107b29d4c4125622cc8dfd203f0f706d15cadc06ccb3b3525cbf2cdd1b4a"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_02.pt",
+      "sha256": "ac7c225c473eae32b4c7248df5d9947b24730b5a460e70294de8d39f8ef3c9bf"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_03.pt",
+      "sha256": "2cdbe282c50b3f331624880aaee3c5b4695175c3c10ed5258cd088b20db20af4"
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_04.pt",
+      "sha256": "446dba447a07ad5143e68c298b14ea330e5fcc122ad4e6a5ad9c17fcde28f16b"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_00.pt",
+      "sha256": "c8ee3a398063efe8a38cac5a5090544d5e0f2b3049d23978449e897d2b252cf8"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_01.pt",
+      "sha256": "f79656e55203982dcb5b1a3f2c3133efec8fae08c2d1baffc9c48428e8feb343"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_02.pt",
+      "sha256": "102ddcb57da14777e72d250644ec83246b8c9a662399e6f26a1542884d68801a"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_03.pt",
+      "sha256": "3379d99f9ded5e4693eb5dc6b81cceb1d2f5a8e61196137c9b4319f5122d033e"
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_04.pt",
+      "sha256": "84edc2936ca164bdc25edd4af48b55e030f0038a3d0baba5556379a1ee8086c7"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_00.pt",
+      "sha256": "466aa09fbed592d3189503b9e955df906b0d7c627fcf3a9b48883d109e7627c5"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_01.pt",
+      "sha256": "a4355af864f0ff176102ebb249395b8d55d4404b8206b99f218381a50c402781"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_02.pt",
+      "sha256": "ff31ed3a0e1e65f701be91373f8714cd200910c9520bdea51f48f76befa75333"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_03.pt",
+      "sha256": "5583a99943fd711ed2f634e18373f83012d7431de73e06706e5ef744948ef453"
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_04.pt",
+      "sha256": "f68a62bafbd3e7d3d1dcb5097f6b6c0d2130ee356ca91f98049bc468c5e169cc"
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/mc_dropout/member_00.pt",
+      "sha256": "384807f259b787298d1682c168cea047184e2a57bcbb0da3f0a4838dd2007a73"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_00.pt",
+      "sha256": "247df37256d027207cb1bdc29435a7aa66b6f31e0b9b458f8ffd2b9ba0737923"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_01.pt",
+      "sha256": "06595930f9a9e0feadcf959d007013bf0423e5243a0c0c325725f1c37c4ae1e1"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_02.pt",
+      "sha256": "f4362693086335ec9f834f770f5be51491ed1920c9ab94f2e49f6589d856ecbd"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_03.pt",
+      "sha256": "78b322e0b05ad5eaedbc3e12fc3716dc1f2e178e592b7126498937cba66a5102"
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_04.pt",
+      "sha256": "1e7937ee0272e038ad29256cc7aa5d972496aec9421924698b0dd9753474de97"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_00.pt",
+      "sha256": "0d74c29c4cb329482f6bd98074cc0b4e0f8e9fced5c5fb606288d5f9fbf090cf"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_01.pt",
+      "sha256": "db952ed746b2c628c797f49e7593b8b992cb621e48a2c98d78162a34e7988dad"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_02.pt",
+      "sha256": "b5ad176f96bfbe9d3e1fbbb6eefc5b6482f18c4cd54586378ec471516811a115"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_03.pt",
+      "sha256": "c05afc3983114f2fea7343ee25f9372c688d6af7269ed9aa12cf230f2b29e748"
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_04.pt",
+      "sha256": "d8b04f41543cd5ec9aa8d643643aa29b112cef2e2b0f674ad7447a05b9348bdd"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_00.pt",
+      "sha256": "e89d16a74dd96b068a37f3db3db7895a38cc6f6ee4acad49d7c7197e419915f6"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 1,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_01.pt",
+      "sha256": "a5f7a55a712db22fa07b1797eb38fb6e4584a95e1bb1aee50ef6dd3afad073a1"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 2,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_02.pt",
+      "sha256": "19cf1c513ae9465af64e20cffd3a073490fcc8870a031e0d330346ebc482885e"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 3,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_03.pt",
+      "sha256": "5a29620737d43878f4760be4a60482fdb1f966fbaf85cdaad472dc88e9d192bd"
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "member": 4,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_04.pt",
+      "sha256": "822d50490648b48279f413db2d85c2e634c534ed19de939a727f627f8c075e73"
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "member": 0,
+      "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/mc_dropout/member_00.pt",
+      "sha256": "6fdb2ef4e820eb581150763815cffeab43e72191dfa129ac8898e470a90de6d7"
+    }
+  ],
+  "colab_driver_source_sha256": {
+    "colab_source.py": "9ef7d37ef97c0d83b2cf0250f867a58dd85180f89d9c989ad1fd2cf027551edb",
+    "colab_runtime.py": "fdc17d09489bfd4d90ec153de5f53d335e38f160090a39fcd1ee283d1811483e",
+    "colab_entrypoint.py": "3cada5e79308080c6855dc59fdb54a3c50341d39a9fbe62e5b592cfd702a4f03",
+    "colab_data.py": "c24ef387922bcbdd321e93911350649faf4175836eee700af62332aacf6f66de"
+  },
+  "dataset_info_sha256": "81c49336712cd15c46230b6851f7c05f51ef0c4aa2f94aa416576984a600b4d7",
+  "checkpoint_source": {
+    "result_root": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local",
+    "manifest": {
+      "signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+      "config": {
+        "name": "local",
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "ensemble_sizes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "epochs": 10,
+        "batch_size": 100,
+        "learning_rate": 0.1,
+        "epsilon_fraction": 0.01,
+        "dropout": 0.1,
+        "validation_size": 5000,
+        "split_seed": 4509,
+        "train_limit": 0,
+        "test_limit": 0,
+        "eval_batch_size": 1000,
+        "threads": 2,
+        "deterministic": true
+      },
+      "source_sha256": {
+        "data.py": "4c8fb06ca776da3a3a82f982e6240e6bd9bccf78b7c64b42212a04af40497c5b",
+        "model.py": "5d976b1df17f9d2f30d6c247a98d0a104ce62d73971224e7cef3e786cebc70fd",
+        "metrics.py": "abe15a8090d93755316bcaf549cd97f3fd7b314cce9f9145370ffc42d2899881",
+        "engine.py": "bfdf6771fb18d5f8c181e4c287b900fe7f9fe7e621a966e0d176c879cd3fdd85",
+        "run_experiment.py": "6d2430bb55c016886356c5b5f15afe143acb1f64fb61c1609fa8d0a038baa082"
+      },
+      "environment": {
+        "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+        "torch": "2.14.1+cu130",
+        "numpy": "2.4.6",
+        "pandas": "2.2.3",
+        "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+        "device": "cuda",
+        "gpu": "Tesla T4",
+        "cuda": "13.0",
+        "deterministic": true
+      },
+      "status": "complete",
+      "started_utc": "2026-11-25T20:51:47.816968+00:00",
+      "resume_policy": "last completed epoch; final epoch evaluated; no test-based selection",
+      "completed_utc": "2026-11-25T21:12:16.053781+00:00",
+      "invocation_seconds": 1228.189546743,
+      "result_rows": 63,
+      "trained_models": 48,
+      "total_training_epoch_seconds": 1188.8576210560013,
+      "colab_resume_summary": {
+        "verified_complete_skipped": 0,
+        "resumed_partial": 0,
+        "trained_new": 48
+      },
+      "checkpoint_validation": "strict architecture/config/signature/history/finite weights/optimizer/RNG"
+    },
+    "inventory": [
+      {
+        "run_seed": 42,
+        "method": "ensemble",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_00.pt",
+        "sha256": "095d6326aec91131699da6f852e4e8ec2c1adcb9e91340f32aeed041d482b7e6"
+      },
+      {
+        "run_seed": 42,
+        "method": "ensemble",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_01.pt",
+        "sha256": "dac2e3ddd3b230c27b6c4aec163967f3180041e6c1d2fe6cae41fb76a30f91fe"
+      },
+      {
+        "run_seed": 42,
+        "method": "ensemble",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_02.pt",
+        "sha256": "2bc292797cacb62e2d3f6952bf985998d713e8eeb199363b3144219b811a05fd"
+      },
+      {
+        "run_seed": 42,
+        "method": "ensemble",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_03.pt",
+        "sha256": "ebb04890b0fe9a15f83f2621af5c4d3c0b28425a1c48119e5e351496c7d20e48"
+      },
+      {
+        "run_seed": 42,
+        "method": "ensemble",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_04.pt",
+        "sha256": "d834558e0b6c205f9ed7651f2172e81621f5a3805a1e4a8d745a9e84f76ea927"
+      },
+      {
+        "run_seed": 42,
+        "method": "random",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_00.pt",
+        "sha256": "6169b031d7e341bf4a1b849ffe5f593fd8320b73c984d1bca80389a28ba5c73f"
+      },
+      {
+        "run_seed": 42,
+        "method": "random",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_01.pt",
+        "sha256": "636ef53ac0dc1ee6a33355e8544eabbef72a751fbbda69de95a63f69623f981c"
+      },
+      {
+        "run_seed": 42,
+        "method": "random",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_02.pt",
+        "sha256": "81edba4db977118a63538b03e57f716f36a29d6dd26e109b722ae9ba43ecc229"
+      },
+      {
+        "run_seed": 42,
+        "method": "random",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_03.pt",
+        "sha256": "2d93ac11a7676c71cffdc050bb78e44896c598a847cab3c06903a18728c64cb7"
+      },
+      {
+        "run_seed": 42,
+        "method": "random",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_04.pt",
+        "sha256": "0ed87a7589cb6c51abe22cf8618b3b6ee501ce9b23c70654ebcc0ebc0c90ff1d"
+      },
+      {
+        "run_seed": 42,
+        "method": "adversarial",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_00.pt",
+        "sha256": "22e44e0f4cdc9a6323d5ca0f43bd59cad07b3f7cb3e8bfc97b1b76f2542fa36d"
+      },
+      {
+        "run_seed": 42,
+        "method": "adversarial",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_01.pt",
+        "sha256": "43030a07fda38a443724176d35930e22597a2c574ec59a174bc48604612c7047"
+      },
+      {
+        "run_seed": 42,
+        "method": "adversarial",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_02.pt",
+        "sha256": "1698288f46f352a64649ac38b210fbcdbc7716bd19f890dc65d3bd11477c293b"
+      },
+      {
+        "run_seed": 42,
+        "method": "adversarial",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_03.pt",
+        "sha256": "15346aaab2c9550145e8f8762bf82a2e0e70a9fd914be27710a3cf1c9e449c08"
+      },
+      {
+        "run_seed": 42,
+        "method": "adversarial",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_04.pt",
+        "sha256": "e1e164601ae866c6312b4a273b28bccf7c7f157c740d2c377359985ea20f530b"
+      },
+      {
+        "run_seed": 42,
+        "method": "mc_dropout",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/mc_dropout/member_00.pt",
+        "sha256": "8fc2b8324907ac265198c0500af6238015f45d1c3335a8e2153f37c64e025015"
+      },
+      {
+        "run_seed": 123,
+        "method": "ensemble",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_00.pt",
+        "sha256": "89f38de90709d4422f80e98f5cb7453f9d9c291957dadf115a6149a12447a8ab"
+      },
+      {
+        "run_seed": 123,
+        "method": "ensemble",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_01.pt",
+        "sha256": "cf89107b29d4c4125622cc8dfd203f0f706d15cadc06ccb3b3525cbf2cdd1b4a"
+      },
+      {
+        "run_seed": 123,
+        "method": "ensemble",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_02.pt",
+        "sha256": "ac7c225c473eae32b4c7248df5d9947b24730b5a460e70294de8d39f8ef3c9bf"
+      },
+      {
+        "run_seed": 123,
+        "method": "ensemble",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_03.pt",
+        "sha256": "2cdbe282c50b3f331624880aaee3c5b4695175c3c10ed5258cd088b20db20af4"
+      },
+      {
+        "run_seed": 123,
+        "method": "ensemble",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_04.pt",
+        "sha256": "446dba447a07ad5143e68c298b14ea330e5fcc122ad4e6a5ad9c17fcde28f16b"
+      },
+      {
+        "run_seed": 123,
+        "method": "random",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_00.pt",
+        "sha256": "c8ee3a398063efe8a38cac5a5090544d5e0f2b3049d23978449e897d2b252cf8"
+      },
+      {
+        "run_seed": 123,
+        "method": "random",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_01.pt",
+        "sha256": "f79656e55203982dcb5b1a3f2c3133efec8fae08c2d1baffc9c48428e8feb343"
+      },
+      {
+        "run_seed": 123,
+        "method": "random",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_02.pt",
+        "sha256": "102ddcb57da14777e72d250644ec83246b8c9a662399e6f26a1542884d68801a"
+      },
+      {
+        "run_seed": 123,
+        "method": "random",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_03.pt",
+        "sha256": "3379d99f9ded5e4693eb5dc6b81cceb1d2f5a8e61196137c9b4319f5122d033e"
+      },
+      {
+        "run_seed": 123,
+        "method": "random",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_04.pt",
+        "sha256": "84edc2936ca164bdc25edd4af48b55e030f0038a3d0baba5556379a1ee8086c7"
+      },
+      {
+        "run_seed": 123,
+        "method": "adversarial",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_00.pt",
+        "sha256": "466aa09fbed592d3189503b9e955df906b0d7c627fcf3a9b48883d109e7627c5"
+      },
+      {
+        "run_seed": 123,
+        "method": "adversarial",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_01.pt",
+        "sha256": "a4355af864f0ff176102ebb249395b8d55d4404b8206b99f218381a50c402781"
+      },
+      {
+        "run_seed": 123,
+        "method": "adversarial",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_02.pt",
+        "sha256": "ff31ed3a0e1e65f701be91373f8714cd200910c9520bdea51f48f76befa75333"
+      },
+      {
+        "run_seed": 123,
+        "method": "adversarial",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_03.pt",
+        "sha256": "5583a99943fd711ed2f634e18373f83012d7431de73e06706e5ef744948ef453"
+      },
+      {
+        "run_seed": 123,
+        "method": "adversarial",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_04.pt",
+        "sha256": "f68a62bafbd3e7d3d1dcb5097f6b6c0d2130ee356ca91f98049bc468c5e169cc"
+      },
+      {
+        "run_seed": 123,
+        "method": "mc_dropout",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/mc_dropout/member_00.pt",
+        "sha256": "384807f259b787298d1682c168cea047184e2a57bcbb0da3f0a4838dd2007a73"
+      },
+      {
+        "run_seed": 2026,
+        "method": "ensemble",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_00.pt",
+        "sha256": "247df37256d027207cb1bdc29435a7aa66b6f31e0b9b458f8ffd2b9ba0737923"
+      },
+      {
+        "run_seed": 2026,
+        "method": "ensemble",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_01.pt",
+        "sha256": "06595930f9a9e0feadcf959d007013bf0423e5243a0c0c325725f1c37c4ae1e1"
+      },
+      {
+        "run_seed": 2026,
+        "method": "ensemble",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_02.pt",
+        "sha256": "f4362693086335ec9f834f770f5be51491ed1920c9ab94f2e49f6589d856ecbd"
+      },
+      {
+        "run_seed": 2026,
+        "method": "ensemble",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_03.pt",
+        "sha256": "78b322e0b05ad5eaedbc3e12fc3716dc1f2e178e592b7126498937cba66a5102"
+      },
+      {
+        "run_seed": 2026,
+        "method": "ensemble",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_04.pt",
+        "sha256": "1e7937ee0272e038ad29256cc7aa5d972496aec9421924698b0dd9753474de97"
+      },
+      {
+        "run_seed": 2026,
+        "method": "random",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_00.pt",
+        "sha256": "0d74c29c4cb329482f6bd98074cc0b4e0f8e9fced5c5fb606288d5f9fbf090cf"
+      },
+      {
+        "run_seed": 2026,
+        "method": "random",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_01.pt",
+        "sha256": "db952ed746b2c628c797f49e7593b8b992cb621e48a2c98d78162a34e7988dad"
+      },
+      {
+        "run_seed": 2026,
+        "method": "random",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_02.pt",
+        "sha256": "b5ad176f96bfbe9d3e1fbbb6eefc5b6482f18c4cd54586378ec471516811a115"
+      },
+      {
+        "run_seed": 2026,
+        "method": "random",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_03.pt",
+        "sha256": "c05afc3983114f2fea7343ee25f9372c688d6af7269ed9aa12cf230f2b29e748"
+      },
+      {
+        "run_seed": 2026,
+        "method": "random",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_04.pt",
+        "sha256": "d8b04f41543cd5ec9aa8d643643aa29b112cef2e2b0f674ad7447a05b9348bdd"
+      },
+      {
+        "run_seed": 2026,
+        "method": "adversarial",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_00.pt",
+        "sha256": "e89d16a74dd96b068a37f3db3db7895a38cc6f6ee4acad49d7c7197e419915f6"
+      },
+      {
+        "run_seed": 2026,
+        "method": "adversarial",
+        "member": 1,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_01.pt",
+        "sha256": "a5f7a55a712db22fa07b1797eb38fb6e4584a95e1bb1aee50ef6dd3afad073a1"
+      },
+      {
+        "run_seed": 2026,
+        "method": "adversarial",
+        "member": 2,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_02.pt",
+        "sha256": "19cf1c513ae9465af64e20cffd3a073490fcc8870a031e0d330346ebc482885e"
+      },
+      {
+        "run_seed": 2026,
+        "method": "adversarial",
+        "member": 3,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_03.pt",
+        "sha256": "5a29620737d43878f4760be4a60482fdb1f966fbaf85cdaad472dc88e9d192bd"
+      },
+      {
+        "run_seed": 2026,
+        "method": "adversarial",
+        "member": 4,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_04.pt",
+        "sha256": "822d50490648b48279f413db2d85c2e634c534ed19de939a727f627f8c075e73"
+      },
+      {
+        "run_seed": 2026,
+        "method": "mc_dropout",
+        "member": 0,
+        "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/mc_dropout/member_00.pt",
+        "sha256": "6fdb2ef4e820eb581150763815cffeab43e72191dfa129ac8898e470a90de6d7"
+      }
+    ],
+    "manifest_sha256": "e130828b44ba1ab5bc78337e4d96f4e9b0026c3da2c937196bb1f9764afbf8db",
+    "checkpoint_audit_sha256": "236e5b9d3f2a4538dd2d78dc5cee069a5d3097a8cd8f08fa2fbff3033bd3aee9",
+    "figure2a_raw_sha256": "0b80fa6b4e2bcc8cd17d45e3d1fec1468d918b4605c72d7a4279db2cc145708e",
+    "attestation": {
+      "kind": "drive_session",
+      "run_id": "figure2a_final_local_48",
+      "session": {
+        "status": "complete",
+        "scientific_signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+        "config": {
+          "name": "local",
+          "seeds": [
+            42,
+            123,
+            2026
+          ],
+          "ensemble_sizes": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "epochs": 10,
+          "batch_size": 100,
+          "learning_rate": 0.1,
+          "epsilon_fraction": 0.01,
+          "dropout": 0.1,
+          "validation_size": 5000,
+          "split_seed": 4509,
+          "train_limit": 0,
+          "test_limit": 0,
+          "eval_batch_size": 1000,
+          "threads": 2,
+          "deterministic": true
+        },
+        "training_enabled": true,
+        "real_colab_training_completed": true,
+        "new_training_executed": true,
+        "result_directory": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local",
+        "no_training_tests": {
+          "successful": true,
+          "tests_run": 11,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0,
+          "optimizer_steps": 0,
+          "new_training": false,
+          "real_colab_test": false,
+          "checkpoint_fixtures": "Synthetic untrained private format fixtures; never used as experiment results",
+          "training_dependent_old_tests_not_run": [
+            "test_fgsm_random_and_gradient_update",
+            "test_exact_resume_all_methods_and_mismatch"
+          ],
+          "failures": [],
+          "error_details": []
+        },
+        "preprocessing": {
+          "shapes": [
+            [
+              55000,
+              784
+            ],
+            [
+              55000
+            ],
+            [
+              5000,
+              784
+            ],
+            [
+              5000
+            ],
+            [
+              10000,
+              784
+            ],
+            [
+              10000
+            ],
+            [
+              784
+            ]
+          ],
+          "dtype": "float32",
+          "range": [
+            0,
+            1
+          ],
+          "split_seed": 4509,
+          "split_arrays_match_local_sha256": true,
+          "official_data_md5": "passed",
+          "local_downloads": null
+        },
+        "checkpoints": 48,
+        "result_rows": 63,
+        "invocation_seconds": 1243.752406715,
+        "training_epoch_seconds": 1188.8576210560013,
+        "environment": {
+          "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+          "torch": "2.14.1+cu130",
+          "numpy": "2.4.6",
+          "pandas": "2.2.3",
+          "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+          "device": "cuda",
+          "gpu": "Tesla T4",
+          "cuda": "13.0",
+          "deterministic": true
+        },
+        "resume_summary": {
+          "verified_complete_skipped": 0,
+          "resumed_partial": 0,
+          "trained_new": 48
+        },
+        "export": {
+          "path": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification_colab_figure2a_final_local_48.zip",
+          "sha256": "2a346c75e559d10a3fbfbda1960a76d53914f7d2ba320e87decda3945151b08d",
+          "checkpoint_files": 48,
+          "raw_rows": 63,
+          "archive_mode": "real_colab_completed",
+          "outer_folder": "mnist_classification_colab_figure2a_final_local_48"
+        }
+      },
+      "session_sha256": "70a333404016552f63e1d28f0fa69e7aa77398fcebdb06ab17d358f4ba55bbbc"
+    },
+    "source_is_real_colab": true
+  },
+  "original_training_manifest_sha256": "e130828b44ba1ab5bc78337e4d96f4e9b0026c3da2c937196bb1f9764afbf8db",
+  "dataset_order": {
+    "mnist": {
+      "dataset": "mnist",
+      "n_examples": 10000,
+      "tensor_sha256": "bc9f8f501f39b3ca61f899a2f402edf2024bde012b73223431b6bd735e47a165",
+      "shape": [
+        10000,
+        784
+      ],
+      "dtype": "torch.float32",
+      "order_sha256": "9f58954c71996aab4bdced34507e299b8312011721f00b7bbbdb521995c7bbc8"
+    },
+    "notmnist": {
+      "dataset": "notmnist",
+      "n_examples": 18724,
+      "tensor_sha256": "5da5a545dee93c711d8ec8ca5be2398f1114a406690a1efaa74d5d072bf1a46e",
+      "shape": [
+        18724,
+        784
+      ],
+      "dtype": "torch.float32",
+      "order_sha256": "829c6c8f00292645bc6d00c4f39c9c8d089ef9ba018a8d0ad0bd251fccb947b1"
+    }
+  },
+  "started_utc": "2026-11-26T17:41:17.972291+00:00",
+  "first_started_utc": "2026-11-26T17:41:17.972318+00:00",
+  "new_training": false,
+  "real_colab_inference_completed": true,
+  "groups": [
+    {
+      "seed": 42,
+      "method": "ensemble",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_42_ensemble_mnist.npz",
+      "sha256": "79102263e9e1e1f295c2fd35dec134b94ae83b61e756e7298c1dfe127f8ef6c5",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.4590565617099713e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.0407395011225227e-16,
+            "max_nat": 1.9418456265461428
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.3985696883826474e-11,
+            "max_nat": 1.9376911888130668
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.6768028734468174e-10,
+            "max_nat": 1.8411267373696107
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.6566427809999595
+      }
+    },
+    {
+      "seed": 42,
+      "method": "ensemble",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_42_ensemble_notmnist.npz",
+      "sha256": "3313d081a6c28c73c9042d5091296581906d457d2ad3170ce8db2ce1b7db0731",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.218567090039869e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.885065279770914e-35,
+            "max_nat": 1.8987078446948633
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 6.574555538897977e-14,
+            "max_nat": 2.0960473438523115
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.731886984544054e-10,
+            "max_nat": 2.1381352775603366
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/ensemble/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7816923720000659
+      }
+    },
+    {
+      "seed": 42,
+      "method": "random",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_42_random_mnist.npz",
+      "sha256": "51ee4728ed295855e2a9a3c5f0ab9d36d61ba5ec3658856164541ab406c40918",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3316942687756637e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.835879358315838e-22,
+            "max_nat": 1.9399441281647416
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.996726473162997e-14,
+            "max_nat": 2.0599858726857065
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.500551705317163e-11,
+            "max_nat": 1.9102463732909318
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.8188671410000552
+      }
+    },
+    {
+      "seed": 42,
+      "method": "random",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_42_random_notmnist.npz",
+      "sha256": "4b435563bf7eaab9c9fb62dddc371c7f4af9f8d5269ea580b599b69a785ec661",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3287711514718978e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.1946611298011306e-20,
+            "max_nat": 1.9812530333693044
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.888680863532938e-13,
+            "max_nat": 2.1437048251243436
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 9.211375357936814e-10,
+            "max_nat": 2.1692387846354135
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/random/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.6976839659999996
+      }
+    },
+    {
+      "seed": 42,
+      "method": "adversarial",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_42_adversarial_mnist.npz",
+      "sha256": "a0da96a4908bde3c5e408ab2ed89faf3998cfbf6b35192165d2430b1438abb09",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.313257931874091e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 7.743145685385967e-11,
+            "max_nat": 2.128184438826918
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.6231551816958204e-08,
+            "max_nat": 1.9213200695518438
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.832079018542789e-07,
+            "max_nat": 2.0534086188943155
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.48426170200002616
+      }
+    },
+    {
+      "seed": 42,
+      "method": "adversarial",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_42_adversarial_notmnist.npz",
+      "sha256": "03384d23400cc97be040c787bc57ec89424f1129434246ec813ae44d72a5795a",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.390340103630706e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.2527500533501079e-08,
+            "max_nat": 2.110966006286486
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.372194030920056e-07,
+            "max_nat": 2.158675792636248
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 6.645543478037216e-07,
+            "max_nat": 2.195415203133861
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/adversarial/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.9030353660000401
+      }
+    },
+    {
+      "seed": 42,
+      "method": "mc_dropout",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_42_mc_dropout_mnist.npz",
+      "sha256": "20ad55886d5b31e517b50fa3942226c20e15c3a7398eef46b0754d508d110708",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2644979136288157e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.9780529192221214e-22,
+            "max_nat": 2.1397593907512578
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.4370481314223785e-19,
+            "max_nat": 2.1360527482312497
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.7969097624366676e-17,
+            "max_nat": 2.1250873898177995
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "1c26cd6fb84bf7399b0c73fd00802e0dc907961d928534954a2d26d281445666",
+          "a0282760c73fdcfac799adf5b25ffad643547e62ecfbd761868b43b809f60a63",
+          "5c461104e151b05db711fe731a8d1165bc778cd7a14c54e2193d4cc739ef83f1",
+          "2e44aef22c9a341f89c2d8f94b679f5f473988616a281e81574cc4f53acc4760",
+          "46b01d4c0987785efba9bcdb0e0e114386f38a3457c1064b4914af7a52b3c4ee"
+        ],
+        "mc_stream_seed": 500429001,
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/mc_dropout/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.3822459320000462
+      }
+    },
+    {
+      "seed": 42,
+      "method": "mc_dropout",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_42_mc_dropout_notmnist.npz",
+      "sha256": "dd6ba672e57a982ba530356ad7d5251282a1cba174ad30e9596acec99becc497",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.35102930901121e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.277864604721496e-23,
+            "max_nat": 2.200388845058093
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.5407823881224246e-19,
+            "max_nat": 2.2068208459593537
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.736542105303089e-16,
+            "max_nat": 2.169682992109805
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "978bd1f502ea4ebc9030ef5c8effee64bd60e52c43b6c907d714b1a3d94b3b0b",
+          "4d21c6f75711573e99130166e82e1fb17068f65910cca73e139fab5ce05b14fb",
+          "e5280fe3c33c4aced77cfd9bd16d47f51fcb6d5a7e1ee7cfea415486eba30e86",
+          "aaec2e97873db359ff7ba8f1eae69b716a2b43c3e200cdb4afc2227e92286802",
+          "fac6d240ba1a4d263bef5455f1b2898021279536019e009d16bd390c5ca81378"
+        ],
+        "mc_stream_seed": 1500429001,
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_42/mc_dropout/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.6134075520000124
+      }
+    },
+    {
+      "seed": 123,
+      "method": "ensemble",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_123_ensemble_mnist.npz",
+      "sha256": "bf3ac0bd66210424a99ea4ce65988fe7cc463f2944b68f1820a3486b722054b3",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2162530655123192e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 5.499063377265338e-19,
+            "max_nat": 1.8406598466881068
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 7.184029151407843e-13,
+            "max_nat": 1.7270497415762975
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.2507872293230464e-12,
+            "max_nat": 1.928273860836863
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.46970572199995786
+      }
+    },
+    {
+      "seed": 123,
+      "method": "ensemble",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_123_ensemble_notmnist.npz",
+      "sha256": "f57f33ecb3b8482b7d3cb43ad89dfe831e6611bea31528c1a613e7ece7db3d46",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.1190076626709242e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.122590737816182e-26,
+            "max_nat": 1.85018732139393
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.129603595484013e-12,
+            "max_nat": 2.19684099007144
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.0442340360102929e-11,
+            "max_nat": 2.0561473100639764
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/ensemble/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.6872220220000145
+      }
+    },
+    {
+      "seed": 123,
+      "method": "random",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_123_random_mnist.npz",
+      "sha256": "b3a922ae5a85380b94a75aaa3fe3de6b37fcb89400f05e39aa5a7b666b358955",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.406043222435983e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.5985577972669958e-17,
+            "max_nat": 1.7596187849461937
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 4.5750124105112835e-10,
+            "max_nat": 1.9717347558772587
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.9737052806762364e-10,
+            "max_nat": 2.148777384141847
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 1.096099277999997
+      }
+    },
+    {
+      "seed": 123,
+      "method": "random",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_123_random_notmnist.npz",
+      "sha256": "065a317471bce8c7b4d5a1cf950b89c9d473bdfc48e93db619a64debaa766c2e",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.1928923388259136e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.8972886877239273e-24,
+            "max_nat": 1.892121241669635
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.8673781788724374e-12,
+            "max_nat": 1.982595858703015
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.3105535983538582e-12,
+            "max_nat": 2.0484918275989314
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/random/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7284721480000371
+      }
+    },
+    {
+      "seed": 123,
+      "method": "adversarial",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_123_adversarial_mnist.npz",
+      "sha256": "9b256a3a1c982a22a32dee16c2f96e32fa3fb1bc88c3d716960624eac5737c62",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2520316633745097e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.2198473673173005e-11,
+            "max_nat": 1.9406379805902527
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.087783775428189e-10,
+            "max_nat": 1.7779704617084884
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.523301922989959e-09,
+            "max_nat": 1.7795624851462264
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.7750223479999931
+      }
+    },
+    {
+      "seed": 123,
+      "method": "adversarial",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_123_adversarial_notmnist.npz",
+      "sha256": "e2a5b81a0e6f1ec23f84d49db6c2441af15fc2dbe186ece8a9e5088db02b55db",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2272888600127771e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.0634111879643812e-08,
+            "max_nat": 2.062571810677159
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.8846492643327136e-08,
+            "max_nat": 2.1007477468914053
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 3.914709396894425e-08,
+            "max_nat": 2.1717514642434965
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/adversarial/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 1.1053001720000566
+      }
+    },
+    {
+      "seed": 123,
+      "method": "mc_dropout",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_123_mc_dropout_mnist.npz",
+      "sha256": "216f67969fdc057a6274f9989b335a7bd1e833822818a9c38b2db2b936b658f2",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.4421714606148726e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.364038030476845e-17,
+            "max_nat": 2.2370922152694
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.0778208268669007e-15,
+            "max_nat": 2.2399211458430335
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.2510995632493573e-14,
+            "max_nat": 2.157146405232559
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "096ff3651068615c1b3393b33b8ea372b70faacafeef54a922fc081c92176785",
+          "7f2e8fe2bb26a33d3ac3299eedf2ea99ab5b100ea6a5c31011afe229e7709eca",
+          "26080124f85fbe1c02f5b3ed18f8808439507098169984ca3a757729298d5597",
+          "d6f600ce4bf823fa52a7dc2a5066c5d09c4dba84485f7a870b78139e47b4bae7",
+          "6ae00d0ddf3929a3609fd3045660fbdaae0675d48376fa3935b1a1a2b90176a5"
+        ],
+        "mc_stream_seed": 501239001,
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/mc_dropout/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.3685163249999732
+      }
+    },
+    {
+      "seed": 123,
+      "method": "mc_dropout",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_123_mc_dropout_notmnist.npz",
+      "sha256": "56f10c91ad2475d1eaca34a882bd4e3eb4b0e94a144def15308a78e4ea585c2a",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.0025849067906165e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.937049567433381e-34,
+            "max_nat": 2.26662530461216
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.7820904198602455e-25,
+            "max_nat": 2.259810077779008
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.4896762263527606e-21,
+            "max_nat": 2.248614449515376
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "e2ba290230f93308ac76d72fc519f2347cc97093c7534b942adf23a89a8609c2",
+          "45ce95cb7ff24b89e9ad650c8964e70814fb6f9d0ae617bf5867eb6ed3bab21f",
+          "f0ed99c754f69b2c482e2136dffbcc765a277f0ab82d687570cafe4602ab9487",
+          "4de5ad4a7c6f4329002b16a4ade68efaad39425dbfe34d5090a04348fd5d2aa8",
+          "708b9af11d5f8077ee4c846ec529b724eb553e55a479cae0ddba65535a1f6667"
+        ],
+        "mc_stream_seed": 1501239001,
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_123/mc_dropout/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.7978360800000246
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "ensemble",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_2026_ensemble_mnist.npz",
+      "sha256": "6bd025f6ba0e9a7654c73e457a06a8afa276a7d965c1dafaf36a9591ad8364cc",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2962922230362892e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 9.00492967663693e-16,
+            "max_nat": 1.8789843731263334
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.2945020177184154e-10,
+            "max_nat": 1.864491154963162
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.8465050668389878e-09,
+            "max_nat": 1.9913354641467462
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.4608522849999872
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "ensemble",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_2026_ensemble_notmnist.npz",
+      "sha256": "eda869c45e8c67471c3a3a7a4b92423ac8be3de057102379d3915090b8f2eb1e",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2624327300491132e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.6605867419001162e-26,
+            "max_nat": 1.9317924289127182
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.0120959330447726e-17,
+            "max_nat": 2.111645758729662
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.167303481991625e-09,
+            "max_nat": 2.1558534847370483
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/ensemble/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.684827792999954
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "random",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_2026_random_mnist.npz",
+      "sha256": "e88aa8026c03a610d9da7fe62553c54e4c2f987ffe4de2e59f79376841e5be9e",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2585408032682608e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 9.895678549343027e-21,
+            "max_nat": 2.0102724577021833
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 4.1847540688893764e-10,
+            "max_nat": 1.8325069921674435
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 9.472083174504128e-09,
+            "max_nat": 1.9078333745201341
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.45182813999997506
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "random",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_2026_random_notmnist.npz",
+      "sha256": "182dfea4d68090f492971840f050e2a423d2949641c3fcf0875eb53ef3cac6eb",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.3130084203515366e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.9440993091851009e-26,
+            "max_nat": 1.9983429407689008
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.8774813339120484e-15,
+            "max_nat": 2.020533104115753
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 7.545175640042401e-12,
+            "max_nat": 2.050903403399869
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/random/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.8509333009999409
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "adversarial",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_2026_adversarial_mnist.npz",
+      "sha256": "757a769c899af242c69ba2dda1e7dc7659a7b3464ba5ce3c25208dafafe85dd9",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.1682595474636912e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 4.956210606495512e-13,
+            "max_nat": 2.0883246211323874
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 5.458021166826941e-08,
+            "max_nat": 1.8616466752997358
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 3.356474620807183e-07,
+            "max_nat": 1.8436739368346045
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.443859247999967
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "adversarial",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_2026_adversarial_notmnist.npz",
+      "sha256": "8c42e7ed21e5e0d0293d80d609b171b9f84a540b97a757f45d9d25e4052282b0",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2007102273846613e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 1.3705583259820486e-09,
+            "max_nat": 2.225889779085466
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 8.432017466552103e-06,
+            "max_nat": 2.1568354989321543
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 5.687733562486997e-06,
+            "max_nat": 2.2420510795686313
+          }
+        },
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_01.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_02.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_03.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          },
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/adversarial/member_04.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": true,
+            "original_predictor_equal": true
+          }
+        ],
+        "inference_seconds": 0.6857493699999395
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "mc_dropout",
+      "dataset": "mnist",
+      "probabilities": "probabilities/seed_2026_mc_dropout_mnist.npz",
+      "sha256": "2cedbd78fb7a722a28e4722e2933fa67181550aa9e08e07f7eac37c8f09bd194",
+      "validation": {
+        "shape": [
+          5,
+          10000,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.2683919698174293e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 2.5928725248335934e-18,
+            "max_nat": 2.2371392630680864
+          },
+          "3": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 1.1609327702160084e-14,
+            "max_nat": 2.121141131254034
+          },
+          "5": {
+            "shape": [
+              10000
+            ],
+            "min_nat": 5.351066365920523e-13,
+            "max_nat": 2.102540857790582
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "f6f9daaa397983df3ef071f1c3d89912e66e51b3807274cda7f585faebe0abfc",
+          "14a0e8461fa3c81c0033a327791fff397963cbbf3755bbcebaf0d0ceb4594d01",
+          "d411ce81956155bb92b202728b54d991455ff4444fc04b52f1253fde0764fab4",
+          "24b31e10f17693e3f72093086ba7be47bc87d73eb4fd6ca21cbbdf0c709b186d",
+          "ec3b3a572d5b7896e62aae19d5611ae3c2ee601278e6836d30a83f2d01523a66"
+        ],
+        "mc_stream_seed": 520269001,
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/mc_dropout/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.3682993749999923
+      }
+    },
+    {
+      "seed": 2026,
+      "method": "mc_dropout",
+      "dataset": "notmnist",
+      "probabilities": "probabilities/seed_2026_mc_dropout_notmnist.npz",
+      "sha256": "3144460baf63bdfed8e4ed1e7e350e1f57935610e2723767ff28ed5802c96d38",
+      "validation": {
+        "shape": [
+          5,
+          18724,
+          10
+        ],
+        "dtype": "float32",
+        "nan_count": 0,
+        "inf_count": 0,
+        "max_probability_sum_error": 2.1402925465263678e-07,
+        "entropy_by_M": {
+          "1": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.964857437848852e-31,
+            "max_nat": 2.205519947385365
+          },
+          "3": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 2.4054029654129203e-25,
+            "max_nat": 2.1850923728089877
+          },
+          "5": {
+            "shape": [
+              18724
+            ],
+            "min_nat": 9.43212467788622e-22,
+            "max_nat": 2.2256109032769174
+          }
+        },
+        "mc_passes_differ": true,
+        "mc_rng_state_sha256_before_pass": [
+          "1aa2e8172e20b161a9c84b25ddb9e42a62646f195756e337fe357a08d5b7a31a",
+          "eeb34cbd53c2b907511e0b35709bc3ea332fdd768c6348b532d8bae6a8e31d99",
+          "7b172ec04337f010de76a49a7cbb496481d822db3c71fe5f121de73381b47142",
+          "ef8eba52e6c86fad93924b856736eb85a213ee261f14d3b823a907cd3cdec72e",
+          "5e8668b0b1e2e56b0fd64f38fbc38714e723b37c7af0e5d46ea51a4c40d51cc8"
+        ],
+        "mc_stream_seed": 1520269001,
+        "models": [
+          {
+            "checkpoint": "/content/drive/MyDrive/DeepEnsembles_MNIST_Figure2a/figure2a_final_local_48/mnist_classification/outputs/local/checkpoints/seed_2026/mc_dropout/member_00.pt",
+            "strict_loaded": true,
+            "bn_buffers_unchanged": true,
+            "deterministic_repeat_equal": null,
+            "original_predictor_equal": null
+          }
+        ],
+        "inference_seconds": 0.5996118069999739
+      }
+    }
+  ],
+  "rng_policy": "Original member_seed + fixed dataset offset; seed once per stream; no per-forward reseeding",
+  "resume_unit": "Verified seed/method/dataset probability cache",
+  "timing_scope": "Checkpoint loading, small audit probes and inference; no dataset preparation/plotting",
+  "result_rows": 36,
+  "summary_rows": 12,
+  "smoke_seconds": 3.1332261080000308,
+  "total_inference_seconds": 15.911972225999989,
+  "new_inference_seconds_this_invocation": 15.911972225999989,
+  "resumed_groups": 0,
+  "classification_comparisons_within_tolerance": 36,
+  "checkpoint_source_unchanged": true,
+  "plot_settings": {
+    "histogram_edges_nat": [
+      0.0,
+      0.04605170185988092,
+      0.09210340371976183,
+      0.13815510557964275,
+      0.18420680743952367,
+      0.23025850929940458,
+      0.2763102111592855,
+      0.3223619130191664,
+      0.36841361487904734,
+      0.4144653167389283,
+      0.46051701859880917,
+      0.5065687204586901,
+      0.552620422318571,
+      0.598672124178452,
+      0.6447238260383328,
+      0.6907755278982137,
+      0.7368272297580947,
+      0.7828789316179756,
+      0.8289306334778566,
+      0.8749823353377374,
+      0.9210340371976183,
+      0.9670857390574993,
+      1.0131374409173801,
+      1.059189142777261,
+      1.105240844637142,
+      1.151292546497023,
+      1.197344248356904,
+      1.2433959502167848,
+      1.2894476520766656,
+      1.3354993539365465,
+      1.3815510557964275,
+      1.4276027576563084,
+      1.4736544595161893,
+      1.5197061613760703,
+      1.5657578632359512,
+      1.6118095650958322,
+      1.6578612669557131,
+      1.7039129688155938,
+      1.7499646706754748,
+      1.7960163725353557,
+      1.8420680743952367,
+      1.8881197762551176,
+      1.9341714781149986,
+      1.9802231799748795,
+      2.0262748818347602,
+      2.0723265836946414,
+      2.118378285554522,
+      2.1644299874144033,
+      2.210481689274284,
+      2.2565333911341647,
+      2.302585092994046
+    ],
+    "density_integral": 1.0,
+    "aggregation": "Arithmetic mean of per-seed density histograms, not raw counts",
+    "y_axis": "Common limits within each ID/OOD row; rows may differ",
+    "png_dpi": 300
+  },
+  "completed_utc": "2026-11-26T17:42:01.317615+00:00",
+  "invocation_seconds": 52.42389608199994,
+  "artifact_sha256": {
+    "classification_consistency.csv": "ce975aad7c37dd9e7d9eb92b27c055e43d3f565820ff5a4455e90ef871e4fafc",
+    "classifier_reference/raw_results.csv": "0b80fa6b4e2bcc8cd17d45e3d1fec1468d918b4605c72d7a4279db2cc145708e",
+    "classifier_reference/summary.csv": "ba5a937eba717c773cc38f0c33f4642a1f2c0f0e41235657b1662f470121669d",
+    "entropy/seed_123_adversarial_mnist_M1.npy": "6da5df9f8f0f34c1396c2de0b2817458d916dd57bd679bafdf023df1deb44c32",
+    "entropy/seed_123_adversarial_mnist_M3.npy": "023efce7ad237b5be67e1a26e5d30eb46f3bfc81406fd6ed6bc786b981f5fa6a",
+    "entropy/seed_123_adversarial_mnist_M5.npy": "b74792f2628d5faa61ef04885319fdf35694bbac641f48b1fd4a2191c8f3d36a",
+    "entropy/seed_123_adversarial_notmnist_M1.npy": "f7bbff12a3615d108c3f0d5b152044f37d64b4913bc08f44b4957977586365f4",
+    "entropy/seed_123_adversarial_notmnist_M3.npy": "e77d610f8e9925b08dce12e4ec53c1f55568741ab396c2cf4438321399672607",
+    "entropy/seed_123_adversarial_notmnist_M5.npy": "cd9e35691b54f189ff9697235076fbf7295d1dfc3932889a189b9e9756892807",
+    "entropy/seed_123_ensemble_mnist_M1.npy": "56e50dd90daf9c27956136d41e45c4a0200496dec9ec72b2ea43f1f502a715bb",
+    "entropy/seed_123_ensemble_mnist_M3.npy": "bce5c94b456ee03aa21485317a8a63ff9777cc61d60a4dd2f49ab8febff51a61",
+    "entropy/seed_123_ensemble_mnist_M5.npy": "85ef253eaff2152d7e8c2ea75283f9443352a7b326db5e797305f27142c0fb0e",
+    "entropy/seed_123_ensemble_notmnist_M1.npy": "406e6b8b0d2784ca3fba255e87e9dce4293e66099c0b79eabe9ce81a9f321063",
+    "entropy/seed_123_ensemble_notmnist_M3.npy": "cc20b4796c16744390f0c9f4ea8d9e696b273fcae51dad9fcf3ea3150263a685",
+    "entropy/seed_123_ensemble_notmnist_M5.npy": "9b6a81ddeeb3b070cfaa3891a24b39bb03c60ddf56a48115e1413904b72eddfb",
+    "entropy/seed_123_mc_dropout_mnist_M1.npy": "b0da5d0dbc2dea6e3b34fbcc89ef606cfef908d59b33b4487867653869e584c4",
+    "entropy/seed_123_mc_dropout_mnist_M3.npy": "5bbb31a144e88f3280ce128d31dce2c378cc6180a56f2e43fd8083857678b4ae",
+    "entropy/seed_123_mc_dropout_mnist_M5.npy": "28d0dbb0e09bfbbf7441d0f679b09131a530fed17220782b0e3501f43d65777a",
+    "entropy/seed_123_mc_dropout_notmnist_M1.npy": "eeccb6c567867d7540840ef14f1d1e821cb361962b2a9735094e4ca0dcb2f55f",
+    "entropy/seed_123_mc_dropout_notmnist_M3.npy": "8a8bf352e467dcaa655398d83c60efd6feb5a2e6967b51a2579578fd06ff5ea2",
+    "entropy/seed_123_mc_dropout_notmnist_M5.npy": "9f775981d82abe0e1956d734d7adc3e86d5d460ee961dc21c6f1bf56db000091",
+    "entropy/seed_123_random_mnist_M1.npy": "b4c9577444b5b8a533a58054b1a0c3d191186db7895c2c8faec2ddefa076da6d",
+    "entropy/seed_123_random_mnist_M3.npy": "a1b0db8bd10a43f79985d2535fa089a19ce39455dc7b0d4f35af6329f18b5e58",
+    "entropy/seed_123_random_mnist_M5.npy": "3f9ae21a0fc5b09a8ebd40110232228b4a98273562f98fb59a95b189edb9c73d",
+    "entropy/seed_123_random_notmnist_M1.npy": "2487badb1381037825bb822a5a85b1954e8c2a673801240579454b101208bb53",
+    "entropy/seed_123_random_notmnist_M3.npy": "37b67029a1d459c633ce37cc78caf3960700b60101a1d93b79e960cce300b75b",
+    "entropy/seed_123_random_notmnist_M5.npy": "985bf09a856c3d29a707ef1de4c9f3837565bd5b6ce6ee1233b21c140b5e69ec",
+    "entropy/seed_2026_adversarial_mnist_M1.npy": "cd5c6f17e1be0fda955da963f632e4ae1d8a4c058f500900299a18ed4d436fa2",
+    "entropy/seed_2026_adversarial_mnist_M3.npy": "e6fa2f40ee6e9c7aed77a9863b3d97416228535fe2ddcf3f98545a22d80c8ffd",
+    "entropy/seed_2026_adversarial_mnist_M5.npy": "6aaa5c4a74bb154ae152b948e83f63e6e9629e7f64209d405db0ce724d5f13b6",
+    "entropy/seed_2026_adversarial_notmnist_M1.npy": "14aa61ecc43d9eb24af99c0db903d10d6be51812b56a1cd9cb792e6ef8c4b194",
+    "entropy/seed_2026_adversarial_notmnist_M3.npy": "36da66b74e11b70762d754be446f830168ef188c7dbc743aa086c81ed22a2883",
+    "entropy/seed_2026_adversarial_notmnist_M5.npy": "95ea69e341a8eb25901c4e334e19523ec76cc7b5d027c78e543f3596d9a6a099",
+    "entropy/seed_2026_ensemble_mnist_M1.npy": "2e9f86ad44ea87e3fc1b36efe415dd34dc63b19ac88bb07c45ff6f413e978aeb",
+    "entropy/seed_2026_ensemble_mnist_M3.npy": "0a795c69ad985ab35fb783ebf7f0d5d9665458bc912ae6a5d6bfa1c736b4051f",
+    "entropy/seed_2026_ensemble_mnist_M5.npy": "f62d44e06a47f81117767a64bdc124c8d6a6a1e76f11f8cd59f76aaa593d855a",
+    "entropy/seed_2026_ensemble_notmnist_M1.npy": "5266317441d09bba3c591c914671e578511697ba3484c6c940cabb92e9798b3e",
+    "entropy/seed_2026_ensemble_notmnist_M3.npy": "0637f6543e845919d7515c2b2dd80cc0ee5e9b0d73d1c8cb012d823c673685c1",
+    "entropy/seed_2026_ensemble_notmnist_M5.npy": "53de8119e851828322b08fea22e0cedb318c040d8aac1882aac3a95a5d0565b3",
+    "entropy/seed_2026_mc_dropout_mnist_M1.npy": "02be2d7e036630ccd78ad766159a2a938af8513c6e3bd7a0df9c10b27569a1df",
+    "entropy/seed_2026_mc_dropout_mnist_M3.npy": "958db257a3d83cdb807b37b04d7b2982f841ad693ffb2cc243be75a3534bd291",
+    "entropy/seed_2026_mc_dropout_mnist_M5.npy": "a323964739dcf37cc8cc34197ca78cf72fc847e9267c597bee93be8d35afbd9a",
+    "entropy/seed_2026_mc_dropout_notmnist_M1.npy": "cb6861a270058606a135a9390b7b962ca10465393018c3e06544d796c06be1ee",
+    "entropy/seed_2026_mc_dropout_notmnist_M3.npy": "244e32617078d103e45a0742e213048715d54d06e9cdd80c9446105b1c8d208a",
+    "entropy/seed_2026_mc_dropout_notmnist_M5.npy": "cde08c701e833d81acacfa0f7362ef4c9e9735bc39dda57f15c8fa52a16df361",
+    "entropy/seed_2026_random_mnist_M1.npy": "598d0c4ad8530638f6c3c1880103f6df23ce365f299cbe44815f7b0472ba5c88",
+    "entropy/seed_2026_random_mnist_M3.npy": "1acc0c366582e6574b3976b4c1ec9a9c562fb2c11e959e7f5af91126c23bcf7e",
+    "entropy/seed_2026_random_mnist_M5.npy": "683e7fc1584bd78d2de173e2d879203c1dec2151357173418fe3f6d8cffdc982",
+    "entropy/seed_2026_random_notmnist_M1.npy": "8c0b38df2623e9fec8a9c7ae8a2e8b8bf380d57c3497c65619bb17e55405117f",
+    "entropy/seed_2026_random_notmnist_M3.npy": "72c4c4873fd7118d18d459a10f18b49fbd3dd5434df66372ddbe836374f4f53a",
+    "entropy/seed_2026_random_notmnist_M5.npy": "eba141809e8cd3fc15fa2969bc821f5b9582670872d88bc66eef366ac1b2ca54",
+    "entropy/seed_42_adversarial_mnist_M1.npy": "314c10df114b1976df519cc72eef5427acfe98e2d323bc79b4d48432405d55ac",
+    "entropy/seed_42_adversarial_mnist_M3.npy": "b86ede5550132f14da8524f8c2da98df58322d00ce30165ea426cdc59502797c",
+    "entropy/seed_42_adversarial_mnist_M5.npy": "1b899ae4e4e728650c2deadde19377055aa12d638b8566e708fdcd6fb9e551ce",
+    "entropy/seed_42_adversarial_notmnist_M1.npy": "e4dd32b7255b7d56e5b594520f6d6b0d71f25b5f13d4d8d22e028daea5623d70",
+    "entropy/seed_42_adversarial_notmnist_M3.npy": "9036510e317be33c3ad3ce65844d31e55d0970beaa117ad50358d426e44f49f0",
+    "entropy/seed_42_adversarial_notmnist_M5.npy": "721e84badc5f15fdc54db0c4300d7fead972ee0de4efed6470b6da21e6364188",
+    "entropy/seed_42_ensemble_mnist_M1.npy": "7f5d8fec2156b28bbb5611e802b2e4333845268194b2173b40cf7964cc36dc4e",
+    "entropy/seed_42_ensemble_mnist_M3.npy": "239cd94fe88ebd94e8f85a283324df38f967e503c295801825e04d0c0b88bc89",
+    "entropy/seed_42_ensemble_mnist_M5.npy": "dfd741f2404decd5614147271e021661c73ceaf98cbf1e17d0bb206c63606814",
+    "entropy/seed_42_ensemble_notmnist_M1.npy": "6305b8c53a0b1a7fac2dff7724d52e7c9351a828dd04199e86c8713986ab4840",
+    "entropy/seed_42_ensemble_notmnist_M3.npy": "6b4ed18f2667f9aa779183fcaf099ffe9843b2b01626e6aac134429cb34917ff",
+    "entropy/seed_42_ensemble_notmnist_M5.npy": "cb807b830d4d6f42280dc5fee39809ed95373973ef833dda24b81150f6707a84",
+    "entropy/seed_42_mc_dropout_mnist_M1.npy": "88c377365f827f36d6446e945ada5543719b506dafc7cee4558b9d1c03d63d0f",
+    "entropy/seed_42_mc_dropout_mnist_M3.npy": "7dbf139bf61658d0b389fc1e9ed6fc928925ac4940fc94e5d5ae08bc42335a0a",
+    "entropy/seed_42_mc_dropout_mnist_M5.npy": "96ba43f713e3ad536ace31daf836db43fb4f1f9a4bc948b6d98c5522dfbed69d",
+    "entropy/seed_42_mc_dropout_notmnist_M1.npy": "08587ea1b1bc83d89788ebd53859abc2e8b85913a63cd52e447c44f950acf7b4",
+    "entropy/seed_42_mc_dropout_notmnist_M3.npy": "8d6fe3099449d5ec6197092042c605bc04c57b090dced6d5bf0144161b769e7d",
+    "entropy/seed_42_mc_dropout_notmnist_M5.npy": "68740269ea1ab8e9552f30f843ab2f4da6edaca20e409999b3444afaaf4da49a",
+    "entropy/seed_42_random_mnist_M1.npy": "1e53040fc4f83fc0ce02658a6eaa35ae69ff9803a116dafbc557e28274a3c299",
+    "entropy/seed_42_random_mnist_M3.npy": "af56757170d4f77ba33da5f086adff9373274aaca6bcd33ba17a3fb84ab52aeb",
+    "entropy/seed_42_random_mnist_M5.npy": "a437c85dce7f1095589c70f024e1d02d3c127c58a83fa2bd65a61df1b9dfd0e8",
+    "entropy/seed_42_random_notmnist_M1.npy": "fe923ae2926fab0b85a4d192e269bfe19e8c1cb0d087abb612f46cf47f0b9a35",
+    "entropy/seed_42_random_notmnist_M3.npy": "836fc4b636d1412744d2cfdc2895f066bf45268a73c085a7f3470c236b99c940",
+    "entropy/seed_42_random_notmnist_M5.npy": "301f502432f6c41b19215fda3ae30bbc3a58979d99ba5bee5adcf2adcbe0e5d8",
+    "figures/dataset_samples.png": "6a0f8ff1c76b3286d3e1242f7bbbfcb892e2700035101a45fe5cc5e7c3690cde",
+    "figures/entropy_gap.pdf": "472a6e3a2e54c5e55b55ea19a4b079a3826975c0a7a88c1140feed7f5b3509d7",
+    "figures/entropy_gap.png": "4c07f95fe902184308ebcb7246246ae9c9a0ab29f76acef87a6859a29f77178a",
+    "figures/figure3a.pdf": "19ccdcf6cb4a25ac449e4146fd1b43a810227207537d819e8b363846beb2db19",
+    "figures/figure3a.png": "6c5b1da23d9322852907ef2a9750624bfbac2cdc6dd937aa3cb7abf44bcfc325",
+    "figures/figure3a_seed123.pdf": "cc64bb6d4118d91044b7e3b9dae8f4ba54add57fda7264e9198c57331b7df02b",
+    "figures/figure3a_seed123.png": "6c23d212bde1bba034e9214b5513a76cf9105bf622b40ff32585eca0a4d36e53",
+    "figures/figure3a_seed2026.pdf": "66242451324f838601fc80cd01c0435580010ef9ed031dceca30b4de142fa349",
+    "figures/figure3a_seed2026.png": "976799425524a5d2627fa1d170d9cce104d53c85f20b5ab435a3abf31ae378e0",
+    "figures/figure3a_seed42.pdf": "b6c9e7b776bfba3c2226e760a69a9656733506715f2212fc689926865dcabd10",
+    "figures/figure3a_seed42.png": "4f020d1d6d8eb04de2fe864d74f764f141ab3ac6359af184e40a796511189659",
+    "figures/ood_auroc.pdf": "71e8e10d471e40f1f34a78c6437b282443cebf2e9306a4d80bdf2e881fb04308",
+    "figures/ood_auroc.png": "3f0c1dedaf0f7844305446be7665239925049d5bcffa87c5b491e62c105128a0",
+    "inference_test_results.json": "bb6b07091970511ec2a4b6f9a00966318c52ae4b35b0756537d2c040cea844e3",
+    "results_per_seed.csv": "0a1c03a0ac1aa50802050705e2a483a266233a08688b47d1e349c58dfc2e3d1c",
+    "results_summary.csv": "f60d6836334591902b6ab3c1a0a1903d541b0ff6257aacf71952b18b17ebea05"
+  },
+  "independent_output_verification": {
+    "successful": true,
+    "passed": 274,
+    "new_model_forward_passes": 0
+  }
+}

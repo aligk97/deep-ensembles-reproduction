@@ -51,7 +51,7 @@ def read_training_data(path: Path) -> tuple[torch.Tensor, torch.Tensor]:
     if not path.exists():
         raise FileNotFoundError(
             f"Training data not found: {path}\n"
-            "First run: .\\.venv\\Scripts\\python.exe .\\01_generate_data.py"
+            "First run: python 01_generate_data.py (from the toy_regression folder)"
         )
 
     with path.open("r", newline="", encoding="utf-8") as f:

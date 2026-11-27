@@ -1,0 +1,62 @@
+{
+  "signature": "cfa11cc390454a008b7c4a5565ab3a097a2b3cfa6aeefef821dcfa802dbd28b0",
+  "config": {
+    "name": "local",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "ensemble_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "epochs": 10,
+    "batch_size": 100,
+    "learning_rate": 0.1,
+    "epsilon_fraction": 0.01,
+    "dropout": 0.1,
+    "validation_size": 5000,
+    "split_seed": 4509,
+    "train_limit": 0,
+    "test_limit": 0,
+    "eval_batch_size": 1000,
+    "threads": 2,
+    "deterministic": true
+  },
+  "source_sha256": {
+    "data.py": "4c8fb06ca776da3a3a82f982e6240e6bd9bccf78b7c64b42212a04af40497c5b",
+    "model.py": "5d976b1df17f9d2f30d6c247a98d0a104ce62d73971224e7cef3e786cebc70fd",
+    "metrics.py": "abe15a8090d93755316bcaf549cd97f3fd7b314cce9f9145370ffc42d2899881",
+    "engine.py": "bfdf6771fb18d5f8c181e4c287b900fe7f9fe7e621a966e0d176c879cd3fdd85",
+    "run_experiment.py": "6d2430bb55c016886356c5b5f15afe143acb1f64fb61c1609fa8d0a038baa082"
+  },
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "torch": "2.14.1+cu130",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "deterministic": true
+  },
+  "status": "complete",
+  "started_utc": "2026-11-25T20:51:47.816968+00:00",
+  "resume_policy": "last completed epoch; final epoch evaluated; no test-based selection",
+  "completed_utc": "2026-11-25T21:12:16.053781+00:00",
+  "invocation_seconds": 1228.189546743,
+  "result_rows": 63,
+  "trained_models": 48,
+  "total_training_epoch_seconds": 1188.8576210560013,
+  "colab_resume_summary": {
+    "verified_complete_skipped": 0,
+    "resumed_partial": 0,
+    "trained_new": 48
+  },
+  "checkpoint_validation": "strict architecture/config/signature/history/finite weights/optimizer/RNG"
+}

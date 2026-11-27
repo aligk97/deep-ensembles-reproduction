@@ -1,0 +1,1922 @@
+{
+  "successful": true,
+  "passed": 478,
+  "failed": 0,
+  "new_training": false,
+  "model_forwards": 0,
+  "scope": "Saved CSV/JSON/archive checks only; existing experiments NOT rerun",
+  "checks": [
+    {
+      "name": "toy/actual T4 evidence",
+      "passed": true
+    },
+    {
+      "name": "mnist/actual T4 evidence",
+      "passed": true
+    },
+    {
+      "name": "ood/actual T4 evidence",
+      "passed": true
+    },
+    {
+      "name": "toy completion",
+      "passed": true
+    },
+    {
+      "name": "MNIST completion",
+      "passed": true
+    },
+    {
+      "name": "OOD completion without training",
+      "passed": true
+    },
+    {
+      "name": "48 MNIST checkpoint hashes match audit",
+      "passed": true
+    },
+    {
+      "name": "OOD uses those same 48 Colab checkpoints",
+      "passed": true
+    },
+    {
+      "name": "OOD classifier manifest is identical to MNIST export",
+      "passed": true
+    },
+    {
+      "name": "OOD Figure2a reference exactly matches Colab CSV",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/classification_consistency.csv",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/classifier_reference/raw_results.csv",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/classifier_reference/summary.csv",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_adversarial_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_adversarial_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_adversarial_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_adversarial_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_adversarial_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_adversarial_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_ensemble_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_ensemble_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_ensemble_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_ensemble_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_ensemble_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_ensemble_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_mc_dropout_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_mc_dropout_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_mc_dropout_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_mc_dropout_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_mc_dropout_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_mc_dropout_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_random_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_random_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_random_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_random_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_random_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_123_random_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_adversarial_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_adversarial_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_adversarial_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_adversarial_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_adversarial_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_adversarial_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_ensemble_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_ensemble_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_ensemble_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_ensemble_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_ensemble_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_ensemble_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_mc_dropout_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_mc_dropout_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_mc_dropout_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_mc_dropout_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_mc_dropout_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_mc_dropout_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_random_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_random_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_random_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_random_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_random_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_2026_random_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_adversarial_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_adversarial_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_adversarial_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_adversarial_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_adversarial_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_adversarial_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_ensemble_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_ensemble_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_ensemble_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_ensemble_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_ensemble_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_ensemble_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_mc_dropout_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_mc_dropout_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_mc_dropout_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_mc_dropout_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_mc_dropout_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_mc_dropout_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_random_mnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_random_mnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_random_mnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_random_notmnist_M1.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_random_notmnist_M3.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/entropy/seed_42_random_notmnist_M5.npy",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/dataset_samples.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/entropy_gap.pdf",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/entropy_gap.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a.pdf",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a_seed123.pdf",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a_seed123.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a_seed2026.pdf",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a_seed2026.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a_seed42.pdf",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/figure3a_seed42.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/ood_auroc.pdf",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/figures/ood_auroc.png",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/inference_test_results.json",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/results_per_seed.csv",
+      "passed": true
+    },
+    {
+      "name": "OOD saved artifact SHA/results_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "MNIST/archived scientific source/data.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/current source matches archived source/data.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/archived scientific source/model.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/current source matches archived source/model.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/archived scientific source/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/current source matches archived source/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/archived scientific source/engine.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/current source matches archived source/engine.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/archived scientific source/run_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST/current source matches archived source/run_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/data.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/data.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/inference.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/inference.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/plots.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/plots.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/run_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/run_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/prepare_data.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/prepare_data.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/archived scientific source/test_inference.py",
+      "passed": true
+    },
+    {
+      "name": "OOD/current source matches archived source/test_inference.py",
+      "passed": true
+    },
+    {
+      "name": "MNIST grid 63/21",
+      "passed": true
+    },
+    {
+      "name": "OOD grid 36/12",
+      "passed": true
+    },
+    {
+      "name": "Toy grid 48/16",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/single/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/single/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/single/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/single/1/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/single/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/2",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/2/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/4",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/4/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/2",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/2/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/4",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/4/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/2",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/2/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/4",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/4/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/2",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/2/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/4",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/4/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/nll",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/ensemble/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/ensemble/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/random/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/random/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/adversarial/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/adversarial/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/1",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/3",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mc_dropout/5",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mc_dropout/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mse_ensemble/left_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mse_ensemble/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mse_ensemble/right_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/mse_ensemble/all",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/mse_ensemble/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_nll/left_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_nll/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_nll/right_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_nll/all",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_nll/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_at/left_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_at/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_at/right_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/gaussian_at/all",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/gaussian_at/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/deep_ensemble/left_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/left_ood/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/deep_ensemble/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/in_distribution/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/deep_ensemble/right_ood",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/right_ood/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three distinct run seeds/deep_ensemble/all",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/width95",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "recomputed/deep_ensemble/all/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/random/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/random/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/random/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/42/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/random/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/random/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/random/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/123/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/ensemble/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/ensemble/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/ensemble/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/random/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/random/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/random/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/adversarial/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/adversarial/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/adversarial/M5",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/mc_dropout/M1",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/mc_dropout/M3",
+      "passed": true
+    },
+    {
+      "name": "OOD valid scalar metrics/2026/mc_dropout/M5",
+      "passed": true
+    },
+    {
+      "name": "local/all twelve left OOD noisy coverages are zero",
+      "passed": true
+    },
+    {
+      "name": "colab/all twelve left OOD noisy coverages are zero",
+      "passed": true
+    },
+    {
+      "name": "preserved negative local AUROC",
+      "passed": true
+    },
+    {
+      "name": "real Colab ordering correction",
+      "passed": true
+    },
+    {
+      "name": "Colab Figure2a consistency",
+      "passed": true
+    },
+    {
+      "name": "dataset sizes/corruption",
+      "passed": true
+    },
+    {
+      "name": "user consistency/MNIST/ensemble",
+      "passed": true
+    },
+    {
+      "name": "user consistency/OOD/ensemble",
+      "passed": true
+    },
+    {
+      "name": "user consistency/MNIST/random",
+      "passed": true
+    },
+    {
+      "name": "user consistency/OOD/random",
+      "passed": true
+    },
+    {
+      "name": "user consistency/MNIST/adversarial",
+      "passed": true
+    },
+    {
+      "name": "user consistency/OOD/adversarial",
+      "passed": true
+    },
+    {
+      "name": "user consistency/MNIST/mc_dropout",
+      "passed": true
+    },
+    {
+      "name": "user consistency/OOD/mc_dropout",
+      "passed": true
+    },
+    {
+      "name": "executed notebook/toy_regression",
+      "passed": true
+    },
+    {
+      "name": "executed notebook/mnist_classification",
+      "passed": true
+    },
+    {
+      "name": "executed notebook/mnist_notmnist_ood",
+      "passed": true
+    }
+  ]
+}

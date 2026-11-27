@@ -1,7 +1,7 @@
-# Starter dependencies. Record exact resolved versions in completed experiments.
-torch
-torchvision
-numpy
-matplotlib
-pandas
-scikit-learn
+# Keep Colab's installed CUDA-enabled PyTorch. Do not install Windows CUDA wheels.
+torch>=2.6
+numpy>=1.26,<3
+matplotlib>=3.8,<4
+Pillow>=10,<14
+pandas>=2.1,<3
+scikit-learn>=1.5,<2

@@ -1,0 +1,442 @@
+{
+  "status": "passed",
+  "config": "local",
+  "checkpoints": 48,
+  "raw_rows": 63,
+  "n_seeds": 3,
+  "M": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "probability_metric_recomputation": "passed",
+  "seed_sample_sd_recomputation": "passed",
+  "data_md5": "passed",
+  "train_validation_disjoint": true,
+  "training_seed_policy": "paired across treatments; distinct members and run seeds",
+  "unique_initialization_seeds": 18,
+  "nll_floor_diagnostics": [
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.9179002830327363e-09
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 3.1614035833626986e-06
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 3.223814201191999e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 2.4338542061741464e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "ensemble",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 4.10360298701562e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 5.7098730188442914e-09
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 8.355065972409648e-09
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 4.072858317272221e-08
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 3.054643826772008e-08
+    },
+    {
+      "run_seed": 42,
+      "method": "random",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 3.357931200298481e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.4521612801132733e-09
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 2.76735099760117e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.8735890989773907e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 7.838856981834397e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "adversarial",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 7.066001126077026e-05
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "M": 1,
+      "n_clamped": 1,
+      "min_true_class_probability": 9.833711337931491e-22
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.140150232004089e-07
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 2.025122967097559e-07
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.7753227155026252e-07
+    },
+    {
+      "run_seed": 42,
+      "method": "mc_dropout",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.4215584087651223e-07
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.110683900407139e-08
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 6.677826149825705e-06
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.6595864508417435e-05
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.2446902474039234e-05
+    },
+    {
+      "run_seed": 123,
+      "method": "ensemble",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 9.957740985555574e-06
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.1997601134794422e-08
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.3415477440048562e-07
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 2.7060562501901586e-07
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 7.144483333831886e-06
+    },
+    {
+      "run_seed": 123,
+      "method": "random",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 5.715931365557481e-06
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 4.913621864943707e-07
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00012600223999470472
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00033811890170909464
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.0006663782405667007
+    },
+    {
+      "run_seed": 123,
+      "method": "adversarial",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.0018128815572708845
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.8300556382799815e-12
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 7.895786802158966e-10
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.8394819562672637e-05
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.495373908255715e-05
+    },
+    {
+      "run_seed": 123,
+      "method": "mc_dropout",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00010152954200748354
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 3.1559174717976646e-10
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 5.032580929764663e-08
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 7.68638255976839e-06
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 1.0076832040795125e-05
+    },
+    {
+      "run_seed": 2026,
+      "method": "ensemble",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00019869196694344282
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 4.274594456177283e-09
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 4.5016872718406375e-07
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 9.723556786411791e-07
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 3.0476048777927645e-06
+    },
+    {
+      "run_seed": 2026,
+      "method": "random",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 8.826936391415074e-05
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "M": 1,
+      "n_clamped": 0,
+      "min_true_class_probability": 2.027859125064424e-08
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "M": 2,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00024263693194370717
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "M": 3,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00024290254805237055
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "M": 4,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.0003470578812994063
+    },
+    {
+      "run_seed": 2026,
+      "method": "adversarial",
+      "M": 5,
+      "n_clamped": 0,
+      "min_true_class_probability": 0.00027764629339799285
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "M": 1,
+      "n_clamped": 2,
+      "min_true_class_probability": 6.266087502386844e-14
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "M": 2,
+      "n_clamped": 2,
+      "min_true_class_probability": 3.135680056538456e-14
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "M": 3,
+      "n_clamped": 1,
+      "min_true_class_probability": 1.9604082896959585e-13
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "M": 4,
+      "n_clamped": 1,
+      "min_true_class_probability": 1.4703062172719689e-13
+    },
+    {
+      "run_seed": 2026,
+      "method": "mc_dropout",
+      "M": 5,
+      "n_clamped": 1,
+      "min_true_class_probability": 1.176244973817575e-13
+    }
+  ]
+}

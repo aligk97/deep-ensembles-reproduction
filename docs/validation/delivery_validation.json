@@ -1,0 +1,3948 @@
+{
+  "successful": true,
+  "new_training": false,
+  "model_forwards": 0,
+  "existing_experiment_reruns": 0,
+  "scope": "Saved CSV, source, notebook, PDF, PPTX and link checks only",
+  "checks": [
+    {
+      "name": "required deliverables",
+      "passed": true
+    },
+    {
+      "name": "no dependencies/raw datasets/weights/bulk caches in public tree",
+      "passed": true,
+      "files": []
+    },
+    {
+      "name": "no oversized public file",
+      "passed": true
+    },
+    {
+      "name": "all text artifacts opened as UTF-8",
+      "passed": true,
+      "files": 362
+    },
+    {
+      "name": "recognized secret patterns absent",
+      "passed": true,
+      "files": []
+    },
+    {
+      "name": "personal Windows paths absent",
+      "passed": true,
+      "files": []
+    },
+    {
+      "name": "all relative Markdown/notebook links resolve",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "all Python sources compile without execution",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/01_generate_data.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/02_train_mse.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/03_train_mse_ensemble.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/04_train_gaussian_nll.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/05_train_gaussian_nll_at.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/06_train_deep_ensemble.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/07_multi_seed_experiments.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/08_diagnose_uncertainty.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/toy_regression/colab_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/colab_checkpoint.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/colab_entrypoint.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/colab_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/data.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/engine.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/final_reference.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/model.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/plots.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/run_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/test_colab_preflight.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/test_correctness.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/verify_artifacts.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_classification/configs/local.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/colab_data.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/colab_entrypoint.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/colab_reference.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/colab_runtime.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/colab_source.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/data.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/inference.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/metrics.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/plots.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/prepare_data.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/run_experiment.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/test_colab_order.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/test_colab_source.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/test_data.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/test_inference.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/test_metrics.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/verify_existing.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/verify_outputs.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged scientific/support source/mnist_notmnist_ood/configs/final.json",
+      "passed": true
+    },
+    {
+      "name": "all published raw CSVs/figures byte-preserved",
+      "passed": true,
+      "files": 308
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/ensemble/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/single/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/single/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/single/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/single/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/single/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/ensemble/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/ensemble/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/ensemble/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/ensemble/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/ensemble/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/random/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/random/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/random/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/random/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/random/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/random/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/adversarial/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/adversarial/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/adversarial/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/adversarial/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/adversarial/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/adversarial/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_classification\\raw_results.csv/mc_dropout/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/random/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\local\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "local/complete result grids",
+      "passed": true
+    },
+    {
+      "name": "local/all negative toy left coverages retained",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/ensemble/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/single/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/single/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/single/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/single/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/single/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/ensemble/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/ensemble/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/ensemble/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/ensemble/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/ensemble/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/random/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/random/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/random/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/random/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/random/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/random/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/adversarial/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/adversarial/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/adversarial/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/adversarial/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/adversarial/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/adversarial/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/1/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/1/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/1/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/1/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/2",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/2/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/2/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/2/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/2/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/3/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/3/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/3/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/3/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/4",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/4/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/4/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/4/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/4/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/5/classification_error",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/5/accuracy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/5/nll",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_classification\\raw_results.csv/mc_dropout/5/brier",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/ensemble/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/random/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/adversarial/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/1/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/3/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/mean_id_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/mean_ood_entropy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\mnist_notmnist_ood\\results_per_seed.csv/mc_dropout/5/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/mse_ensemble/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_nll/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/gaussian_at/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/left_ood/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/in_distribution/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/right_ood/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "three seeds/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/rmse_clean",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/rmse_noisy",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/nll_moment",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/coverage95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/width95",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/avg_aleatoric_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/avg_epistemic_std",
+      "passed": true
+    },
+    {
+      "name": "sample statistics/results\\colab\\toy_regression\\07_seed_experiments\\aggregate\\metrics\\metrics_by_seed.csv/deep_ensemble/all/nll_exact_mixture",
+      "passed": true
+    },
+    {
+      "name": "colab/complete result grids",
+      "passed": true
+    },
+    {
+      "name": "colab/all negative toy left coverages retained",
+      "passed": true
+    },
+    {
+      "name": "README numeric row/ensemble",
+      "passed": true
+    },
+    {
+      "name": "README numeric row/random",
+      "passed": true
+    },
+    {
+      "name": "README numeric row/adversarial",
+      "passed": true
+    },
+    {
+      "name": "README numeric row/mc_dropout",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTEnsembleAccuracy",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTEnsembleAccuracy",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTEnsembleError",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTEnsembleError",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTEnsembleNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTEnsembleNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTEnsembleBrier",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTEnsembleBrier",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODEnsembleID",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODEnsembleID",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODEnsembleOOD",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODEnsembleOOD",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODEnsembleGap",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODEnsembleGap",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODEnsembleAUROC",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODEnsembleAUROC",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTRandomAccuracy",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTRandomAccuracy",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTRandomError",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTRandomError",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTRandomNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTRandomNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTRandomBrier",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTRandomBrier",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODRandomID",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODRandomID",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODRandomOOD",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODRandomOOD",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODRandomGap",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODRandomGap",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODRandomAUROC",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODRandomAUROC",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTATAccuracy",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTATAccuracy",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTATError",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTATError",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTATNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTATNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTATBrier",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTATBrier",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODATID",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODATID",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODATOOD",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODATOOD",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODATGap",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODATGap",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODATAUROC",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODATAUROC",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTDropoutAccuracy",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTDropoutAccuracy",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTDropoutError",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTDropoutError",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTDropoutNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTDropoutNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/MNISTDropoutBrier",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/MNISTDropoutBrier",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODDropoutID",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODDropoutID",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODDropoutOOD",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODDropoutOOD",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODDropoutGap",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODDropoutGap",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/OODDropoutAUROC",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/OODDropoutAUROC",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSEIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSEIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSEIDNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSEIDNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSEIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSEIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSELeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSELeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSELeftNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSELeftNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSELeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSELeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSERightRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSERightRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSERightNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSERightNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyMSERightCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyMSERightCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianIDNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianIDNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianLeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianLeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianLeftNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianLeftNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianLeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianLeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianRightRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianRightRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianRightNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianRightNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianRightCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianRightCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATIDNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATIDNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATLeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATLeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATLeftNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATLeftNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATLeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATLeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATRightRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATRightRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATRightNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATRightNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyGaussianATRightCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyGaussianATRightCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepIDRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepIDNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepIDNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepIDCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepLeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepLeftRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepLeftNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepLeftNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepLeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepLeftCoverage",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepRightRMSE",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepRightRMSE",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepRightNLL",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepRightNLL",
+      "passed": true
+    },
+    {
+      "name": "claim from actual CSV/ToyDeepRightCoverage",
+      "passed": true
+    },
+    {
+      "name": "LaTeX numeric macro/ToyDeepRightCoverage",
+      "passed": true
+    },
+    {
+      "name": "instructor preamble preserved",
+      "passed": true
+    },
+    {
+      "name": "instructor required section order preserved",
+      "passed": true
+    },
+    {
+      "name": "guides hidden",
+      "passed": true
+    },
+    {
+      "name": "all citations have actual BibTeX entries",
+      "passed": true
+    },
+    {
+      "name": "real public repository URL in report",
+      "passed": true
+    },
+    {
+      "name": "three editable author slots",
+      "passed": true
+    },
+    {
+      "name": "report figure exists/figures/figure1_toy_colab.png",
+      "passed": true
+    },
+    {
+      "name": "report figure exists/figures/figure2a_mnist_colab.pdf",
+      "passed": true
+    },
+    {
+      "name": "report figure exists/figures/figure3a_ood_colab.pdf",
+      "passed": true
+    },
+    {
+      "name": "actual executed notebook/MNIST_Deep_Ensembles_Colab_executed.ipynb",
+      "passed": true,
+      "code_cells": 8
+    },
+    {
+      "name": "actual executed notebook/MNIST_NotMNIST_OOD_Colab_executed.ipynb",
+      "passed": true,
+      "code_cells": 9
+    },
+    {
+      "name": "actual executed notebook/Toy_Regression_Colab_executed.ipynb",
+      "passed": true,
+      "code_cells": 15
+    },
+    {
+      "name": "six runnable/evidence notebooks",
+      "passed": true
+    },
+    {
+      "name": "9 slides, 7:30 speech, balanced three speakers",
+      "passed": true
+    },
+    {
+      "name": "PPTX ZIP CRC",
+      "passed": true
+    },
+    {
+      "name": "PPTX nine actual slide parts",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '685800', 'y': '1447799'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '711200', 'y': '2463799'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '711200', 'y': '3759199'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '711200', 'y': '5105399'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/1/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/2/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/2/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/2/{'x': '685800', 'y': '1549399'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/2/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/2/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/3/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/3/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/3/{'x': '685800', 'y': '1422399'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/3/{'x': '685800', 'y': '4381499'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/3/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/3/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "editable native table/slide4",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/4/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/4/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/4/{'x': '609600', 'y': '4648199'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/4/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/4/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '438150', 'y': '1308100'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '8763000', 'y': '1422399'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '609600', 'y': '5803899'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/5/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/6/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/6/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/6/{'x': '431800', 'y': '1365667'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/6/{'x': '558800', 'y': '5143499'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/6/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/6/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/7/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/7/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/7/{'x': '1237591', 'y': '1143000'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/7/{'x': '558800', 'y': '5791199'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/7/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/7/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "editable native table/slide8",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/8/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/8/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/8/{'x': '609600', 'y': '4495799'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/8/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/8/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/9/{'x': '0', 'y': '0'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/9/{'x': '508000', 'y': '355599'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/9/{'x': '685800', 'y': '1549399'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/9/{'x': '685800', 'y': '5613399'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/9/{'x': '508000', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "PPTX bounds/9/{'x': '11480800', 'y': '6476999'}",
+      "passed": true
+    },
+    {
+      "name": "actual unmodified figure embedded/slide5",
+      "passed": true
+    },
+    {
+      "name": "actual unmodified figure embedded/slide6",
+      "passed": true
+    },
+    {
+      "name": "actual unmodified figure embedded/slide7",
+      "passed": true
+    },
+    {
+      "name": "all internal PPTX relationships resolve",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "PPTX OOD table value/ensemble/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/ensemble/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/random/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/random/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/adversarial/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/adversarial/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/mc_dropout/ood_auroc",
+      "passed": true
+    },
+    {
+      "name": "PPTX OOD table value/mc_dropout/entropy_gap",
+      "passed": true
+    },
+    {
+      "name": "PPTX accuracy/adversarial",
+      "passed": true
+    },
+    {
+      "name": "PPTX accuracy/mc_dropout",
+      "passed": true
+    },
+    {
+      "name": "negative local OOD value preserved",
+      "passed": true
+    },
+    {
+      "name": "actual readable PDFs match reviewed page count and 9 slides",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleAccuracy/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleAccuracy/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleError/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleError/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleBrier/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTEnsembleBrier/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODEnsembleOOD/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODEnsembleOOD/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODEnsembleGap/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODEnsembleGap/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODEnsembleAUROC/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODEnsembleAUROC/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomAccuracy/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomAccuracy/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomError/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomError/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomBrier/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTRandomBrier/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODRandomOOD/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODRandomOOD/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODRandomGap/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODRandomGap/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODRandomAUROC/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODRandomAUROC/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATAccuracy/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATAccuracy/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATError/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATError/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATBrier/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTATBrier/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODATOOD/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODATOOD/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODATGap/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODATGap/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODATAUROC/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODATAUROC/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutAccuracy/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutAccuracy/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutError/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutError/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutBrier/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/MNISTDropoutBrier/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODDropoutOOD/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODDropoutOOD/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODDropoutGap/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODDropoutGap/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODDropoutAUROC/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/OODDropoutAUROC/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyMSEIDRMSE/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyMSEIDRMSE/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyMSEIDNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyMSEIDNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyMSELeftCoverage/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyMSELeftCoverage/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianIDRMSE/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianIDRMSE/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianIDNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianIDNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianLeftCoverage/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianLeftCoverage/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianATIDRMSE/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianATIDRMSE/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianATIDNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianATIDNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianATLeftCoverage/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyGaussianATLeftCoverage/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepIDRMSE/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepIDRMSE/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepIDNLL/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepIDNLL/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepIDCoverage/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepIDCoverage/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepLeftRMSE/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepLeftRMSE/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepLeftCoverage/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepLeftCoverage/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepRightCoverage/mean",
+      "passed": true
+    },
+    {
+      "name": "rendered report numeric token/ToyDeepRightCoverage/sample_sd",
+      "passed": true
+    },
+    {
+      "name": "rendered presentation numeric token/0.9653",
+      "passed": true
+    },
+    {
+      "name": "rendered presentation numeric token/0.9346",
+      "passed": true
+    },
+    {
+      "name": "rendered presentation numeric token/0.9668",
+      "passed": true
+    },
+    {
+      "name": "rendered presentation numeric token/0.7779",
+      "passed": true
+    },
+    {
+      "name": "rendered presentation numeric token/98.61",
+      "passed": true
+    },
+    {
+      "name": "rendered presentation numeric token/97.32",
+      "passed": true
+    },
+    {
+      "name": "review receipts match final PDF/PPTX",
+      "passed": true
+    },
+    {
+      "name": "Overleaf ZIP CRC",
+      "passed": true
+    },
+    {
+      "name": "Overleaf source current/main.tex",
+      "passed": true
+    },
+    {
+      "name": "Overleaf source current/references.bib",
+      "passed": true
+    },
+    {
+      "name": "Overleaf source current/results_values.tex",
+      "passed": true
+    },
+    {
+      "name": "Overleaf source current/README.md",
+      "passed": true
+    },
+    {
+      "name": "Overleaf figure current/figures/figure1_toy_colab.png",
+      "passed": true
+    },
+    {
+      "name": "Overleaf figure current/figures/figure2a_mnist_colab.pdf",
+      "passed": true
+    },
+    {
+      "name": "Overleaf figure current/figures/figure3a_ood_colab.pdf",
+      "passed": true
+    },
+    {
+      "name": "39 defense questions",
+      "passed": true
+    },
+    {
+      "name": "equation Markdown delimiters/notation",
+      "passed": true
+    }
+  ],
+  "report_pages": 10,
+  "presentation_slides": 9,
+  "manual_actions_pending": [
+    "Complete names and student IDs",
+    "Complete verified contributions and approve AI disclosure",
+    "Confirm later course page cap and assigned presentation date",
+    "Approve/review final GitHub publication",
+    "Rebuild/check personalized PDF and rehearse talk",
+    "Submit officially"
+  ],
+  "submission_ready_without_human_review": false,
+  "passed": 979,
+  "failed": 0
+}
